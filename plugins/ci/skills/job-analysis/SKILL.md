@@ -1,5 +1,5 @@
 ---
-name: Job Analysis
+name: job-analysis
 description: Unified entry point for analyzing all Prow CI job failure types with progressive disclosure of job-type-specific knowledge via references
 ---
 

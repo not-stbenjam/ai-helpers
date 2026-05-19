@@ -1,5 +1,5 @@
 ---
-name: Payload Revert
+name: payload-revert
 description: Consolidated workflow for staging reverts, experimenting with candidates, and creating revert PRs with JIRA integration and CI override commands
 ---
 

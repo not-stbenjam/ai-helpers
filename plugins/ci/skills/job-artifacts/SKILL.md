@@ -1,5 +1,5 @@
 ---
-name: Job Artifacts
+name: job-artifacts
 description: Search, list, and fetch Prow CI job artifacts from GCS; extract and process must-gather archives
 ---
 

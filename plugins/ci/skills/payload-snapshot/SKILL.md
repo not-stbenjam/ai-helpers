@@ -1,5 +1,5 @@
 ---
-name: Payload Snapshot
+name: payload-snapshot
 description: Deterministic Phase 1 data gathering for payload analysis — fetches all required payload context to .work/<tag>/
 ---
 

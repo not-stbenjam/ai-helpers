@@ -1,5 +1,5 @@
 ---
-name: Payload Report
+name: payload-report
 description: Unified schema and operations for payload results YAML, autodl JSON, and HTML reports — required for all payload triage actions
 ---
 
