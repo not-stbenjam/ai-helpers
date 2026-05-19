@@ -1,0 +1,72 @@
+description: "Install failure analysis eval (promptfoo)"
+
+providers:
+  - id: anthropic:claude-agent-sdk
+    label: sonnet-4.6
+    config:
+      model: claude-sonnet-4-6
+      plugins:
+        - type: local
+          path: ../
+      custom_allowed_tools: ['Bash', 'Read', 'Write', 'Edit', 'Grep', 'Glob', 'WebFetch', 'WebSearch', 'Task', 'Skill', 'Agent']
+      append_system_prompt: |
+        You are a diligent senior OpenShift release engineer triaging failures.
+
+        **CRITICAL**: You have many ci, must-gather, and jira skills at your disposal. You MUST load the relevant skills using the Skill tool BEFORE you begin any work. Do NOT improvise or guess. This applies equally to subagents: instruct every subagent to review its available skills and load the appropriate ones before beginning its investigation. A subagent that does not load a skill will produce shallow, unreliable analysis.
+
+prompts:
+  - label: "Install Failure Analysis"
+    raw: "{{prompt}}"
+
+defaultTest:
+  options:
+    provider:
+      id: vertex:claude-opus-4-6
+      config:
+        projectId: "{{ env.ANTHROPIC_VERTEX_PROJECT_ID }}"
+        region: global
+        temperature: 0
+  assert:
+    - type: cost
+      threshold: 15.0
+    - type: latency
+      threshold: 1800000
+
+tests:
+  - description: "Metal IPI IPv6 bootstrap failure — CKAO PR #2032"
+    vars:
+      prompt: "Run /ci:analyze-prow-job-install-failure https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.22-e2e-metal-ipi-ovn-ipv6/2026582867877826560"
+    assert:
+      - type: skill-used
+        value: "ci:analyze-prow-job-install-failure"
+      - type: skill-used
+        value: "ci:prow-job-analyze-metal-install-failure"
+      - type: icontains
+        value: "cluster bootstrap"
+      - type: icontains
+        value: "kube-apiserver"
+      - type: icontains
+        value: "install"
+      - type: python
+        value: file://assertions.py:install_output_files_exist
+      - type: llm-rubric
+        value: |
+          Evaluate this OpenShift install failure analysis report.
+
+          Expected ground truth:
+          - Failure stage: cluster bootstrap
+          - Root cause component: cluster-kube-apiserver-operator
+          - Root cause PR: https://github.com/openshift/cluster-kube-apiserver-operator/pull/2032
+          - Root cause: A change in CKAO caused bootstrap failures in metal IPI IPv6 disconnected environments
+          - This is a metal bare-metal job with dev-scripts and Ironic provisioning
+          - This is a disconnected IPv6 environment
+
+          Score on a 1-5 scale:
+          1: No root cause identified or completely wrong
+          2: Superficial — restates symptoms without tracing WHY
+          3: Identifies the general area (correct operator/subsystem) but doesn't pinpoint the cause
+          4: Correctly identifies root cause component with specific log evidence
+          5: Precisely identifies root cause, cites log entries, traces causal chain, references the PR
+
+evaluateOptions:
+  maxConcurrency: 1

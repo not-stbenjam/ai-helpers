@@ -249,9 +249,8 @@ handle_release_controller() {
         done
     fi
 
-    log_shim "MISS release-controller → $url"
-    echo "curl: (22) The requested URL returned error: 500" >&2
-    return 22
+    log_shim "MISS release-controller → $url (passthrough)"
+    return 1
 }
 
 # Handle Sippy API
@@ -284,9 +283,8 @@ handle_sippy() {
         done
     done
 
-    log_shim "MISS sippy → $url"
-    echo "curl: (22) The requested URL returned error: 500" >&2
-    return 22
+    log_shim "MISS sippy → $url (passthrough)"
+    return 1
 }
 
 # Handle GitHub raw content
@@ -306,9 +304,8 @@ handle_github_raw() {
         fi
     done
 
-    log_shim "MISS github-raw → $url"
-    echo "curl: (22) The requested URL returned error: 500" >&2
-    return 22
+    log_shim "MISS github-raw → $url (passthrough)"
+    return 1
 }
 
 # Main dispatch
@@ -319,45 +316,17 @@ if [[ -z "$URL" ]]; then
 fi
 
 case "$URL" in
-    *gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/*)
-        handle_gcsweb "$URL"
-        exit $?
-        ;;
     *ocp.releases.ci.openshift.org/api/*)
-        handle_release_controller "$URL"
-        exit $?
+        handle_release_controller "$URL" && exit 0
         ;;
     *sippy.dptools.openshift.org/*)
-        handle_sippy "$URL"
-        exit $?
+        handle_sippy "$URL" && exit 0
         ;;
     *raw.githubusercontent.com/*)
-        handle_github_raw "$URL"
-        exit $?
-        ;;
-    *storage.googleapis.com/*)
-        log_shim "BLOCKED storage.googleapis.com (GCS JSON API) → $URL"
-        echo '{"error":{"code":403,"message":"Access denied by eval shim","errors":[{"message":"Access denied by eval shim","domain":"global","reason":"forbidden"}]}}' | emit_content
-        exit 22
-        ;;
-    *prow.ci.openshift.org/*)
-        log_shim "BLOCKED prow.ci.openshift.org → $URL"
-        echo "curl: (7) Failed to connect to prow.ci.openshift.org: Connection refused (eval shim)" >&2
-        exit 7
-        ;;
-    *api.github.com/*)
-        log_shim "BLOCKED api.github.com → $URL"
-        echo '{"message":"Blocked by eval shim","documentation_url":"https://docs.github.com/rest"}' | emit_content
-        exit 22
-        ;;
-    *ocp.releases.ci.openshift.org/changelog*)
-        log_shim "BLOCKED ocp.releases.ci.openshift.org/changelog → $URL"
-        echo "curl: (7) Failed to connect to ocp.releases.ci.openshift.org: Connection refused (eval shim)" >&2
-        exit 7
-        ;;
-    *)
-        log_shim "BLOCKED unhandled URL → $URL"
-        echo "curl: (7) Failed to connect: Connection refused (eval shim blocked unrecognized URL)" >&2
-        exit 7
+        handle_github_raw "$URL" && exit 0
         ;;
 esac
+
+# Cache miss or unhandled URL — pass through to real curl
+log_shim "PASSTHROUGH → $URL"
+exec "$REAL_CURL" "$@"

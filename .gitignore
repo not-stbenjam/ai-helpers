@@ -49,3 +49,13 @@ package-lock.json
 # Various logs and metrics tracking info
 *.log
 .anonymous_id
+
+# MLflow
+mlflow.db
+mlruns/
+
+# Scratch/temp files
+tmp/
+eval/
+eval.md
+TODO.md

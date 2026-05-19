@@ -1,0 +1,250 @@
+description: "Payload analysis eval (promptfoo)"
+
+providers:
+  - id: anthropic:claude-agent-sdk
+    label: sonnet-4.6
+    config:
+      model: claude-sonnet-4-6
+      plugins:
+        - type: local
+          path: ../
+      custom_allowed_tools: ['Bash', 'Read', 'Write', 'Edit', 'Grep', 'Glob', 'WebFetch', 'WebSearch', 'Task', 'Skill', 'Agent']
+      append_system_prompt: |
+        You are a diligent senior OpenShift release engineer triaging failures.
+
+        **CRITICAL**: You have many ci, must-gather, and jira skills at your disposal. You MUST load the relevant skills using the Skill tool BEFORE you begin any work. Do NOT improvise or guess. This applies equally to subagents: instruct every subagent to review its available skills and load the appropriate ones before beginning its investigation. A subagent that does not load a skill will produce shallow, unreliable analysis.
+
+  - id: anthropic:claude-agent-sdk
+    label: opus-4.6
+    config:
+      model: claude-opus-4-6
+      plugins:
+        - type: local
+          path: ../
+      custom_allowed_tools: ['Bash', 'Read', 'Write', 'Edit', 'Grep', 'Glob', 'WebFetch', 'WebSearch', 'Task', 'Skill', 'Agent']
+      append_system_prompt: |
+        You are a diligent senior OpenShift release engineer triaging failures.
+
+        **CRITICAL**: You have many ci, must-gather, and jira skills at your disposal. You MUST load the relevant skills using the Skill tool BEFORE you begin any work. Do NOT improvise or guess. This applies equally to subagents: instruct every subagent to review its available skills and load the appropriate ones before beginning its investigation. A subagent that does not load a skill will produce shallow, unreliable analysis.
+
+prompts:
+  - label: "Payload Analysis"
+    raw: "{{prompt}}"
+
+extensions:
+  - file://set-archive-env.js:beforeEach
+
+defaultTest:
+  options:
+    provider:
+      id: vertex:claude-opus-4-6
+      config:
+        projectId: "{{ env.ANTHROPIC_VERTEX_PROJECT_ID }}"
+        region: global
+        temperature: 0
+  assert:
+    - type: skill-used
+      value: "ci:analyze-payload"
+    - type: python
+      value: file://assertions.py:output_files_exist
+    - type: python
+      value: file://assertions.py:yaml_results_valid
+    - type: python
+      value: file://assertions.py:json_data_valid
+    - type: python
+      value: file://assertions.py:html_report_structure
+    - type: cost
+      threshold: 25.0
+    - type: latency
+      threshold: 3600000
+
+tests:
+  # --- Simple cases (no revert candidates) ---
+
+  - description: "case-001 rejected single failure (4.19)"
+    vars:
+      prompt: "Run /ci:analyze-payload 4.19.0-0.nightly-2026-05-13-214109"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/4.19.0-0.nightly-2026-05-13-214109"
+    assert:
+      - type: icontains
+        value: "Rejected"
+
+  - description: "case-002 rejected multiple failures (4.18)"
+    vars:
+      prompt: "Run /ci:analyze-payload 4.18.0-0.nightly-2026-05-14-085133"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/4.18.0-0.nightly-2026-05-14-085133"
+    assert:
+      - type: icontains
+        value: "Rejected"
+
+  - description: "case-003 accepted with failures (4.20)"
+    vars:
+      prompt: "Run /ci:analyze-payload 4.20.0-0.nightly-2026-05-13-064706"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/4.20.0-0.nightly-2026-05-13-064706"
+    assert:
+      - type: icontains
+        value: "Accepted"
+
+  - description: "case-004 ready in progress (4.20)"
+    vars:
+      prompt: "Run /ci:analyze-payload 4.20.0-0.nightly-2026-05-14-114051"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/4.20.0-0.nightly-2026-05-14-114051"
+    assert:
+      - type: icontains
+        value: "Ready"
+
+  - description: "case-005 rejected streak (4.20)"
+    vars:
+      prompt: "Run /ci:analyze-payload 4.20.0-0.nightly-2026-05-12-225204"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/4.20.0-0.nightly-2026-05-12-225204"
+    assert:
+      - type: icontains
+        value: "Rejected"
+
+  # --- Revert candidate cases (with llm-rubric for scoring accuracy) ---
+
+  - description: "case-006 4.22 rejected with reverts"
+    vars:
+      prompt: "Run /ci:analyze-payload 4.22.0-0.nightly-2026-03-20-053450"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/4.22.0-0.nightly-2026-03-20-053450"
+    assert:
+      - type: icontains
+        value: "Rejected"
+      - type: icontains
+        value: "revert"
+      - type: llm-rubric
+        value: |
+          Evaluate whether this payload analysis correctly identified revert
+          candidates with appropriate confidence scores. The analysis should
+          identify high-confidence candidates (>=85) with clear rationale
+          citing specific error messages and component changes. Score 1-5.
+
+  - description: "case-007 4.22 ci CCO revert"
+    vars:
+      prompt: "Run /ci:analyze-payload 4.22.0-0.ci-2026-03-31-050515"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/4.22.0-0.ci-2026-03-31-050515"
+    assert:
+      - type: icontains
+        value: "Rejected"
+      - type: icontains
+        value: "revert"
+      - type: llm-rubric
+        value: |
+          Evaluate whether the analysis correctly identifies cloud-credential-operator
+          as a revert candidate. Score 1-5 based on whether the correct component
+          is identified with specific log evidence and confidence scoring.
+
+  - description: "case-008 4.22 ci hypershift revert"
+    vars:
+      prompt: "Run /ci:analyze-payload 4.22.0-0.ci-2026-03-31-170515"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/4.22.0-0.ci-2026-03-31-170515"
+    assert:
+      - type: icontains
+        value: "Rejected"
+      - type: icontains
+        value: "revert"
+      - type: llm-rubric
+        value: |
+          Evaluate whether the analysis correctly identifies a hypershift-related
+          component as a revert candidate. Score 1-5 based on root cause depth,
+          log evidence, and confidence scoring accuracy.
+
+  - description: "case-009 4.22 CVO revert"
+    vars:
+      prompt: "Run /ci:analyze-payload 4.22.0-0.nightly-2026-03-18-161724"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/4.22.0-0.nightly-2026-03-18-161724"
+    assert:
+      - type: icontains
+        value: "Rejected"
+      - type: icontains
+        value: "revert"
+      - type: llm-rubric
+        value: |
+          Evaluate whether the analysis correctly identifies a cluster-version-operator
+          related component as a revert candidate. Score 1-5 based on root cause
+          identification, log evidence, and confidence scoring.
+
+  - description: "case-010 5.0 ci CNO networkpolicy revert"
+    vars:
+      prompt: "Run /ci:analyze-payload 5.0.0-0.ci-2026-05-07-142711"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/5.0.0-0.ci-2026-05-07-142711"
+    assert:
+      - type: icontains
+        value: "Rejected"
+      - type: icontains
+        value: "revert"
+      - type: icontains
+        value: "network"
+      - type: llm-rubric
+        value: |
+          Evaluate this payload analysis. Expected ground truth:
+          - cluster-network-operator PR #2959 added NetworkPolicies that blocked
+            egress from cloud-network-config-controller
+          - CrashLoopBackOff across AWS, Azure, GCP due to API server timeouts
+          - Should be identified as high-confidence revert candidate (>=85)
+
+          Score 1-5:
+          1: Wrong component or no revert candidate identified
+          2: Correct component but no specific mechanism described
+          3: Correct component and general mechanism but weak evidence
+          4: Correct component, specific NetworkPolicy/egress mechanism, cross-platform correlation
+          5: All of the above plus PR #2959 referenced, confidence score justified with rubric breakdown
+
+  - description: "case-011 5.0 nightly CMO monitoring revert"
+    vars:
+      prompt: "Run /ci:analyze-payload 5.0.0-0.nightly-2026-04-27-183150"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/5.0.0-0.nightly-2026-04-27-183150"
+    assert:
+      - type: icontains
+        value: "revert"
+      - type: llm-rubric
+        value: |
+          Evaluate whether the analysis correctly identifies a cluster-monitoring-operator
+          related component as a revert candidate with appropriate confidence scoring.
+          Score 1-5 based on root cause depth and evidence quality.
+
+  # --- Edge cases (false positives, infra-only) ---
+
+  - description: "case-012 5.0 ci hypershift builder false positive"
+    vars:
+      prompt: "Run /ci:analyze-payload 5.0.0-0.ci-2026-04-14-085906"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/5.0.0-0.ci-2026-04-14-085906"
+    assert:
+      - type: icontains
+        value: "Rejected"
+      - type: llm-rubric
+        value: |
+          This payload has a hypershift builder failure that should NOT produce
+          high-confidence revert candidates (it's a false positive / infra issue).
+          Score 1-5 based on whether the analysis correctly avoids recommending
+          a revert, or appropriately flags low confidence.
+
+  - description: "case-013 5.0 nightly NTO testdata revert"
+    vars:
+      prompt: "Run /ci:analyze-payload 5.0.0-0.nightly-2026-05-08-191551"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/5.0.0-0.nightly-2026-05-08-191551"
+    assert:
+      - type: icontains
+        value: "revert"
+      - type: llm-rubric
+        value: |
+          Evaluate whether the analysis correctly identifies a node-tuning-operator
+          related component as a revert candidate. Score 1-5.
+
+  - description: "case-014 5.0 ci infra only no candidates"
+    vars:
+      prompt: "Run /ci:analyze-payload 5.0.0-0.ci-2026-05-14-181709"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/5.0.0-0.ci-2026-05-14-181709"
+    assert:
+      - type: icontains
+        value: "Rejected"
+      - type: llm-rubric
+        value: |
+          This payload has only infrastructure failures with no product-level
+          revert candidates. The analysis should correctly classify failures
+          as infrastructure-related and NOT recommend any reverts. Score 1-5
+          based on whether the analysis correctly distinguishes infra from
+          product failures.
+
+evaluateOptions:
+  maxConcurrency: 2
