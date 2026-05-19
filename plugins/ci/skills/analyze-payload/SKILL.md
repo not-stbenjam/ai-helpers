@@ -24,8 +24,8 @@ Use this skill when you need to:
 
 Before starting, you **MUST** load the following skills (they define output schemas used in Steps 6, 8, and 9):
 
-1. **`payload-results-yaml`** — schema for the payload results YAML file
-2. **`payload-autodl-json`** — schema for the autodl JSON data file
+1. **`payload-report`** — schema for the payload results YAML file
+2. **`payload-report`** — schema for the autodl JSON data file
 
 ## Prerequisites
 
@@ -123,8 +123,8 @@ You MUST use the following prompt verbatim (substituting the placeholder values)
 > First, check the JUnit results or build log to determine whether this is an install failure (look for `install should succeed: overall` or similar install-related test failures) or a test failure (install passed, specific tests failed).
 >
 > Based on the failure type, use the appropriate skill:
-> - **Install failure**: Use the `ci:prow-job-analyze-install-failure` skill. For metal/bare-metal jobs (job name contains "metal"), perform additional analysis using the `ci:prow-job-analyze-metal-install-failure` skill as needed for dev-scripts, Metal3/Ironic, and BareMetalHost-specific diagnostics.
-> - **Test failure**: Use the `ci:prow-job-analyze-test-failure` skill. Do NOT use `--fast` — always perform the full analysis including must-gather extraction and analysis.
+> - **Install failure**: Use the `ci:analyze-prow-job` skill. For metal/bare-metal jobs (job name contains "metal"), perform additional analysis using the `ci:analyze-prow-job` skill as needed for dev-scripts, Metal3/Ironic, and BareMetalHost-specific diagnostics.
+> - **Test failure**: Use the `ci:analyze-prow-job` skill. Do NOT use `--fast` — always perform the full analysis including must-gather extraction and analysis.
 >
 > **IMPORTANT** — Trace every failure to its specific root cause by examining actual logs. Never stop at high-level symptoms like "0 nodes ready", "operator degraded", or "containers are crash-looping". Download and read the actual log bundles, pod logs, and container previous logs. Cite specific error messages. The root cause must be actionable, not a restatement of the symptom.
 >
@@ -270,7 +270,7 @@ Record the determination in the payload results YAML and autodl JSON (see their 
 
 #### 6.5: Write Payload Results YAML
 
-After scoring all (job, candidate PR) pairs and checking for existing reverts, use the `payload-results-yaml` skill to create the results file in the current working directory: `payload-results-{tag}.yaml` (sanitize the tag for filename safety).
+After scoring all (job, candidate PR) pairs and checking for existing reverts, use the `payload-report` skill to create the results file in the current working directory: `payload-results-{tag}.yaml` (sanitize the tag for filename safety).
 
 This file contains ALL scored candidates across all confidence tiers (HIGH, MEDIUM, and LOW), enabling downstream commands (`/ci:payload-revert`, `/ci:payload-experiment`) to filter by their own criteria.
 
@@ -278,7 +278,7 @@ When a PR appears as a candidate for multiple jobs, merge into one entry using t
 
 Candidates start with `actions: []` unless a pre-existing revert PR was found in Step 6.3. If found, append an action with `type: "revert"`, `status: "open"` or `"merged"`, `revert_pr_url` set, and remaining action fields empty. Downstream skills (`stage-payload-reverts`, `payload-experimental-reverts`) append additional actions.
 
-See the `payload-results-yaml` skill for the complete schema.
+See the `payload-report` skill for the complete schema.
 
 ### Step 7: Generate HTML Report
 
@@ -513,9 +513,9 @@ You may add additional classes as needed (e.g., history markers, timeline items,
 
 ### Step 8: Generate JSON Data File
 
-After generating the HTML report, use the `payload-autodl-json` skill to produce a structured JSON data file for database ingestion. The file is named `payload-analysis-<sanitized_tag>-autodl.json`.
+After generating the HTML report, use the `payload-report` skill to produce a structured JSON data file for database ingestion. The file is named `payload-analysis-<sanitized_tag>-autodl.json`.
 
-See the `payload-autodl-json` skill for the complete schema, row cardinality rules, and field rules.
+See the `payload-report` skill for the complete schema, row cardinality rules, and field rules.
 
 ### Step 9: Save and Present
 
@@ -564,8 +564,8 @@ If the release controller or Sippy API is unreachable, report the error clearly 
 
 ## See Also
 
-- Related Skill: `payload-results-yaml` - Schema for the results YAML
-- Related Skill: `payload-autodl-json` - Schema for the autodl JSON data file
+- Related Skill: `payload-report` - Schema for the results YAML
+- Related Skill: `payload-report` - Schema for the autodl JSON data file
 - Related Skill: `fetch-payloads` - Fetches payload data from release controller
 - Related Skill: `fetch-new-prs-in-payload` - Fetches PRs new in a payload
 - Related Command: `/ci:payload-revert` - Stages reverts for high-confidence candidates
