@@ -35,7 +35,7 @@ The command identifies the failure mode from `junit_install.xml` and tailors its
 
 ## Implementation
 
-The command performs the following steps by invoking the "Prow Job Analyze Install Failure" skill:
+The command performs the following steps by invoking the "Job Analysis" skill:
 
 1. **Parse Job URL**: Extract build ID and job details from the Prow URL
 
@@ -75,12 +75,12 @@ The command performs the following steps by invoking the "Prow Job Analyze Insta
 The skill handles all the implementation details including URL parsing, artifact downloading, archive extraction, log analysis, and report generation.
 
 ## Return Value
-- **Success**: Comprehensive analysis report saved to `.work/prow-job-analyze-install-failure/{build_id}/analysis/report.txt`
+- **Success**: Comprehensive analysis report saved to `.work/job-analysis/{build_id}/analysis/report.txt`
 - **Error**: Error message explaining the issue (invalid URL, gcloud not installed, artifacts not found, etc.)
 
 **Important for Claude**:
 1. Parse the Prow job URL to extract the build ID and job name
-2. Invoke the "ci:prow-job-analyze-install-failure" skill with the job details
+2. Invoke the "ci:job-analysis" skill with the job details
 3. The skill will download all relevant artifacts and analyze them
 4. For metal jobs, the skill automatically invokes the specialized metal install failure skill
 5. Present the analysis report to the user with clear findings
@@ -137,7 +137,7 @@ The skill handles all the implementation details including URL parsing, artifact
 - **Log Bundle**: Contains detailed node-level diagnostics including journals, serial consoles, and cluster API resources
 - **Metal Jobs**: Identified by "metal" in the job name. These jobs automatically invoke the specialized `ci:prow-job-analyze-metal-install-failure` skill.
 - **Metal Artifacts**: Metal jobs analyze dev-scripts logs, libvirt console logs, sosreport, and squid logs
-- **Artifacts Location**: All downloaded artifacts are cached in `.work/prow-job-analyze-install-failure/{build_id}/` for faster re-analysis
+- **Artifacts Location**: All downloaded artifacts are cached in `.work/job-analysis/{build_id}/` for faster re-analysis
 - **gcloud Requirement**: Requires gcloud CLI to be installed to access GCS buckets
 - **Public Access**: The test-platform-results bucket is publicly accessible - no authentication needed
 

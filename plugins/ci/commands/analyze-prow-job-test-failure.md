@@ -13,7 +13,7 @@ Generate a test failure analysis for the given test:
 ```
 
 ## Description
-Analyze a failed test by inspecting the test code in the current project and artifacts in Prow CI job. This is done by invoking the "Prow Job Analyze Test Failure" skill.
+Analyze a failed test by inspecting the test code in the current project and artifacts in Prow CI job. This is done by invoking the "Job Analysis" skill.
 
 The command provides comprehensive analysis by:
 - Examining test failure stack traces and source code
@@ -61,7 +61,7 @@ For HyperShift jobs with hosted clusters, the command automatically:
 **Note**: HyperShift jobs may use different artifact structures depending on the workflow and test type.
 
 ## Implementation
-- Load the "Prow Job Analyze Test Failure" skill
+- Load the "Job Analysis" skill
 - Proceed with the analysis by following the implementation steps from the skill
 
 The skill handles all the implementation details including:
@@ -78,7 +78,7 @@ The skill handles all the implementation details including:
   - **Cluster Diagnostics** (if must-gather analyzed): Cluster operator status, problematic pods, node issues, warning events
   - **Correlation** (if must-gather analyzed): Temporal correlation (test timing vs cluster events) and component correlation (affected operators/pods/nodes)
   - **Root Cause Hypothesis**: Integrated analysis combining test-level and cluster-level insights
-- **Artifacts**: Downloaded to `.work/prow-job-analyze-test-failure/{build_id}/`
+- **Artifacts**: Downloaded to `.work/job-analysis/{build_id}/`
   - `logs/` - Test artifacts (build-log, interval files)
   - `must-gather/logs/` - Cluster diagnostics (if extracted, standard OpenShift)
   - `must-gather-mgmt/logs/` and `must-gather-hosted/logs/` - Dual cluster diagnostics (if extracted, HyperShift)

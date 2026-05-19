@@ -5,17 +5,17 @@ argument-hint: <pr-url> <jira-ticket>
 
 ## Name
 
-ci:revert-pr
+ci:payload-revert
 
 ## Synopsis
 
 ```
-/ci:revert-pr <pr-url> <jira-ticket>
+/ci:payload-revert <pr-url> <jira-ticket>
 ```
 
 ## Description
 
-The `ci:revert-pr` command reverts a merged pull request that is breaking CI or nightly payloads. It follows the [OpenShift quick-revert policy](https://github.com/openshift/enhancements/blob/master/enhancements/release/improving-ci-signal.md#quick-revert) to restore CI signal.
+The `ci:payload-revert` command reverts a merged pull request that is breaking CI or nightly payloads. It follows the [OpenShift quick-revert policy](https://github.com/openshift/enhancements/blob/master/enhancements/release/improving-ci-signal.md#quick-revert) to restore CI signal.
 
 This command:
 
@@ -53,9 +53,9 @@ This command is useful when:
      - The JIRA issue doesn't contain enough information to determine what broke or which jobs to verify
    - If the user provided additional context as inline arguments, combine it with the JIRA-derived context
 
-3. **Perform the Revert**: Use the `revert-pr` skill
+3. **Perform the Revert**: Use the `payload-revert` skill
 
-   Follow the complete workflow in `plugins/ci/skills/revert-pr/SKILL.md`, which covers:
+   Follow the complete workflow in `plugins/ci/skills/payload-revert/SKILL.md`, which covers:
    - Extracting PR information (title, author, merge SHA, base branch) via `gh`
    - Validating the PR is in MERGED state
    - Ensuring the user has a fork of the repository
@@ -83,13 +83,13 @@ This command is useful when:
 
 1. **Basic revert with context provided inline**:
    ```
-   /ci:revert-pr https://github.com/openshift/kubernetes/pull/1703 TRT-9999
+   /ci:payload-revert https://github.com/openshift/kubernetes/pull/1703 TRT-9999
    ```
    The command will ask for context and verification details interactively.
 
 2. **Revert with full context**:
    ```
-   /ci:revert-pr https://github.com/openshift/cluster-network-operator/pull/2037 OCPBUGS-12345
+   /ci:payload-revert https://github.com/openshift/cluster-network-operator/pull/2037 OCPBUGS-12345
    This PR broke all e2e-aws jobs on the 4.18 nightly. Verification: run e2e-aws and e2e-gcp.
    ```
 
@@ -123,6 +123,6 @@ This command is useful when:
 
 ## See Also
 
-- Related Skill: `revert-pr` - Detailed git revert workflow and PR template (`plugins/ci/skills/revert-pr/SKILL.md`)
+- Related Skill: `payload-revert` - Detailed git revert workflow and PR template (`plugins/ci/skills/payload-revert/SKILL.md`)
 - OpenShift Quick Revert Policy: https://github.com/openshift/enhancements/blob/master/enhancements/release/improving-ci-signal.md#quick-revert
 - Revertomatic: https://github.com/stbenjam/revertomatic

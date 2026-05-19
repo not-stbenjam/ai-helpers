@@ -4,12 +4,12 @@ argument-hint: <prowjob-url-1> [prowjob-url-2 ...] [--backends backend1,backend2
 ---
 
 ## Name
-ci:analyze-disruption
+ci:job-analysis
 
 ## Synopsis
 Analyze disruption events across one or more CI job runs, comparing backends to identify root causes:
 ```text
-/ci:analyze-disruption <prowjob-url-1> [prowjob-url-2 ...] [--backends backend1,backend2,...]
+/ci:job-analysis <prowjob-url-1> [prowjob-url-2 ...] [--backends backend1,backend2,...]
 ```
 
 ## Description
@@ -53,7 +53,7 @@ Disruption responsibility spans multiple teams. The more detail tracked down, th
 - **Node team** — node shutdown sequencing, kubelet behavior, high CPU
 
 ## Implementation
-- Load the "Analyze Disruption" skill
+- Load the "Job Analysis" skill
 - Proceed with the analysis by following the implementation steps from the skill
 
 The skill handles all implementation details including:
@@ -87,15 +87,15 @@ The skill handles all implementation details including:
 
 1. **Analyze disruption in a single job run**:
    ```text
-   /ci:analyze-disruption https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.21-e2e-aws-ovn/1983307151598161920
+   /ci:job-analysis https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.21-e2e-aws-ovn/1983307151598161920
    ```
 
 2. **Compare disruption across multiple runs**:
    ```text
-   /ci:analyze-disruption https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.21-e2e-aws-ovn/1983307151598161920 https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.21-e2e-aws-ovn/1983307151598161921
+   /ci:job-analysis https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.21-e2e-aws-ovn/1983307151598161920 https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.21-e2e-aws-ovn/1983307151598161921
    ```
 
 3. **Focus on specific backends**:
    ```text
-   /ci:analyze-disruption https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.21-e2e-aws-ovn/1983307151598161920 --backends kube-api,oauth-api,openshift-api
+   /ci:job-analysis https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-master-ci-4.21-e2e-aws-ovn/1983307151598161920 --backends kube-api,oauth-api,openshift-api
    ```

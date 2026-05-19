@@ -164,7 +164,7 @@ This command is intended to be run periodically (e.g., monthly) to track revert 
 
 ## See Also
 
-- Related Command: `ci:revert-pr` - Create a revert PR for a breaking change
+- Related Command: `ci:payload-revert` - Create a revert PR for a breaking change
 - CodeRabbit Config: https://github.com/openshift/coderabbit
 - OpenShift Quick Revert Policy: https://github.com/openshift/enhancements/blob/master/enhancements/release/improving-ci-signal.md#quick-revert
 - Revertomatic: https://github.com/stbenjam/revertomatic

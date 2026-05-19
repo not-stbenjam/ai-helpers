@@ -91,5 +91,5 @@ Load the "Analyze Payload" skill and follow its implementation steps. The skill 
 
 - `fetch-payloads`: Fetches recent payloads from the release controller
 - `fetch-new-prs-in-payload`: Identifies PRs new in a given payload vs its predecessor
-- `prow-job-analyze-install-failure`: Analyzes install failures (used by subagents)
-- `prow-job-analyze-test-failure`: Analyzes test failures (used by subagents)
+- `job-analysis`: Analyzes install failures (used by subagents)
+- `job-analysis`: Analyzes test failures (used by subagents)

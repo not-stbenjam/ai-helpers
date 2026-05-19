@@ -21,7 +21,7 @@ The `ci:payload-experiment` command opens draft revert PRs for medium-confidence
 
 **Phase 2**: Detects candidates with a `status: "pending"` action entry in the results YAML, checks job results, promotes confirmed causes to real revert PRs (with TRT JIRA bugs), and closes innocent draft PRs.
 
-All state is tracked in the payload results YAML via the `payload-results-yaml` skill — no separate tracking file is created.
+All state is tracked in the payload results YAML via the `payload-report` skill — no separate tracking file is created.
 
 This command is one of three composable stages in the payload triage pipeline:
 1. `/ci:analyze-payload` — produces the payload results YAML
@@ -37,7 +37,7 @@ This command is one of three composable stages in the payload triage pipeline:
 
 1. **Parse the payload tag** from the argument. Extract `version`, `stream`, and `architecture` from the tag (see `analyze-payload` Step 1 for parsing rules).
 
-2. **Read the payload results YAML** using the `payload-results-yaml` skill: Look for `payload-results-{tag}.yaml` in the current working directory. If not found, print an error and exit:
+2. **Read the payload results YAML** using the `payload-report` skill: Look for `payload-results-{tag}.yaml` in the current working directory. If not found, print an error and exit:
    ```
    Error: Payload results YAML not found for {payload_tag}.
    Run `/ci:analyze-payload {payload_tag}` first to generate it.
@@ -45,9 +45,9 @@ This command is one of three composable stages in the payload triage pipeline:
 
 3. **Detect Phase 2 resume**: If the results YAML contains any action entry with `type: "experiment"` and `status: "pending"`, jump to Phase 2 (step 5). Phase 2 processes only pending experiments — candidates with other statuses are left unchanged.
 
-4. **Phase 1 — Set up experiments**: Filter candidates with `60 <= confidence_score < 85`. Exclude any that already have an action with `status` of `"open"` or `"merged"` (pre-existing revert). Dispatch to the `payload-experimental-reverts` skill Phase 1, which updates the results YAML in place.
+4. **Phase 1 — Set up experiments**: Filter candidates with `60 <= confidence_score < 85`. Exclude any that already have an action with `status` of `"open"` or `"merged"` (pre-existing revert). Dispatch to the `payload-revert` skill Phase 1, which updates the results YAML in place.
 
-5. **Phase 2 — Collect results**: Dispatch to the `payload-experimental-reverts` skill Phase 2 to check job results, promote confirmed causes, close innocent drafts, and update the results YAML.
+5. **Phase 2 — Collect results**: Dispatch to the `payload-revert` skill Phase 2 to check job results, promote confirmed causes, close innocent drafts, and update the results YAML.
 
 6. **Report results**: Print a summary of actions taken.
 
@@ -75,7 +75,7 @@ This command is one of three composable stages in the payload triage pipeline:
 
 ## Skills Used
 
-- `payload-results-yaml`: Reads and updates the payload results YAML
-- `payload-experimental-reverts`: Opens draft revert PRs and triggers payload jobs (Phase 1); collects results and acts (Phase 2)
+- `payload-report`: Reads and updates the payload results YAML
+- `payload-revert`: Opens draft revert PRs and triggers payload jobs (Phase 1); collects results and acts (Phase 2)
 - `trigger-payload-job`: Triggers payload jobs and collects URLs
-- `revert-pr`: Git revert workflow for creating revert PRs
+- `payload-revert`: Git revert workflow for creating revert PRs

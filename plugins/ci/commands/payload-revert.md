@@ -17,7 +17,7 @@ ci:payload-revert
 
 The `ci:payload-revert` command reads the payload results YAML produced by `/ci:analyze-payload` and stages reverts for all high-confidence candidates (confidence score >= 85) that have not already been reverted.
 
-For each qualifying candidate, it creates a TRT JIRA bug, opens a revert PR, and triggers payload validation jobs using the `stage-payload-reverts` skill.
+For each qualifying candidate, it creates a TRT JIRA bug, opens a revert PR, and triggers payload validation jobs using the `payload-revert` skill.
 
 This command is one of three composable stages in the payload triage pipeline:
 1. `/ci:analyze-payload` — produces the payload results YAML
@@ -35,7 +35,7 @@ When the number of failing jobs across all candidates exceeds these limits, prio
 
 1. **Parse the payload tag** from the argument. Extract `version`, `stream`, and `architecture` from the tag (see `analyze-payload` Step 1 for parsing rules).
 
-2. **Read the payload results YAML** using the `payload-results-yaml` skill: Look for `payload-results-{tag}.yaml` in the current working directory. If not found, print an error and exit:
+2. **Read the payload results YAML** using the `payload-report` skill: Look for `payload-results-{tag}.yaml` in the current working directory. If not found, print an error and exit:
    ```
    Error: Payload results YAML not found for {payload_tag}.
    Run `/ci:analyze-payload {payload_tag}` first to generate it.
@@ -43,7 +43,7 @@ When the number of failing jobs across all candidates exceeds these limits, prio
 
 3. **Filter candidates**: Select candidates with `confidence_score >= 85`. Exclude any that already have an action with `status` of `"open"` or `"merged"` (pre-existing revert).
 
-4. **Dispatch to `stage-payload-reverts` skill**: Pass all qualifying candidates with their context (results YAML path, payload tag, version, stream, architecture, release controller URL, and failing jobs). The skill updates the results YAML and HTML report in place. The `trigger-payload-job` skill validates that aggregated jobs have `underlying_job_name` set and skips them with an error if not.
+4. **Dispatch to `payload-revert` skill**: Pass all qualifying candidates with their context (results YAML path, payload tag, version, stream, architecture, release controller URL, and failing jobs). The skill updates the results YAML and HTML report in place. The `trigger-payload-job` skill validates that aggregated jobs have `underlying_job_name` set and skips them with an error if not.
 
 5. **Report results**: Print a summary of actions taken (JIRA tickets created, revert PRs opened, payload jobs triggered).
 
@@ -66,7 +66,7 @@ When the number of failing jobs across all candidates exceeds these limits, prio
 
 ## Skills Used
 
-- `payload-results-yaml`: Reads and updates the payload results YAML
-- `stage-payload-reverts`: Creates TRT JIRA bugs, opens revert PRs, triggers payload jobs
+- `payload-report`: Reads and updates the payload results YAML
+- `payload-revert`: Creates TRT JIRA bugs, opens revert PRs, triggers payload jobs
 - `trigger-payload-job`: Triggers payload jobs and collects URLs
-- `revert-pr`: Git revert workflow for creating revert PRs
+- `payload-revert`: Git revert workflow for creating revert PRs
