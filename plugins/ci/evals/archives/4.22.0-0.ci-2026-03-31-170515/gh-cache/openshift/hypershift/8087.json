@@ -1,0 +1,24 @@
+{
+  "body": "## Summary\r\n- ARO HCP does not need router LoadBalancer services since Swift handles connectivity\r\n- PR #7845 introduced a regression by creating LB services for ARO HCP with Swift enabled\r\n- Adds `IsAroHCP()` check to `reconcileHCPRouterServices` so router LB services are always skipped for ARO HCP\r\n- Adds test case for ARO with Swift ensuring no services are created\r\n\r\nThis was introduced via https://github.com/openshift/hypershift/pull/7845\r\n\r\n## Test plan\r\n- [x] Unit tests pass (`go test ./control-plane-operator/controllers/hostedcontrolplane/infra/...`)\r\n- [x] Testdata regenerated with `UPDATE=true`\r\n- [ ] Verify no router LB services are created for ARO HCP clusters\r\n\r\n\ud83e\udd16 Generated with [Claude Code](https://claude.com/claude-code)\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **Bug Fixes**\n  * Corrected router service handling for ARO HostedControlPlanes to ensure appropriate infrastructure management and service cleanup.\n\n* **Tests**\n  * Added test coverage validating proper service behavior when ARO HostedControlPlanes are configured.\n\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+  "files": [
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/infra/infra.go",
+      "additions": 39,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/infra/infra_test.go",
+      "additions": 36,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/infra/testdata/zz_fixture_TestReconcileInfrastructure_ARO_Route_SharedIngress_And_Swift.yaml",
+      "additions": 1,
+      "deletions": 17,
+      "changeType": "MODIFIED"
+    }
+  ],
+  "title": "OCPBUGS-81162: fix(cpo): skip router LB services for ARO HCP"
+}

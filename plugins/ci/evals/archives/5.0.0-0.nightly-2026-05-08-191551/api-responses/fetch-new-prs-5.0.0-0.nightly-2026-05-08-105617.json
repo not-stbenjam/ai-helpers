@@ -1,0 +1,10 @@
+[
+    {
+      "url": "https://github.com/openshift/cluster-api-provider-azure/pull/387",
+      "pull_request_id": "387",
+      "component": "azure-cluster-api-controllers",
+      "description": "NO-JIRA: manifests-gen: scope provider webhooks to capi namespace",
+      "bug_url": ""
+    }
+  ]
+}

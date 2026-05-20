@@ -1,0 +1,4 @@
+=== [Monitor:kubelet-container-restarts][sig-architecture] platform pods in ns/openshift-cloud-network-config-controller should not fail to start ===
+1 container starts had issues
+
+container failed to start at 2026-05-07 16:26:18 +0000 UTC: namespace/openshift-cloud-network-config-controller pod/cloud-network-config-controller-697888b769-t998p uid/a2f1b91c-4ab6-4050-9999-f378603fc6fb container/controller - constructed/pod-lifecycle-constructor reason/ContainerWait missed real "ContainerWait"

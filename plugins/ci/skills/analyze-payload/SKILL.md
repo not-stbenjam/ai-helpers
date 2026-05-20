@@ -128,6 +128,8 @@ You MUST use the following prompt verbatim (substituting the placeholder values)
 >
 > **IMPORTANT** — Trace every failure to its specific root cause by examining actual logs. Never stop at high-level symptoms like "0 nodes ready", "operator degraded", or "containers are crash-looping". Download and read the actual log bundles, pod logs, and container previous logs. Cite specific error messages. The root cause must be actionable, not a restatement of the symptom.
 >
+> **Root cause depth**: When pods are CrashLooping or failing to start, identify WHAT caused them to crash — read the container's previous logs and look for the specific error (connection refused, timeout to a specific endpoint, permission denied, etc.). When network-related failures are involved, check whether NetworkPolicies, EgressFirewall rules, or other network configuration changes could be blocking traffic. The root cause should name the specific mechanism (e.g., "NetworkPolicy blocked egress from pod X to endpoint Y") not just the symptom ("pod X is CrashLooping").
+>
 > Return a concise summary including: failure type (install vs test), root cause, key error messages, and any relevant log excerpts. Do not ask user questions. Keep the output concise for inclusion in a summary report.
 >
 > If the job is an aggregated job (has `aggregated-` prefix in the name or an `aggregator` container/step), also return the **underlying job name** (e.g., `periodic-ci-openshift-release-main-ci-4.22-e2e-aws-upgrade-ovn-single-node`). This is found in the junit-aggregated.xml artifacts — each `<testcase>` has `<system-out>` YAML data with a `humanurl` field linking to individual runs whose URL path contains the underlying job name. The underlying job name cannot be derived from the aggregated job name — it must be extracted from the artifacts.
@@ -157,7 +159,7 @@ This structured format enables downstream consumers (like the `/ci:payload-rever
 After collecting subagent results, look for patterns across multiple jobs:
 
 - **Same failure across a job family** (e.g., all `techpreview` jobs, all `fips` jobs, all `upgrade` jobs): This often indicates a failure specific to that feature set or configuration. Look at what differentiates that job family (feature gates, install-config options, test parameters).
-- **Same failure across multiple platforms**: Consider whether this points to a product bug in shared code, though note that cross-platform infrastructure issues (e.g., CI platform problems) are also possible.
+- **Same failure across multiple platforms**: This is a strong signal of a product bug in shared code. When the same component fails across AWS, Azure, and GCP, prioritize investigating what changed in that component's code (check the candidate PRs) over infrastructure explanations. Infrastructure issues rarely affect all platforms simultaneously.
 
 When patterns emerge, query Sippy for pass rates of related non-blocking jobs to see if the pattern extends beyond blocking jobs.
 
@@ -197,7 +199,7 @@ Wait for all subagents to complete and collect their analysis results. For each 
 
 #### 6.1: Correlate Failures with Candidate PRs
 
-For each failed job, cross-reference the failure analysis from the subagent with the candidate PRs from the originating payload. Additionally, if a subagent traced the root cause to a PR outside the payload (e.g., an `openshift/release` PR that modified a CI step registry script), include that PR as a candidate — it is a regression like any other and should be scored and treated the same way as payload PRs.
+For each failed job, cross-reference the failure analysis from the subagent with the candidate PRs from the originating payload. Read the PR title and description for each candidate — look for keywords that match the failure mechanism (e.g., a PR titled "add NetworkPolicies" combined with network egress failures is a strong signal). Additionally, if a subagent traced the root cause to a PR outside the payload (e.g., an `openshift/release` PR that modified a CI step registry script), include that PR as a candidate — it is a regression like any other and should be scored and treated the same way as payload PRs.
 
 Score each (failed job, candidate PR) pair using the following weighted rubric:
 
@@ -518,6 +520,8 @@ After generating the HTML report, use the `payload-report` skill to produce a st
 See the `payload-report` skill for the complete schema, row cardinality rules, and field rules.
 
 ### Step 9: Save and Present
+
+**CRITICAL**: You MUST write ALL THREE output files. Do NOT skip any. The analysis is incomplete without all three files.
 
 1. Save all output files to the current working directory:
    - HTML report: `payload-analysis-<sanitized_tag>-summary.html`

@@ -1,0 +1,26 @@
+# WebFetch URL: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2052472661463797760/prowjob.json
+# Prompt: Return the complete raw JSON content of this prowjob.json file. I need the full spec including all container args, the job name, and any metadata.
+# Session: gcp-agent
+---
+# ProwJob JSON Content
+
+The complete raw JSON provided contains a Kubernetes ProwJob resource with the following key elements:
+
+**Job Identity:**
+- Name: `5.0.0-0.ci-2026-05-07-142711-aggregated-gc-msvqxp2-aggregator-2`
+- Job type: periodic
+- Agent: kubernetes (cluster: build01)
+
+**Key Specifications:**
+The job definition includes a container running the `ci-operator` image with arguments for release analysis aggregation. Critical arguments include `--target=release-analysis-aggregator` and parameters for image imports and lease server credentials.
+
+**Environment Variables:**
+The configuration defines environment variables such as `VERIFICATION_JOB_NAME`, `PAYLOAD_TAG` (5.0.0-0.ci-2026-05-07-142711), and release image references pointing to OpenShift Container Platform 5.0 builds.
+
+**Status:**
+The job completed with a "failure" state at 2026-05-07T19:47:48Z, with duration of approximately 11 minutes. The failure description states "Job failed."
+
+**Decoration Configuration:**
+Includes 7-hour timeout, GCS bucket configuration for test results, and resource limits for utility images (clonerefs, initupload, entrypoint, sidecar).
+
+The complete JSON structure with all nested fields, volumes, and metadata is preserved in the original document provided.

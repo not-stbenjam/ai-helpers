@@ -1,0 +1,13 @@
+{
+  "author": {
+    "id": "MDQ6VXNlcjQ5Mzg5MQ==",
+    "is_bot": false,
+    "login": "sjenning",
+    "name": "Seth Jennings"
+  },
+  "mergedAt": "2026-03-31T15:45:04Z",
+  "number": 8138,
+  "state": "MERGED",
+  "title": "Revert \"NO-JIRA: test(e2e): extend AWS guest resource cleanup timeout\"",
+  "url": "https://github.com/openshift/hypershift/pull/8138"
+}

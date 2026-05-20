@@ -1,0 +1,89 @@
+{
+  "case": "case-09",
+  "payload_tag": "4.22.0-0.nightly-2026-03-18-161724",
+  "description": "Hermetic eval archive for CI payload analysis of 4.22.0-0.nightly-2026-03-18-161724",
+  "archive_stats": {
+    "total_files": 12,
+    "total_size_bytes": 108355
+  },
+  "file_categories": {
+    "metadata": {
+      "count": 2,
+      "total_bytes": 608
+    },
+    "fetch-new-prs": {
+      "count": 3,
+      "total_bytes": 6723
+    },
+    "fetch-payloads": {
+      "count": 1,
+      "total_bytes": 88912
+    },
+    "gh-cache": {
+      "count": 6,
+      "total_bytes": 12112
+    }
+  },
+  "files": [
+    {
+      "path": "failed-aggregated-jobs.txt",
+      "size": 136,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-direct-jobs.txt",
+      "size": 472,
+      "category": "metadata"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-4.22.0-0.nightly-2026-03-17-104634.json",
+      "size": 2205,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-4.22.0-0.nightly-2026-03-18-081725.json",
+      "size": 4514,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-4.22.0-0.nightly-2026-03-18-161724.json",
+      "size": 4,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-payloads-amd64-4.22-nightly.json",
+      "size": 88912,
+      "category": "fetch-payloads"
+    },
+    {
+      "path": "gh-cache/api/_repos_openshift_release_commits_14f3d552_.json",
+      "size": 79,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/api/repos_openshift_cluster-version-operator_contents_pkg_cvo_internal_dynamicclient_client.go.json",
+      "size": 3028,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/api/repos_openshift_library-go_contents_pkg_manifest_manifest.go.json",
+      "size": 732,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/api/repos_openshift_release_commits_14f3d552.json",
+      "size": 69,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/api/repos_openshift_release_contents_ci-operator_step-registry_baremetalds_e2e_test_baremetalds-e2e-test-commands.sh.json",
+      "size": 2906,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/openshift/cluster-version-operator/1309.json",
+      "size": 5298,
+      "category": "gh-cache"
+    }
+  ]
+}

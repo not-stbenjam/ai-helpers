@@ -1,0 +1,55 @@
+{
+  "case": "case-07",
+  "payload_tag": "4.22.0-0.ci-2026-03-31-050515",
+  "description": "Hermetic eval archive for CI payload analysis of 4.22.0-0.ci-2026-03-31-050515",
+  "archive_stats": {
+    "total_files": 6,
+    "total_size_bytes": 34335
+  },
+  "file_categories": {
+    "metadata": {
+      "count": 3,
+      "total_bytes": 1638
+    },
+    "fetch-new-prs": {
+      "count": 2,
+      "total_bytes": 7942
+    },
+    "fetch-payloads": {
+      "count": 1,
+      "total_bytes": 24755
+    }
+  },
+  "files": [
+    {
+      "path": "extraction-manifest.json",
+      "size": 1146,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-aggregated-jobs.txt",
+      "size": 262,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-direct-jobs.txt",
+      "size": 230,
+      "category": "metadata"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-4.22.0-0.ci-2026-03-30-160521.json",
+      "size": 5102,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-4.22.0-0.ci-2026-03-31-050515.json",
+      "size": 2840,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-payloads-amd64-4.22-ci.json",
+      "size": 24755,
+      "category": "fetch-payloads"
+    }
+  ]
+}

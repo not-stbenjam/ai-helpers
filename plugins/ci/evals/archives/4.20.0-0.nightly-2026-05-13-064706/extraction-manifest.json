@@ -1,0 +1,68 @@
+{
+  "payload_tag": "4.20.0-0.nightly-2026-05-13-064706",
+  "description": "Hermetic eval archive for CI payload analysis of 4.20.0-0.nightly-2026-05-13-064706",
+  "archive_stats": {
+    "total_files": 8,
+    "total_size_bytes": 76626
+  },
+  "file_categories": {
+    "metadata": {
+      "count": 3,
+      "total_bytes": 1728
+    },
+    "fetch-new-prs": {
+      "count": 2,
+      "total_bytes": 961
+    },
+    "fetch-payloads": {
+      "count": 1,
+      "total_bytes": 67333
+    },
+    "gh-cache": {
+      "count": 2,
+      "total_bytes": 6604
+    }
+  },
+  "files": [
+    {
+      "path": "extraction-manifest.json",
+      "size": 1474,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-aggregated-jobs.txt",
+      "size": 0,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-direct-jobs.txt",
+      "size": 254,
+      "category": "metadata"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-4.20.0-0.nightly-2026-05-12-225204.json",
+      "size": 648,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-4.20.0-0.nightly-2026-05-13-064706.json",
+      "size": 313,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-payloads-amd64-4.20-nightly.json",
+      "size": 67333,
+      "category": "fetch-payloads"
+    },
+    {
+      "path": "gh-cache/openshift/ovn-kubernetes/3102.json",
+      "size": 4140,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/openshift/cluster-node-tuning-operator/1443.json",
+      "size": 2464,
+      "category": "gh-cache"
+    }
+  ]
+}

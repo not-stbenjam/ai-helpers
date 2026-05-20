@@ -1,0 +1,77 @@
+{
+  "additions": 81,
+  "author": {
+    "id": "MDQ6VXNlcjM4NDkzMTAy",
+    "is_bot": false,
+    "login": "kyrtapz",
+    "name": "Patryk Diak"
+  },
+  "body": "Skip namespaces with deletionTimestamp set when selecting target namespaces, triggering NAD deletion for terminating namespaces.\r\n\r\nManual, clean cherry-pick. \r\n(cherry picked from commit 7606fd885c17325b5d9f41c8f05da0c68017f484)\r\n\r\n<!--\r\nPlease make sure you've read and understood our contributing guidelines;\r\nhttps://github.com/ovn-kubernetes/ovn-kubernetes/blob/master/CONTRIBUTING.md\r\n\r\n** Make sure all your commits include a signature generated with `git commit -s` **\r\n\r\nAll changes must adhere to this template to make it easy for reviewers\r\nand preserve rationale/history behind every change\r\n-->\r\n\r\n## \ud83d\udcd1 Description\r\n<!-- Add a brief description of the pr -->\r\n\r\n<!--\r\n*Automatically closes linked issue when PR is merged.\r\nUsage: `Fixes #<issue number>`, or `Fixes (paste link of issue)`.\r\n_If PR is about `failing-tests or flakes`, please post the related issues/tests in a comment and do not use `Fixes`_*\r\n-->\r\nFixes #\r\n\r\n## Additional Information for reviewers\r\n<!--\r\nWhat exactly did you change - you may also defer to information\r\ncontained in commit messages. At a bare minimum it's worth highlighting\r\nwhich areas of the code were changed as it's easier to assign reviewers\r\n-->\r\n\r\n## \u2705 Checks\r\n<!-- Make sure your pr passes the CI checks and do check the following fields as needed - -->\r\n- [ ] My code requires changes to the documentation\r\n- [ ] if so, I have updated the documentation as required\r\n- [ ] My code requires tests\r\n- [ ] if so, I have added and/or updated the tests as required\r\n- [ ] All the tests have passed in the CI <!-- If not leave a comment as to why the CI is red and if you need help understanding what's wrong -->\r\n\r\n## How to verify it\r\n<!--\r\nDid you include unit tests? or end-to-end tests?\r\nHow can I manually verify that this patch achieves its objective\r\n-->\r\n",
+  "deletions": 8,
+  "files": [
+    {
+      "path": "go-controller/pkg/clustermanager/userdefinednetwork/controller.go",
+      "additions": 19,
+      "deletions": 7,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "go-controller/pkg/clustermanager/userdefinednetwork/controller_test.go",
+      "additions": 26,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "go-controller/pkg/clustermanager/userdefinednetwork/notifier/namespace.go",
+      "additions": 2,
+      "deletions": 1,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "test/e2e/network_segmentation.go",
+      "additions": 34,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    }
+  ],
+  "labels": [
+    {
+      "id": "MDU6TGFiZWwxMjQyMzU4MjE4",
+      "name": "approved",
+      "description": "Indicates a PR has been approved by an approver from all required OWNERS files.",
+      "color": "0ffa16"
+    },
+    {
+      "id": "MDU6TGFiZWwxMjQyMzYwMzY4",
+      "name": "lgtm",
+      "description": "Indicates that a PR is ready to be merged.",
+      "color": "15dd18"
+    },
+    {
+      "id": "LA_kwDOCjzoLM7KUs7y",
+      "name": "backport-risk-assessed",
+      "description": "Indicates a PR to a release branch has been evaluated and considered safe to accept.",
+      "color": "fef2c0"
+    },
+    {
+      "id": "LA_kwDOCjzoLM7_aeRj",
+      "name": "jira/valid-bug",
+      "description": "Indicates that a referenced Jira bug is valid for the branch this PR is targeting.",
+      "color": "15dd18"
+    },
+    {
+      "id": "LA_kwDOCjzoLM8AAAABKDam6g",
+      "name": "jira/valid-reference",
+      "description": "Indicates that this PR references a valid Jira ticket of any type.",
+      "color": "15dd18"
+    },
+    {
+      "id": "LA_kwDOCjzoLM8AAAACJemW0Q",
+      "name": "verified",
+      "description": "Signifies that the PR passed pre-merge verification criteria",
+      "color": "0FFA16"
+    }
+  ],
+  "mergedAt": "2026-05-12T12:16:49Z",
+  "title": "[release-4.20] OCPBUGS-81484: CUDN: cleanup NADs in terminating namespaces without pods"
+}

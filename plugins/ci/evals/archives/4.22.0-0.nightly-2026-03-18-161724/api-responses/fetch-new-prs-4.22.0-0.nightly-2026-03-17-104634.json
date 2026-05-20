@@ -1,0 +1,52 @@
+[
+    {
+      "url": "https://github.com/openshift/cloud-provider-aws/pull/131",
+      "pull_request_id": "131",
+      "component": "aws-cloud-controller-manager",
+      "description": "Merge https://github.com/kubernetes/cloud-provider-aws:master (ea961d6) into main",
+      "bug_url": "https://issues.redhat.com/browse/OCPCLOUD-3276"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-baremetal-operator/pull/553",
+      "pull_request_id": "553",
+      "component": "cluster-baremetal-operator",
+      "description": "Allow ProvisioningCIDR for unmanaged network",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-69399"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-kube-controller-manager-operator/pull/907",
+      "pull_request_id": "907",
+      "component": "cluster-kube-controller-manager-operator",
+      "description": "Migrate Prometheus targets discovering from Endpoints to EndpointSlices",
+      "bug_url": "https://issues.redhat.com/browse/MON-4503"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-version-operator/pull/1309",
+      "pull_request_id": "1309",
+      "component": "cluster-version-operator",
+      "description": "NO-ISSUE: OTA-1605 Automate OCP-42543",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/7881",
+      "pull_request_id": "7881",
+      "component": "hypershift",
+      "description": "Fix GCP boot image discovery from CoreOS stream metadata",
+      "bug_url": "https://issues.redhat.com/browse/GCP-440"
+    },
+    {
+      "url": "https://github.com/openshift/operator-framework-olm/pull/1256",
+      "pull_request_id": "1256",
+      "component": "operator-framework-tools, operator-lifecycle-manager, operator-registry",
+      "description": "Fix admin context race condition in parallel tests",
+      "bug_url": "https://issues.redhat.com/browse/OCPQE-31804"
+    },
+    {
+      "url": "https://github.com/openshift/prometheus/pull/296",
+      "pull_request_id": "296",
+      "component": "prometheus",
+      "description": "chore(kubernetes): deduplicate warning logs from the API",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-65568"
+    }
+  ]
+}

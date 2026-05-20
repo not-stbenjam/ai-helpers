@@ -1,0 +1,101 @@
+[
+    {
+      "url": "https://github.com/openshift/cluster-api-provider-gcp/pull/292",
+      "pull_request_id": "292",
+      "component": "gcp-cluster-api-controllers",
+      "description": ":running: [ci-conformance] Fix kustomize template to better handle envsubst",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-api-provider-metal3/pull/79",
+      "pull_request_id": "79",
+      "component": "baremetal-cluster-api-controllers",
+      "description": "NO-JIRA: manifests-gen: scope provider webhooks to capi namespace",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-api-provider-vsphere/pull/106",
+      "pull_request_id": "106",
+      "component": "vsphere-cluster-api-controllers",
+      "description": "NO-JIRA: manifests-gen: scope provider webhooks to capi namespace",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-api/pull/292",
+      "pull_request_id": "292",
+      "component": "cluster-capi-controllers",
+      "description": "NO-JIRA: manifests-gen: scope provider webhooks to capi namespace",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-network-operator/pull/2959",
+      "pull_request_id": "2959",
+      "component": "cluster-network-operator",
+      "description": "add remaining CNO NetworkPolicies",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-83800"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-node-tuning-operator/pull/1508",
+      "pull_request_id": "1508",
+      "component": "cluster-node-tuning-operator",
+      "description": "NO-JIRA: test/extended: scope oc process to NTO namespace",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8437",
+      "pull_request_id": "8437",
+      "component": "hypershift",
+      "description": "bump go builder and ubi images",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-84857"
+    },
+    {
+      "url": "https://github.com/openshift/ironic-agent-image/pull/247",
+      "pull_request_id": "247",
+      "component": "ironic-agent",
+      "description": "Add podman package for bootc deploy",
+      "bug_url": "https://issues.redhat.com/browse/METAL-1779"
+    },
+    {
+      "url": "https://github.com/openshift/ironic-agent-image/pull/248",
+      "pull_request_id": "248",
+      "component": "ironic-agent",
+      "description": "NO-ISSUE: Update requirements.cachito with latest ironic-python-agent",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/ironic-agent-image/pull/249",
+      "pull_request_id": "249",
+      "component": "ironic-agent",
+      "description": "NO-ISSUE: Remove openstack repo workaround",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/ironic-agent-image/pull/253",
+      "pull_request_id": "253",
+      "component": "ironic-agent",
+      "description": "NO-ISSUE: Update requirements.cachito with latest ironic-python-agent",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/machine-config-operator/pull/6003",
+      "pull_request_id": "6003",
+      "component": "machine-config-operator",
+      "description": "Add ML-KEM verification test for IRI registry",
+      "bug_url": "https://issues.redhat.com/browse/AGENT-1514"
+    },
+    {
+      "url": "https://github.com/openshift/operator-framework-olm/pull/1291",
+      "pull_request_id": "1291",
+      "component": "operator-framework-tools, operator-lifecycle-manager, operator-registry",
+      "description": "Synchronize From Upstream Repositories",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-84642"
+    },
+    {
+      "url": "https://github.com/openshift/origin/pull/30960",
+      "pull_request_id": "30960",
+      "component": "tests",
+      "description": "Migrate OCP-38271 from openshift-tests-private",
+      "bug_url": "https://issues.redhat.com/browse/OCPNODE-4381"
+    }
+  ]
+}

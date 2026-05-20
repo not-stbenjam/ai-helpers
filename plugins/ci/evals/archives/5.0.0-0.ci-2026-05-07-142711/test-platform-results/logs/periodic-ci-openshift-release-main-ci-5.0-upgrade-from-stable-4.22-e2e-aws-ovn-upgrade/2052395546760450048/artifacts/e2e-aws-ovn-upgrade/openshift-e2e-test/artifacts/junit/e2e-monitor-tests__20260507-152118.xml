@@ -1,0 +1,13 @@
+FAILED: [Monitor:kubelet-container-restarts][sig-architecture] platform pods in ns/openshift-cloud-network-config-controller should not exit an excessive amount of times
+  MSG: 1 containers with multiple restarts
+
+namespace/openshift-cloud-network-config-controller node/ip-10-0-50-175.us-west-1.compute.internal pod/cloud-network-config-controller-5f6f76f7c9-mvpc2 uid/e4056e6f-da37-4bf1-be8f-60ada0ecedb7 container/controller restarted 5 times at:
+non-zero exit at 2026-05-07 15:57:33.852691215 +0000 UTC m=+2213.223325409: cause/Error code/1 reason/ContainerExit W0507 15:57:03.678646       1 client_config.go:682] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+F0507 15:57:33.680253       1 main.go:89] Error getting platform status from cluster infrastructure: failed to get infrastructure: failed to get server groups: Get "https://172.30.0.1:443/api": dial tcp 172.30.0.1:443: i/o timeout
+non-zero exit at 2026-05-07 15:58:18.136991345 +0000 UTC m=+2257.507625529: cause/Error code/1 reason/ContainerExit W0507 15:57:47.142275       1 client_config.go:682] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+F0507 15:58:17.171243       1 main.go:89] Error getting platform status from cluster infrastructure: failed to get infrastructure: failed to get server groups: Get "https://172.30.0.1:443/api": dial tcp 172.30.0.1:443: i/o timeout
+non-zero exit at 2026-05-07 15:59:12.460057913 +0000 UTC m=+2311.830692097: cause/Error code/1 reason/ContainerExit W0507 15:58:42.251665       1 client_config.go:682] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+F0507 15:59:12.257671       1 main.go:89] Error getting platform status from cluster infrastructure: failed to get infrastructure: failed to get server groups: Get "https://172.30.0.1:443/api": dial tcp 172.30.0.1:443: i/o timeout
+non-zero exit at 2026-05-07 16:00:30.949612756 +0000 UTC m=+2390.320246940: cause/Error code/1 reason/ContainerExit W0507 16:00:00.215392       1 client_config.go:682] Neither --kubeconfig nor --master was specified.  Using the inClu
+
+PASSED: [Monitor:legacy-node-invariants][sig-cluster-lifecycle] pathological event should not see excessive Back-off restarting failed containers for ns/openshift-cloud-network-config-controller

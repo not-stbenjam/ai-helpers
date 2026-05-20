@@ -1,0 +1,206 @@
+[
+    {
+      "url": "https://github.com/openshift/api/pull/2833",
+      "pull_request_id": "2833",
+      "component": "cluster-config-api",
+      "description": "Rename KMSConfig Struct to KMSPluginConfig",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3237"
+    },
+    {
+      "url": "https://github.com/openshift/api/pull/2834",
+      "pull_request_id": "2834",
+      "component": "cluster-config-api",
+      "description": "remove deprecated k8s.io/api packages removed in v0.36.0",
+      "bug_url": "https://issues.redhat.com/browse/SRVKP-11558"
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3661",
+      "pull_request_id": "3661",
+      "component": "agent-installer-ui",
+      "description": "Read from aipVIPs and ingressVIPs in getClusterProperties function (#3661)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3686",
+      "pull_request_id": "3686",
+      "component": "agent-installer-ui",
+      "description": "Memoize the wizard footer on CIM Review step (#3686)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3687",
+      "pull_request_id": "3687",
+      "component": "agent-installer-ui",
+      "description": "OCPBUGS-84038 | [Below the sea UI] Lack of visual feedback (spinner) on disabled \"Next\" button during background validation (#3687)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3688",
+      "pull_request_id": "3688",
+      "component": "agent-installer-ui",
+      "description": "Refactor Troubleshooting Web Console (#3688)",
+      "bug_url": "https://issues.redhat.com/browse/MGMT-23490"
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3689",
+      "pull_request_id": "3689",
+      "component": "agent-installer-ui",
+      "description": "Bump ip-address from 7.1.0 to 10.1.1 (#3689)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3698",
+      "pull_request_id": "3698",
+      "component": "agent-installer-ui",
+      "description": "Bump basic-ftp from 5.3.0 to 5.3.1 (#3698)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/assisted-service/pull/10230",
+      "pull_request_id": "10230",
+      "component": "agent-installer-api-server",
+      "description": "upgrade PostgreSQL stack to pgx v5 and ocm-sdk-go v0.1.499",
+      "bug_url": "https://issues.redhat.com/browse/MGMT-19930"
+    },
+    {
+      "url": "https://github.com/openshift/assisted-service/pull/10287",
+      "pull_request_id": "10287",
+      "component": "agent-installer-api-server",
+      "description": "NO-ISSUE: [master] Bump OCP versions: 4.21, 4.20, 4.18, 4.19",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-api-provider-aws/pull/605",
+      "pull_request_id": "605",
+      "component": "aws-cluster-api-controllers",
+      "description": "NO-JIRA: manifests-gen: scope provider webhooks to capi namespace",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-api-provider-gcp/pull/273",
+      "pull_request_id": "273",
+      "component": "gcp-cluster-api-controllers",
+      "description": "Merge https://github.com/kubernetes-sigs/cluster-api-provider-gcp:v1.11.2 (14609a0) into master",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-85101"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-api-provider-vsphere/pull/107",
+      "pull_request_id": "107",
+      "component": "vsphere-cluster-api-controllers",
+      "description": "Merge https://github.com/kubernetes-sigs/cluster-api-provider-vsphere:v1.15.3 (e917f8e) into master",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-83600"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-authentication-operator/pull/890",
+      "pull_request_id": "890",
+      "component": "cluster-authentication-operator",
+      "description": "NO-JIRA: Bump latest library-go changes",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-etcd-operator/pull/1612",
+      "pull_request_id": "1612",
+      "component": "cluster-etcd-operator",
+      "description": "Migrating etcd otp cases to ote",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3392"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-ingress-operator/pull/1405",
+      "pull_request_id": "1405",
+      "component": "cluster-ingress-operator",
+      "description": "Fix malformed PEM bundle when tls.crt lacks trailing newline",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-80966"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-kube-apiserver-operator/pull/2127",
+      "pull_request_id": "2127",
+      "component": "cluster-kube-apiserver-operator",
+      "description": "Migrate testKMSEncryptionOnOff to ote",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3347"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-monitoring-operator/pull/2877",
+      "pull_request_id": "2877",
+      "component": "cluster-monitoring-operator",
+      "description": "validate more CMO configmap fields",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-83284"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-olm-operator/pull/202",
+      "pull_request_id": "202",
+      "component": "cluster-olm-operator",
+      "description": "Scale to replicas=2 and enable PDB on HighlyAvailable topology",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-62517"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-openshift-apiserver-operator/pull/688",
+      "pull_request_id": "688",
+      "component": "cluster-openshift-apiserver-operator",
+      "description": "NO-JIRA: Bump latest library-go changes",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/etcd/pull/368",
+      "pull_request_id": "368",
+      "component": "etcd",
+      "description": "5.0/4.23 rebase 3.6.10",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-82495"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8327",
+      "pull_request_id": "8327",
+      "component": "hypershift",
+      "description": "clarify pull secret in-place update behavior and add CP watches",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-84528"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8436",
+      "pull_request_id": "8436",
+      "component": "hypershift",
+      "description": "Add render-sensitive flag to `hypershift install render`",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-84955"
+    },
+    {
+      "url": "https://github.com/openshift/insights-operator/pull/1288",
+      "pull_request_id": "1288",
+      "component": "insights-operator",
+      "description": "Bump google.golang.org/grpc to v1.79.3",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-85201"
+    },
+    {
+      "url": "https://github.com/openshift/machine-api-provider-aws/pull/185",
+      "pull_request_id": "185",
+      "component": "aws-machine-controllers",
+      "description": "Changed timeout for node ready logic in OTE",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-83873"
+    },
+    {
+      "url": "https://github.com/openshift/origin/pull/31102",
+      "pull_request_id": "31102",
+      "component": "tests",
+      "description": "Add e2e tests for KubeletEnsureSecretPulledImages feature gate",
+      "bug_url": "https://issues.redhat.com/browse/OCPNODE-3983"
+    },
+    {
+      "url": "https://github.com/openshift/ovn-kubernetes/pull/3169",
+      "pull_request_id": "3169",
+      "component": "ovn-kubernetes, ovn-kubernetes-microshift",
+      "description": "Add zone support",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/router/pull/677",
+      "pull_request_id": "677",
+      "component": "haproxy-router",
+      "description": "Reapply \"OCPBUGS-55506: Prevent startup failures due to name resolution\"",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/telemeter/pull/601",
+      "pull_request_id": "601",
+      "component": "telemeter",
+      "description": "update google.golang.org/grpc",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-85082"
+    }
+  ]
+}

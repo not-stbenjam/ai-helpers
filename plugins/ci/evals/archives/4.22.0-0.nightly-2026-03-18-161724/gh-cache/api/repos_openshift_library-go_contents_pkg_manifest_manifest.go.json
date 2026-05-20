@@ -1,0 +1,30 @@
+package manifest
+
+import (
+	"bytes"
+	"fmt"
+	"io"
+	"os"
+	"path/filepath"
+	"reflect"
+	"strconv"
+	"strings"
+
+	"k8s.io/apimachinery/pkg/util/sets"
+
+	configv1 "github.com/openshift/api/config/v1"
+	features "github.com/openshift/api/features"
+
+	"github.com/pkg/errors"
+	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
+	"k8s.io/apimachinery/pkg/runtime/schema"
+	utilerrors "k8s.io/apimachinery/pkg/util/errors"
+	"k8s.io/apimachinery/pkg/util/yaml"
+	"k8s.io/client-go/kubernetes/scheme"
+)
+
+const (
+	CapabilityAnnotation   = "capability.openshift.io/name"
+	DefaultClusterProfile  = "self-managed-high-availability"
+	featureSetAnnotation   = "release.openshift.io/feature-set"
+	featureGateAnnotation  = "release.openshift.io/feature-gate"

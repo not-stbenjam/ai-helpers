@@ -1,0 +1,13 @@
+{
+  "author": {
+    "id": "MDQ6VXNlcjE5MTg2NTc1",
+    "is_bot": false,
+    "login": "jmencak",
+    "name": "Jiri Mencak"
+  },
+  "mergedAt": "2026-05-06T09:07:05Z",
+  "number": 1499,
+  "state": "MERGED",
+  "title": "NO-JIRA: ote: embed extended testdata in cluster-node-tuning-operator-test-ext binary",
+  "url": "https://github.com/openshift/cluster-node-tuning-operator/pull/1499"
+}

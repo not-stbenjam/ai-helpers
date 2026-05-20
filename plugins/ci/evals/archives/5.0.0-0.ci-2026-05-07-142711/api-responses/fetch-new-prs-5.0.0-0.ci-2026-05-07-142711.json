@@ -1,0 +1,164 @@
+[
+    {
+      "url": "https://github.com/openshift/assisted-service/pull/10230",
+      "pull_request_id": "10230",
+      "component": "agent-installer-api-server",
+      "description": "upgrade PostgreSQL stack to pgx v5 and ocm-sdk-go v0.1.499",
+      "bug_url": "https://issues.redhat.com/browse/MGMT-19930"
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3689",
+      "pull_request_id": "3689",
+      "component": "agent-installer-ui",
+      "description": "Bump ip-address from 7.1.0 to 10.1.1 (#3689)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3661",
+      "pull_request_id": "3661",
+      "component": "agent-installer-ui",
+      "description": "Read from aipVIPs and ingressVIPs in getClusterProperties function (#3661)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3686",
+      "pull_request_id": "3686",
+      "component": "agent-installer-ui",
+      "description": "Memoize the wizard footer on CIM Review step (#3686)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-api-provider-metal3/pull/79",
+      "pull_request_id": "79",
+      "component": "baremetal-cluster-api-controllers",
+      "description": "NO-JIRA: manifests-gen: scope provider webhooks to capi namespace",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-authentication-operator/pull/890",
+      "pull_request_id": "890",
+      "component": "cluster-authentication-operator",
+      "description": "NO-JIRA: Bump latest library-go changes",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-api/pull/292",
+      "pull_request_id": "292",
+      "component": "cluster-capi-controllers",
+      "description": "NO-JIRA: manifests-gen: scope provider webhooks to capi namespace",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/api/pull/2834",
+      "pull_request_id": "2834",
+      "component": "cluster-config-api",
+      "description": "remove deprecated k8s.io/api packages removed in v0.36.0",
+      "bug_url": "https://issues.redhat.com/browse/SRVKP-11558"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-etcd-operator/pull/1612",
+      "pull_request_id": "1612",
+      "component": "cluster-etcd-operator",
+      "description": "Migrating etcd otp cases to ote",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3392"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-kube-apiserver-operator/pull/2127",
+      "pull_request_id": "2127",
+      "component": "cluster-kube-apiserver-operator",
+      "description": "Migrate testKMSEncryptionOnOff to ote",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3347"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-monitoring-operator/pull/2877",
+      "pull_request_id": "2877",
+      "component": "cluster-monitoring-operator",
+      "description": "validate more CMO configmap fields",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-83284"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-network-operator/pull/2959",
+      "pull_request_id": "2959",
+      "component": "cluster-network-operator",
+      "description": "add remaining CNO NetworkPolicies",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-83800"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-node-tuning-operator/pull/1508",
+      "pull_request_id": "1508",
+      "component": "cluster-node-tuning-operator",
+      "description": "NO-JIRA: test/extended: scope oc process to NTO namespace",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-openshift-apiserver-operator/pull/688",
+      "pull_request_id": "688",
+      "component": "cluster-openshift-apiserver-operator",
+      "description": "NO-JIRA: Bump latest library-go changes",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16361",
+      "pull_request_id": "16361",
+      "component": "console",
+      "description": "NO-JIRA: Add approvers and reviewers to helm-plugin OWNERS",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-api-provider-gcp/pull/292",
+      "pull_request_id": "292",
+      "component": "gcp-cluster-api-controllers",
+      "description": "NO-JIRA: manifests-gen: scope provider webhooks to capi namespace",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8437",
+      "pull_request_id": "8437",
+      "component": "hypershift",
+      "description": "bump go builder and ubi images",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-84857"
+    },
+    {
+      "url": "https://github.com/openshift/machine-config-operator/pull/6003",
+      "pull_request_id": "6003",
+      "component": "machine-config-operator",
+      "description": "Add ML-KEM verification test for IRI registry",
+      "bug_url": "https://issues.redhat.com/browse/AGENT-1514"
+    },
+    {
+      "url": "https://github.com/openshift/operator-framework-olm/pull/1291",
+      "pull_request_id": "1291",
+      "component": "operator-framework-tools, operator-lifecycle-manager, operator-registry",
+      "description": "Synchronize From Upstream Repositories",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-84642"
+    },
+    {
+      "url": "https://github.com/openshift/telemeter/pull/601",
+      "pull_request_id": "601",
+      "component": "telemeter",
+      "description": "update google.golang.org/grpc",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-85082"
+    },
+    {
+      "url": "https://github.com/openshift/telemeter/pull/603",
+      "pull_request_id": "603",
+      "component": "telemeter",
+      "description": "NO-ISSUE: add .coderabbit.yaml",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/origin/pull/30960",
+      "pull_request_id": "30960",
+      "component": "tests",
+      "description": "Migrate OCP-38271 from openshift-tests-private",
+      "bug_url": "https://issues.redhat.com/browse/OCPNODE-4381"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-api-provider-vsphere/pull/106",
+      "pull_request_id": "106",
+      "component": "vsphere-cluster-api-controllers",
+      "description": "NO-JIRA: manifests-gen: scope provider webhooks to capi namespace",
+      "bug_url": ""
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+[
+    {
+      "url": "https://github.com/openshift/assisted-service/pull/10022",
+      "pull_request_id": "10022",
+      "component": "agent-installer-api-server",
+      "description": "NO-ISSUE: clarify error when interface in bond missing",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/assisted-service/pull/9999",
+      "pull_request_id": "9999",
+      "component": "agent-installer-api-server",
+      "description": "Make InfraEnv CpuArchitecture immutable after creation",
+      "bug_url": "https://issues.redhat.com/browse/MGMT-23060"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-ingress-operator/pull/1404",
+      "pull_request_id": "1404",
+      "component": "cluster-ingress-operator",
+      "description": "Move Sail Library to official release branch",
+      "bug_url": "https://issues.redhat.com/browse/NE-2519"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-monitoring-operator/pull/2860",
+      "pull_request_id": "2860",
+      "component": "cluster-monitoring-operator",
+      "description": "reject invalid collection profile in webhook",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-81159"
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16188",
+      "pull_request_id": "16188",
+      "component": "console",
+      "description": "fix analyze.sh/react-icons treeshake",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-79315"
+    },
+    {
+      "url": "https://github.com/openshift/router/pull/755",
+      "pull_request_id": "755",
+      "component": "haproxy-router",
+      "description": "Add support for TLS curves in HAProxy configuration",
+      "bug_url": "https://issues.redhat.com/browse/NE-2332"
+    },
+    {
+      "url": "https://github.com/openshift/kubernetes/pull/2635",
+      "pull_request_id": "2635",
+      "component": "hyperkube, installer-kube-apiserver-artifacts, kube-proxy, pod",
+      "description": "NO-JIRA: UPSTREAM: &lt;carry&gt;: Register OpenShift cloud providers in k8s-tests-ext",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8124",
+      "pull_request_id": "8124",
+      "component": "hypershift",
+      "description": "NO-JIRA: test(e2e): extend AWS guest resource cleanup timeout",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8127",
+      "pull_request_id": "8127",
+      "component": "hypershift",
+      "description": "NO-JIRA: fix(test): deep copy CRDs inside envtest retry loop",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/origin/pull/30758",
+      "pull_request_id": "30758",
+      "component": "tests",
+      "description": "Add DRA e2e tests to run on NVIDIA GPU",
+      "bug_url": "https://issues.redhat.com/browse/OCPNODE-4043"
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "payload_tag": "4.18.0-0.nightly-2026-05-14-085133",
+  "description": "Hermetic eval archive for CI payload analysis of 4.18.0-0.nightly-2026-05-14-085133",
+  "archive_stats": {
+    "total_files": 15,
+    "total_size_bytes": 71267
+  },
+  "file_categories": {
+    "metadata": {
+      "count": 3,
+      "total_bytes": 3819
+    },
+    "release-controller-api": {
+      "count": 2,
+      "total_bytes": 5430
+    },
+    "sippy-api": {
+      "count": 7,
+      "total_bytes": 1267
+    },
+    "fetch-new-prs": {
+      "count": 1,
+      "total_bytes": 4
+    },
+    "fetch-payloads": {
+      "count": 1,
+      "total_bytes": 60694
+    },
+    "gh-cache": {
+      "count": 1,
+      "total_bytes": 53
+    }
+  },
+  "files": [
+    {
+      "path": "extraction-manifest.json",
+      "size": 2851,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-aggregated-jobs.txt",
+      "size": 0,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-direct-jobs.txt",
+      "size": 968,
+      "category": "metadata"
+    },
+    {
+      "path": "api-responses/curl-rc-api_v1_releasestream_4.18.0-0.nightly_release_4.18.0-0.nightly-2026-05-13-235509.json",
+      "size": 341,
+      "category": "release-controller-api"
+    },
+    {
+      "path": "api-responses/curl-rc-api_v1_releasestream_4.18.0-0.nightly_release_4.18.0-0.nightly-2026-05-14-085133.json",
+      "size": 5089,
+      "category": "release-controller-api"
+    },
+    {
+      "path": "api-responses/curl-sippy-api_chat.json",
+      "size": 97,
+      "category": "sippy-api"
+    },
+    {
+      "path": "api-responses/curl-sippy-api_jobs_4.18_filter=name%3Dcontains%3Aaws-ovn-serial.json",
+      "size": 31,
+      "category": "sippy-api"
+    },
+    {
+      "path": "api-responses/curl-sippy-api_jobs_release=4.18.json",
+      "size": 18,
+      "category": "sippy-api"
+    },
+    {
+      "path": "api-responses/curl-sippy-api_jobs_release=4.18_filter=periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial.json",
+      "size": 110,
+      "category": "sippy-api"
+    },
+    {
+      "path": "api-responses/curl-sippy-api_tests_4.18_search=graceful+termination.json",
+      "size": 43,
+      "category": "sippy-api"
+    },
+    {
+      "path": "api-responses/curl-sippy-api_tests_release=4.18_filter=name%3Dcontains%3Agraceful%20termination%20process_limit=5.json",
+      "size": 111,
+      "category": "sippy-api"
+    },
+    {
+      "path": "api-responses/curl-sippy-api_tests_release=4.18_testNameContains=graceful+termination+process.json",
+      "size": 857,
+      "category": "sippy-api"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-4.18.0-0.nightly-2026-05-14-085133.json",
+      "size": 4,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-payloads-amd64-4.18-nightly.json",
+      "size": 60694,
+      "category": "fetch-payloads"
+    },
+    {
+      "path": "gh-cache/api/-H.json",
+      "size": 53,
+      "category": "gh-cache"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "case": "case-08",
+  "payload_tag": "4.22.0-0.ci-2026-03-31-170515",
+  "description": "Hermetic eval archive for CI payload analysis of 4.22.0-0.ci-2026-03-31-170515",
+  "archive_stats": {
+    "total_files": 15,
+    "total_size_bytes": 52528
+  },
+  "file_categories": {
+    "metadata": {
+      "count": 3,
+      "total_bytes": 2994
+    },
+    "fetch-new-prs": {
+      "count": 1,
+      "total_bytes": 6974
+    },
+    "fetch-payloads": {
+      "count": 1,
+      "total_bytes": 25209
+    },
+    "gh-cache": {
+      "count": 10,
+      "total_bytes": 17351
+    }
+  },
+  "files": [
+    {
+      "path": "extraction-manifest.json",
+      "size": 2542,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-aggregated-jobs.txt",
+      "size": 0,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-direct-jobs.txt",
+      "size": 452,
+      "category": "metadata"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-4.22.0-0.ci-2026-03-31-170515.json",
+      "size": 6974,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-payloads-amd64-4.22-ci.json",
+      "size": 25209,
+      "category": "fetch-payloads"
+    },
+    {
+      "path": "gh-cache/openshift/hypershift/6827.json",
+      "size": 8529,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/openshift/hypershift/7790.json",
+      "size": 246,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/openshift/hypershift/8087.json",
+      "size": 1954,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/openshift/hypershift/8128.json",
+      "size": 1632,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/openshift/hypershift/8138.json",
+      "size": 355,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/api/_search_issues_q_repo_openshift_hypershift_is_pr_is_merged_sha_c9205fabc3d5325c3477080c9f950c4e68270b80_.json",
+      "size": 179,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/api/repos_openshift_hypershift_commits.json",
+      "size": 40,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/api/repos_openshift_hypershift_commits_c9205fabc3d5325c3477080c9f950c4e68270b80.json",
+      "size": 833,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/api/repos_openshift_hypershift_contents_control-plane-operator_hostedclusterconfigoperator_controllers_resources_resources.go.json",
+      "size": 3480,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/api/repos_openshift_hypershift_git_trees_release-4.22_recursive_1.json",
+      "size": 103,
+      "category": "gh-cache"
+    }
+  ]
+}

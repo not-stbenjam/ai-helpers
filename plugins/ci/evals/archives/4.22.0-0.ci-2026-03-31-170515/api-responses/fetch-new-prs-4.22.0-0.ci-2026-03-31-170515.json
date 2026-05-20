@@ -1,0 +1,171 @@
+[
+    {
+      "url": "https://github.com/openshift/assisted-service/pull/10044",
+      "pull_request_id": "10044",
+      "component": "agent-installer-api-server",
+      "description": "implement cluster and host validations for Kube API mode",
+      "bug_url": "https://issues.redhat.com/browse/MGMT-23599"
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3522",
+      "pull_request_id": "3522",
+      "component": "agent-installer-ui",
+      "description": "Upgrade @openshift-console/dynamic-plugin/sdk (#3522)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3524",
+      "pull_request_id": "3524",
+      "component": "agent-installer-ui",
+      "description": "Update translation files (#3524)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3519",
+      "pull_request_id": "3519",
+      "component": "agent-installer-ui",
+      "description": "chore(deps): update registry.access.redhat.com/ubi9/go-toolset docker tag to v1.25.8-1774618347 (#3519)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3527",
+      "pull_request_id": "3527",
+      "component": "agent-installer-ui",
+      "description": "Add support for release branches in PR workflow (#3527)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3407",
+      "pull_request_id": "3407",
+      "component": "agent-installer-ui",
+      "description": "chore(deps): update dependency @redhat-cloud-services/tsc-transform-imports to v1.0.57 (#3407)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/oc/pull/2245",
+      "pull_request_id": "2245",
+      "component": "cli, cli-artifacts, deployer, tools",
+      "description": "NO-JIRA: claude: Turn pr-review skill into code-reviewer agent",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cloud-credential-operator/pull/1007",
+      "pull_request_id": "1007",
+      "component": "cloud-credential-operator",
+      "description": "Revert #978: CCO-738, CCO-739: Set operator condition to Progressing when pod identity webhook pod are updating",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-api/pull/273",
+      "pull_request_id": "273",
+      "component": "cluster-capi-controllers",
+      "description": "NO-JIRA: IPAM CRDs: Use negated feature-gate: -ClusterAPIMachineManagement instead of feature-set: Default",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-cloud-controller-manager-operator/pull/437",
+      "pull_request_id": "437",
+      "component": "cluster-cloud-controller-manager-operator",
+      "description": "e2e/ote/ccm-aws: moving OTE binary from CCM-AWS",
+      "bug_url": "https://issues.redhat.com/browse/SPLAT-2672"
+    },
+    {
+      "url": "https://github.com/openshift/api/pull/2779",
+      "pull_request_id": "2779",
+      "component": "cluster-config-api",
+      "description": "Add ConfidentialCluster feature gate",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-etcd-operator/pull/1580",
+      "pull_request_id": "1580",
+      "component": "cluster-etcd-operator",
+      "description": "fix: add correct annotations to stop update events",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-81341"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-ingress-operator/pull/1402",
+      "pull_request_id": "1402",
+      "component": "cluster-ingress-operator",
+      "description": "Change default log level from DEBUG to INFO",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-79467"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-monitoring-operator/pull/2865",
+      "pull_request_id": "2865",
+      "component": "cluster-monitoring-operator",
+      "description": "NO-JIRA: [bot] Synchronize versions of the downstream components",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-network-operator/pull/2942",
+      "pull_request_id": "2942",
+      "component": "cluster-network-operator",
+      "description": "Fix ManagementState being reset on operator restart",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-78974"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-olm-operator/pull/183",
+      "pull_request_id": "183",
+      "component": "cluster-olm-operator",
+      "description": "NO-ISSUE: return semver conversion errors",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-openshift-apiserver-operator/pull/662",
+      "pull_request_id": "662",
+      "component": "cluster-openshift-apiserver-operator",
+      "description": "Restart operator when TLS config changes",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-2619"
+    },
+    {
+      "url": "https://github.com/openshift/kubernetes/pull/2632",
+      "pull_request_id": "2632",
+      "component": "hyperkube, installer-kube-apiserver-artifacts, kube-proxy, pod",
+      "description": "UPSTREAM: 137926: KEP-961: demote maxUnavailable feature in statefulset to off by default",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-78986"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/6827",
+      "pull_request_id": "6827",
+      "component": "hypershift",
+      "description": "Create dedicated identity for KAS bootstrap container",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-50603"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8138",
+      "pull_request_id": "8138",
+      "component": "hypershift",
+      "description": "Revert \"NO-JIRA: test(e2e): extend AWS guest resource cleanup timeout\"",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8113",
+      "pull_request_id": "8113",
+      "component": "hypershift",
+      "description": "NO-JIRA: ci: improve CI efficiency and codecov configuration",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8131",
+      "pull_request_id": "8131",
+      "component": "hypershift",
+      "description": "NO-JIRA: test(e2e): add KubeVirt platform to backup/restore e2e test",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8087",
+      "pull_request_id": "8087",
+      "component": "hypershift",
+      "description": "fix(cpo): skip router LB services for ARO HCP",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-81162"
+    },
+    {
+      "url": "https://github.com/openshift/origin/pull/30866",
+      "pull_request_id": "30866",
+      "component": "tests",
+      "description": "Rebase 1.35",
+      "bug_url": "https://issues.redhat.com/browse/OCPSTRAT-2728"
+    }
+  ]
+}

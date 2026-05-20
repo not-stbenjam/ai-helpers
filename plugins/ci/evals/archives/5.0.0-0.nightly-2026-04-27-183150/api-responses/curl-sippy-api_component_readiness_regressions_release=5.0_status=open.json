@@ -1,0 +1,21 @@
+Found 1064 open regressions
+  ID=38742 test=install should succeed: overall component=Installer / openshift-installer
+  ID=38339 test=[sig-node] Probing container should be restarted with a exec "cat /tmp/health" liveness probe [NodeC component=Node / Kubelet
+  ID=38389 test=[sig-node] Variable Expansion should succeed in writing subpaths in container [Conformance] component=Node / Kubelet
+  ID=39136 test=install should succeed: overall component=Installer / openshift-installer
+  ID=38915 test=[sig-apps] StatefulSet Basic StatefulSet functionality [StatefulSetBasic] should provide basic ident component=openshift-controller-manager / apps
+  ID=38913 test=[sig-apps] StatefulSet Basic StatefulSet functionality [StatefulSetBasic] should perform rolling upd component=openshift-controller-manager / apps
+  ID=38900 test=[sig-apps] StatefulSet Non-retain StatefulSetPersistentVolumeClaimPolicy should delete PVCs after ad component=openshift-controller-manager / apps
+  ID=38916 test=[sig-apps] StatefulSet Non-retain StatefulSetPersistentVolumeClaimPolicy should delete PVCs after ad component=openshift-controller-manager / apps
+  ID=38912 test=[sig-apps] StatefulSet Non-retain StatefulSetPersistentVolumeClaimPolicy should not delete PVCs when component=openshift-controller-manager / apps
+  ID=38911 test=[sig-apps] StatefulSet Non-retain StatefulSetPersistentVolumeClaimPolicy should not delete PVC with  component=openshift-controller-manager / apps
+  ID=38899 test=[sig-apps] StatefulSet Non-retain StatefulSetPersistentVolumeClaimPolicy should delete PVCs with a W component=openshift-controller-manager / apps
+  ID=38914 test=[sig-apps] StatefulSet Basic StatefulSet functionality [StatefulSetBasic] should adopt matching orph component=openshift-controller-manager / apps
+  ID=39068 test=[sig-network][OCPFeatureGate:PersistentIPsForVirtualization][Feature:Layer2LiveMigration] Kubevirt V component=Networking / ovn-kubernetes
+  ID=39256 test=[sig-network][OCPFeatureGate:PersistentIPsForVirtualization][Feature:Layer2LiveMigration] Kubevirt V component=Networking / ovn-kubernetes
+  ID=38370 test=[sig-node] [NodeConformance] [FeatureGate:SidecarContainers] Probing restartable init container shou component=Node / Kubelet
+  ID=38400 test=[sig-node] FileKeyRef [FeatureGate:EnvFiles] [Beta] should be consumable via FileKeyRef component=Node / Kubelet
+  ID=39295 test=[sig-network-edge][Feature:Router][apigroup:route.openshift.io][OCPFeatureGate:IngressControllerDyna component=Networking / router
+  ID=39296 test=[sig-network-edge][Feature:Router][apigroup:route.openshift.io][OCPFeatureGate:IngressControllerDyna component=Networking / router
+  ID=39297 test=[sig-storage] CSI Mock volume fsgroup policies CSI FSGroupPolicy Update [LinuxOnly] should update fs component=Storage
+  ID=39138 test=[Monitor:legacy-cvo-invariants][bz-Etcd] clusteroperator/etcd should stay Progressing=False while MC component=Etcd

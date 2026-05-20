@@ -1,0 +1,399 @@
+[
+  {
+    "tag": "5.0.0-0.ci-2026-05-14-181709",
+    "phase": "Rejected",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/5.0.0-0.ci/release/5.0.0-0.ci-2026-05-14-181709",
+    "results": {
+      "blockingJobs": {
+        "aggregated-aws-ovn-upgrade-5.0-major": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2055072278298759168",
+          "retries": 2,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054990798243500032",
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2055066944767266816"
+          ]
+        },
+        "aggregated-azure-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054990737933602816"
+        },
+        "aggregated-gcp-ovn-upgrade-5.0-micro": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2055072966340775936",
+          "retries": 2,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2054990761342013440",
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2055069660511997952"
+          ]
+        },
+        "hypershift-e2e-aks": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2054990765532123136"
+        },
+        "hypershift-e2e-aws": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2055017174107426816",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2054990763854401536"
+          ]
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "5.0.0-0.ci-2026-05-14-121709",
+    "phase": "Rejected",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/5.0.0-0.ci/release/5.0.0-0.ci-2026-05-14-121709",
+    "results": {
+      "blockingJobs": {
+        "aggregated-aws-ovn-upgrade-5.0-major": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054978975859478528",
+          "retries": 2,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054899516947042304",
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054974914229702656"
+          ]
+        },
+        "aggregated-azure-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054899542968504320"
+        },
+        "aggregated-gcp-ovn-upgrade-5.0-micro": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2054980708513878016",
+          "retries": 2,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2054899570642522112",
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2054977333487472640"
+          ]
+        },
+        "hypershift-e2e-aks": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2054899497753907200"
+        },
+        "hypershift-e2e-aws": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2054924008566034432",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2054899497695186944"
+          ]
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "5.0.0-0.ci-2026-05-14-061709",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/5.0.0-0.ci/release/5.0.0-0.ci-2026-05-14-061709",
+    "results": {
+      "blockingJobs": {
+        "aggregated-aws-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054811607418015744"
+        },
+        "aggregated-azure-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054811635939282944"
+        },
+        "aggregated-gcp-ovn-upgrade-5.0-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2054811665391685632"
+        },
+        "hypershift-e2e-aks": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2054865880185049088",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2054811670324187136"
+          ]
+        },
+        "hypershift-e2e-aws": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2054811666960355328"
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "5.0.0-0.ci-2026-05-14-001709",
+    "phase": "Rejected",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/5.0.0-0.ci/release/5.0.0-0.ci-2026-05-14-001709",
+    "results": {
+      "blockingJobs": {
+        "aggregated-aws-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054718324452888576"
+        },
+        "aggregated-azure-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054718352139489280"
+        },
+        "aggregated-gcp-ovn-upgrade-5.0-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2054718379821895680"
+        },
+        "hypershift-e2e-aks": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2054740474236768256",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2054718384859254784"
+          ]
+        },
+        "hypershift-e2e-aws": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2054718382363643904"
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "5.0.0-0.ci-2026-05-13-181709",
+    "phase": "Rejected",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/5.0.0-0.ci/release/5.0.0-0.ci-2026-05-13-181709",
+    "results": {
+      "blockingJobs": {
+        "aggregated-aws-ovn-upgrade-5.0-major": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054709563592019968",
+          "retries": 2,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054627784461914112",
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054706171767427072"
+          ]
+        },
+        "aggregated-azure-ovn-upgrade-5.0-major": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054711149307367424",
+          "retries": 2,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054627814656708608",
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054707720044417024"
+          ]
+        },
+        "aggregated-gcp-ovn-upgrade-5.0-micro": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2054711172258598912",
+          "retries": 2,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2054627839847698432",
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2054707772901036032"
+          ]
+        },
+        "hypershift-e2e-aks": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2054627765256196096"
+        },
+        "hypershift-e2e-aws": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2054627842393640960"
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "5.0.0-0.ci-2026-05-13-121708",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/5.0.0-0.ci/release/5.0.0-0.ci-2026-05-13-121708",
+    "results": {
+      "blockingJobs": {
+        "aggregated-aws-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054618250129444864",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054542994089971712"
+          ]
+        },
+        "aggregated-azure-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054540744500187136"
+        },
+        "aggregated-gcp-ovn-upgrade-5.0-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2054551737464786944"
+        },
+        "hypershift-e2e-aks": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2054540505240309760"
+        },
+        "hypershift-e2e-aws": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2054540078155304960"
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "5.0.0-0.ci-2026-05-13-061707",
+    "phase": "Rejected",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/5.0.0-0.ci/release/5.0.0-0.ci-2026-05-13-061707",
+    "results": {
+      "blockingJobs": {
+        "aggregated-aws-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054446582912258048"
+        },
+        "aggregated-azure-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054446608069693440"
+        },
+        "aggregated-gcp-ovn-upgrade-5.0-micro": {
+          "state": "Pending",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2054446628219129856"
+        },
+        "hypershift-e2e-aks": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2054446631578767360"
+        },
+        "hypershift-e2e-aws": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2054469078965293056",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2054446629888462848"
+          ]
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "5.0.0-0.ci-2026-05-13-001706",
+    "phase": "Rejected",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/5.0.0-0.ci/release/5.0.0-0.ci-2026-05-13-001706",
+    "results": {
+      "blockingJobs": {
+        "aggregated-aws-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054366440907083776"
+        },
+        "aggregated-azure-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054366465523453952"
+        },
+        "aggregated-gcp-ovn-upgrade-5.0-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2054366490672500736"
+        },
+        "hypershift-e2e-aks": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2054366494866804736"
+        },
+        "hypershift-e2e-aws": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2054393073022013440",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2054366492354416640"
+          ]
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "5.0.0-0.ci-2026-05-12-121545",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/5.0.0-0.ci/release/5.0.0-0.ci-2026-05-12-121545",
+    "results": {
+      "blockingJobs": {
+        "aggregated-aws-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054176053663895552"
+        },
+        "aggregated-azure-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2054176080524218368"
+        },
+        "aggregated-gcp-ovn-upgrade-5.0-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2054176111541096448"
+        },
+        "hypershift-e2e-aks": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2054176116582649856"
+        },
+        "hypershift-e2e-aws": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2054176114061873152"
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "5.0.0-0.ci-2026-05-12-001545",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/5.0.0-0.ci/release/5.0.0-0.ci-2026-05-12-001545",
+    "results": {
+      "blockingJobs": {
+        "aggregated-aws-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2053994880794890240"
+        },
+        "aggregated-azure-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2053994905126047744"
+        },
+        "aggregated-gcp-ovn-upgrade-5.0-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2053994926928039936"
+        },
+        "hypershift-e2e-aks": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2054014511299432448",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2053994930283483136"
+          ]
+        },
+        "hypershift-e2e-aws": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2053994928605761536"
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "5.0.0-0.ci-2026-05-11-181545",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/5.0.0-0.ci/release/5.0.0-0.ci-2026-05-11-181545",
+    "results": {
+      "blockingJobs": {
+        "aggregated-aws-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2053903875965980672"
+        },
+        "aggregated-azure-ovn-upgrade-5.0-major": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2053903943909511168"
+        },
+        "aggregated-gcp-ovn-upgrade-5.0-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2053903969918390272"
+        },
+        "hypershift-e2e-aks": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aks/2053903813491822592"
+        },
+        "hypershift-e2e-aws": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-5.0-periodics-e2e-aws-ovn/2053903810975240192"
+        }
+      },
+      "asyncJobs": {}
+    }
+  }
+]

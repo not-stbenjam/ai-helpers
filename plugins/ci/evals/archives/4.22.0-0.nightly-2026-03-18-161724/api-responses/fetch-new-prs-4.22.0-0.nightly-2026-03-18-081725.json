@@ -1,0 +1,115 @@
+[
+    {
+      "url": "https://github.com/openshift/api/pull/2680",
+      "pull_request_id": "2680",
+      "component": "cluster-config-api",
+      "description": "Add TLS adherence feature gate",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/api/pull/2763",
+      "pull_request_id": "2763",
+      "component": "cluster-config-api",
+      "description": "Add variant OS and JobTier to promotion check",
+      "bug_url": "https://issues.redhat.com/browse/TRT-2518"
+    },
+    {
+      "url": "https://github.com/openshift/api/pull/2764",
+      "pull_request_id": "2764",
+      "component": "cluster-config-api",
+      "description": "Avoid OSImageStream defaultStream unset",
+      "bug_url": "https://issues.redhat.com/browse/MCO-2142"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-etcd-operator/pull/1544",
+      "pull_request_id": "1544",
+      "component": "cluster-etcd-operator",
+      "description": "Add network policies to openshift-etcd pods (#1544)",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-2683"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-ingress-operator/pull/1361",
+      "pull_request_id": "1361",
+      "component": "cluster-ingress-operator",
+      "description": "Add e2e test for haproxy_max_connections metric",
+      "bug_url": "https://issues.redhat.com/browse/NE-2418"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-kube-scheduler-operator/pull/614",
+      "pull_request_id": "614",
+      "component": "cluster-kube-scheduler-operator",
+      "description": "Migrate Prometheus targets discovering from Endpoints to EndpointSlices",
+      "bug_url": "https://issues.redhat.com/browse/MON-4504"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/7867",
+      "pull_request_id": "7867",
+      "component": "hypershift",
+      "description": "feat(cpo): add Azure workload identity webhook as KAS sidecar",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-2910"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/7871",
+      "pull_request_id": "7871",
+      "component": "hypershift",
+      "description": "feat(aws): migrate ec2 to AWS SDK v2",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-2219"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/7918",
+      "pull_request_id": "7918",
+      "component": "hypershift",
+      "description": "NO-JIRA: add .gitattributes to collapse generated files in PR diffs",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/7960",
+      "pull_request_id": "7960",
+      "component": "hypershift",
+      "description": "refactor(cleanzones): migrate AWS SDK from v1 to v2",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-2077"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/7972",
+      "pull_request_id": "7972",
+      "component": "hypershift",
+      "description": "NO-JIRA: chore(owners): require api-approvers approval for api/ changes",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/7977",
+      "pull_request_id": "7977",
+      "component": "hypershift",
+      "description": "fix(e2e): register Azure private platform e2e flags",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-2172"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/7982",
+      "pull_request_id": "7982",
+      "component": "hypershift",
+      "description": "Update Kube API Linter config for new APIs",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/installer/pull/10335",
+      "pull_request_id": "10335",
+      "component": "baremetal-installer, installer, installer-artifacts",
+      "description": "Disallow cross subscription encryption sets",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-57603"
+    },
+    {
+      "url": "https://github.com/openshift/kube-rbac-proxy/pull/133",
+      "pull_request_id": "133",
+      "component": "kube-rbac-proxy",
+      "description": "Merge upstream v0.21.1",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-2932"
+    },
+    {
+      "url": "https://github.com/openshift/operator-framework-operator-controller/pull/665",
+      "pull_request_id": "665",
+      "component": "olm-catalogd, olm-operator-controller",
+      "description": "NO-ISSUE: Synchronize From Upstream Repositories",
+      "bug_url": ""
+    }
+  ]
+}

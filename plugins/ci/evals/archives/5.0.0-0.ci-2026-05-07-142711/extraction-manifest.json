@@ -1,0 +1,260 @@
+{
+  "case": "case-09",
+  "payload_tag": "5.0.0-0.ci-2026-05-07-142711",
+  "description": "Hermetic eval archive for CI payload analysis of 5.0.0-0.ci-2026-05-07-142711",
+  "source_sessions": {
+    "main": "eda0587e-0f22-4599-b10e-9218b7984166.jsonl",
+    "subagents": {
+      "aws-agent": "agent-a0f25ba94da75faef.jsonl",
+      "gcp-agent": "agent-a949fd25a4236e17f.jsonl",
+      "azure-agent": "agent-ac571233402ab551f.jsonl"
+    }
+  },
+  "aggregated_jobs": [
+    {
+      "name": "aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator",
+      "job_id": "2052478906816008192",
+      "agent": "aws-agent"
+    },
+    {
+      "name": "aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator",
+      "job_id": "2052472661463797760",
+      "agent": "gcp-agent"
+    },
+    {
+      "name": "aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator",
+      "job_id": "2052480005698490368",
+      "agent": "azure-agent"
+    }
+  ],
+  "archive_stats": {
+    "total_files": 38,
+    "total_size_bytes": 338677
+  },
+  "file_categories": {
+    "metadata": {
+      "count": 3,
+      "total_bytes": 20071
+    },
+    "fetch-new-prs": {
+      "count": 1,
+      "total_bytes": 6523
+    },
+    "fetch-payloads": {
+      "count": 1,
+      "total_bytes": 25341
+    },
+    "webfetch": {
+      "count": 6,
+      "total_bytes": 8138
+    },
+    "gcs-build-log": {
+      "count": 3,
+      "total_bytes": 238164
+    },
+    "gcs-prowjob": {
+      "count": 2,
+      "total_bytes": 11953
+    },
+    "gcs-directory-listing": {
+      "count": 2,
+      "total_bytes": 1865
+    },
+    "gcs-junit": {
+      "count": 20,
+      "total_bytes": 26622
+    },
+  },
+  "files": [
+    {
+      "path": "extraction-manifest.json",
+      "size": 19679,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-aggregated-jobs.txt",
+      "size": 392,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-direct-jobs.txt",
+      "size": 0,
+      "category": "metadata"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-5.0.0-0.ci-2026-05-07-142711.json",
+      "size": 6523,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-payloads-amd64-5.0-ci.json",
+      "size": 25341,
+      "category": "fetch-payloads"
+    },
+    {
+      "path": "api-responses/webfetch-gcsweb-01.txt",
+      "size": 2182,
+      "category": "webfetch"
+    },
+    {
+      "path": "api-responses/webfetch-gcsweb-02.txt",
+      "size": 1662,
+      "category": "webfetch"
+    },
+    {
+      "path": "api-responses/webfetch-gcsweb-03.txt",
+      "size": 555,
+      "category": "webfetch"
+    },
+    {
+      "path": "api-responses/webfetch-gcsweb-04.txt",
+      "size": 1145,
+      "category": "webfetch"
+    },
+    {
+      "path": "api-responses/webfetch-gcsweb-05.txt",
+      "size": 2041,
+      "category": "webfetch"
+    },
+    {
+      "path": "api-responses/webfetch-gcsweb-06.txt",
+      "size": 553,
+      "category": "webfetch"
+    },
+    {
+      "path": "test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2052478906816008192/build-log.txt",
+      "size": 97283,
+      "category": "gcs-build-log"
+    },
+    {
+      "path": "test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2052478906816008192/prowjob.json",
+      "size": 11453,
+      "category": "gcs-prowjob"
+    },
+    {
+      "path": "test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2052478906816008192/artifacts/release-analysis-aggregator/openshift-release-analysis-aggregator/artifacts/index.html",
+      "size": 601,
+      "category": "gcs-directory-listing"
+    },
+    {
+      "path": "test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2052478906816008192/artifacts/release-analysis-aggregator/openshift-release-analysis-aggregator/artifacts/release-analysis-aggregator/index.html",
+      "size": 1264,
+      "category": "gcs-directory-listing"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-aws-ovn-upgrade/2052395551797809152/artifacts/junit_operator.xml",
+      "size": 5000,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-aws-ovn-upgrade/2052395546760450048/artifacts/e2e-aws-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-152118.xml",
+      "size": 2373,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-aws-ovn-upgrade/2052395546760450048/artifacts/e2e-aws-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-164159.xml",
+      "size": 502,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-aws-ovn-upgrade/2052395546760450048/artifacts/e2e-aws-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-164159.xml",
+      "size": 118,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-aws-ovn-upgrade/2052395546760450048/artifacts/e2e-aws-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_upgrade__20260507-163701.xml",
+      "size": 31,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2052472661463797760/build-log.txt",
+      "size": 94132,
+      "category": "gcs-build-log"
+    },
+    {
+      "path": "test-platform-results/logs/aggregated-gcp-ovn-upgrade-5.0-micro-release-openshift-release-analysis-aggregator/2052472661463797760/prowjob.json",
+      "size": 500,
+      "category": "gcs-prowjob"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-152735.xml",
+      "size": 5172,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-164029.xml",
+      "size": 496,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-164029.xml",
+      "size": 118,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-163851.xml",
+      "size": 123,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-164503.xml",
+      "size": 180,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2052480005698490368/build-log.txt",
+      "size": 46749,
+      "category": "gcs-build-log"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-azure-ovn-upgrade/2052395566909886464/artifacts/e2e-azure-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-152712.xml",
+      "size": 5294,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-azure-ovn-upgrade/2052395566909886464/artifacts/e2e-azure-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-164324.xml",
+      "size": 536,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-azure-ovn-upgrade/2052395566909886464/artifacts/e2e-azure-ovn-upgrade/openshift-e2e-test/artifacts/junit/index.html",
+      "size": 1249,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-azure-ovn-upgrade/2052395566909886464/artifacts/e2e-azure-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-164324.xml",
+      "size": 117,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-azure-ovn-upgrade/2052395566909886464/artifacts/e2e-azure-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_upgrade__20260507-163802.xml",
+      "size": 31,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-azure-ovn-upgrade/2052395574455439360/artifacts/e2e-azure-ovn-upgrade/openshift-e2e-test/artifacts/junit/index.html",
+      "size": 1249,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-azure-ovn-upgrade/2052395574455439360/artifacts/e2e-azure-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-163910.xml",
+      "size": 86,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-azure-ovn-upgrade/2052395574455439360/artifacts/e2e-azure-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-164551.xml",
+      "size": 31,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-azure-ovn-upgrade/2052395589538156544/artifacts/e2e-azure-ovn-upgrade/openshift-e2e-test/artifacts/junit/index.html",
+      "size": 1249,
+      "category": "gcs-junit"
+    },
+    {
+      "path": "test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-upgrade-from-stable-4.22-e2e-azure-ovn-upgrade/2052395589538156544/artifacts/e2e-azure-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-164011.xml",
+      "size": 2667,
+      "category": "gcs-junit"
+    },
+  ]
+}

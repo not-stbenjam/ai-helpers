@@ -1,0 +1,164 @@
+[
+    {
+      "url": "https://github.com/openshift/cluster-cloud-controller-manager-operator/pull/457",
+      "pull_request_id": "457",
+      "component": "cluster-cloud-controller-manager-operator",
+      "description": "use AlwaysAllow UnhealthyPodEvictionPolicy option in PDBs",
+      "bug_url": "https://issues.redhat.com/browse/OCPCLOUD-3436"
+    },
+    {
+      "url": "https://github.com/openshift/api/pull/2824",
+      "pull_request_id": "2824",
+      "component": "cluster-config-api",
+      "description": "Add OLMLifecycleAndCompatibility feature gate",
+      "bug_url": "https://issues.redhat.com/browse/OPRUN-4590"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-image-registry-operator/pull/1329",
+      "pull_request_id": "1329",
+      "component": "cluster-image-registry-operator",
+      "description": "Fix stale config cache causing incorrect deployment",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-84725"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-network-operator/pull/2999",
+      "pull_request_id": "2999",
+      "component": "cluster-network-operator",
+      "description": "Revert \"add remaining CNO NetworkPolicies\" (#2959)",
+      "bug_url": "https://issues.redhat.com/browse/TRT-2657"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-node-tuning-operator/pull/1494",
+      "pull_request_id": "1494",
+      "component": "cluster-node-tuning-operator",
+      "description": "NO-JIRA: e2e: fix tuned deferred tests on Hypershift",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16406",
+      "pull_request_id": "16406",
+      "component": "console",
+      "description": "Migrate NameValueEditor to TypeScript and PatternFly drag-drop",
+      "bug_url": "https://issues.redhat.com/browse/CONSOLE-5015"
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16361",
+      "pull_request_id": "16361",
+      "component": "console",
+      "description": "NO-JIRA: Add approvers and reviewers to helm-plugin OWNERS",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16399",
+      "pull_request_id": "16399",
+      "component": "console",
+      "description": "Remove `@console` imports from SDK dist",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-85043"
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16388",
+      "pull_request_id": "16388",
+      "component": "console",
+      "description": "Loosen default `img-src` CSP",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-77931"
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16362",
+      "pull_request_id": "16362",
+      "component": "console",
+      "description": "Update outdated documentation links and references",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-84324"
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16320",
+      "pull_request_id": "16320",
+      "component": "console",
+      "description": "Set up Playwright e2e test infrastructure",
+      "bug_url": "https://issues.redhat.com/browse/CONSOLE-5212"
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16384",
+      "pull_request_id": "16384",
+      "component": "console",
+      "description": "VSphere plugin changes broke i18n translations - missing strings in locales/en/",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-84844"
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16392",
+      "pull_request_id": "16392",
+      "component": "console",
+      "description": "Fix SDK publish workflow for Yarn Berry",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-80940"
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16317",
+      "pull_request_id": "16317",
+      "component": "console",
+      "description": "Reject basic auth over non-HTTPS for Helm chart repositories",
+      "bug_url": "https://issues.redhat.com/browse/HELM-613"
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16266",
+      "pull_request_id": "16266",
+      "component": "console",
+      "description": "Fix Search page state mutation and unnecessary component remounts",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-81519"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8412",
+      "pull_request_id": "8412",
+      "component": "hypershift",
+      "description": "add image registry v2 e2e tests for hosted clusters",
+      "bug_url": "https://issues.redhat.com/browse/GCP-413"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8444",
+      "pull_request_id": "8444",
+      "component": "hypershift",
+      "description": "NO-JIRA: docs: make CLAUDE.md a symlink to AGENTS.md across the repo",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/7754",
+      "pull_request_id": "7754",
+      "component": "hypershift",
+      "description": "feat(tooling): overhaul pr-report skill and Python script",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-2778"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8432",
+      "pull_request_id": "8432",
+      "component": "hypershift",
+      "description": "use the latest ubi9 nginx image",
+      "bug_url": "https://issues.redhat.com/browse/ACM-33601"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8455",
+      "pull_request_id": "8455",
+      "component": "hypershift",
+      "description": "add image registry operational guide",
+      "bug_url": "https://issues.redhat.com/browse/GCP-414"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-api-provider-ibmcloud/pull/160",
+      "pull_request_id": "160",
+      "component": "ibmcloud-cluster-api-controllers",
+      "description": "NO-JIRA: manifests-gen: scope provider webhooks to capi namespace",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/machine-api-operator/pull/1495",
+      "pull_request_id": "1495",
+      "component": "machine-api-operator",
+      "description": "Changed vSphere cloud config to be read from openshift-config-managed",
+      "bug_url": "https://issues.redhat.com/browse/SPLAT-2745"
+    },
+    {
+      "url": "https://github.com/openshift/operator-framework-olm/pull/1290",
+      "pull_request_id": "1290",
+      "component": "operator-framework-tools, operator-lifecycle-manager, operator-registry",
+      "description": "use resource-based RBAC for lifecycle-server auth",
+      "bug_url": "https://issues.redhat.com/browse/OPRUN-4601"
+    }
+  ]
+}

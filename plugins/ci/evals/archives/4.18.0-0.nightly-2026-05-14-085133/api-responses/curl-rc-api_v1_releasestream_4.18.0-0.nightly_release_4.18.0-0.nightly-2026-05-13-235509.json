@@ -1,0 +1,9 @@
+From: 4.18.0-0.nightly-2026-05-13-164455
+To: 4.18.0-0.nightly-2026-05-13-235509
+Updated images: 1
+Rebuilt images: 182
+
+Updated: cluster-network-operator
+  PR #3006: Remove duplicated openssl parameter
+  URL: https://github.com/openshift/cluster-network-operator/pull/3006
+  Bug: OCPBUGS-85443 (https://issues.redhat.com/browse/OCPBUGS-85443)

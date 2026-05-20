@@ -1,0 +1,31 @@
+=== 502_bad_gateway (8 tests) ===
+  - [sig-apps][Feature:DeploymentConfig] deploymentconfigs with multiple image change triggers should run a successful deplo
+  - [sig-imageregistry][Feature:ImageExtract] Image extract should extract content from an image [apigroup:image.openshift.i
+  - [sig-apps][Feature:DeploymentConfig] deploymentconfigs with multiple image change triggers should run a successful deplo
+  - [sig-node] [FeatureGate:ImageVolume] ArtifactVolume should handle multiple image volumes [Suite:openshift/conformance/pa
+  - [sig-cli] oc adm release extract image-references [Suite:openshift/conformance/parallel]
+  ... and 3 more
+
+=== unable_locate_images (6 tests) ===
+  - [sig-builds][Feature:Builds] oc new-app should succeed with an imagestream [apigroup:build.openshift.io] [Suite:openshif
+  - [sig-builds][Feature:Builds] oc new-app should succeed with a --name of 58 characters [apigroup:build.openshift.io] [Sui
+  - [sig-builds][Feature:Builds] oc new-app should fail with a --name longer than 58 characters [apigroup:build.openshift.io
+  - [sig-builds][Feature:Builds] s2i build with a root user image should create a root build and pass with a privileged SCC 
+  - [sig-builds][Feature:Builds] build can reference a cluster service with a build being created from new-build should be a
+  ... and 1 more
+
+=== timeout_waiting (20 tests) ===
+  - [sig-builds][Feature:Builds] imagechangetriggers imagechangetriggers should trigger builds of all types [apigroup:build.
+  - [sig-imageregistry][Feature:ImageInfo] Image info should display information about images [apigroup:image.openshift.io] 
+  - [sig-cli] Workloads test oc works well ROSA-OSD_CCS-ARO-ConnectedOnly-Author:knarra-Medium-66989-Workloads oc debug with
+  - [sig-cli] oc set image can set images for pods and deployments [apigroup:image.openshift.io][apigroup:apps.openshift.io]
+  - [sig-cli] oc builds complex build start-build [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+  ... and 15 more
+
+=== other (15 tests) ===
+  - [sig-builds][Feature:Builds] build have source revision metadata started build should contain source revision informatio
+  - [sig-builds][Feature:Builds] s2i build with a quota Building from a template should create an s2i build with a quota and
+  - [sig-builds][Feature:Builds][volumes] build volumes should mount given secrets and configmaps into the build pod for doc
+  - [sig-builds][Feature:Builds] result image should have proper labels set S2I build from a template should create a image 
+  - [sig-builds][Feature:Builds] custom build with buildah being created from new-build should complete build with custom bu
+  ... and 10 more

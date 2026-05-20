@@ -1,0 +1,31 @@
+[
+    {
+      "url": "https://github.com/openshift/cluster-network-operator/pull/3003",
+      "pull_request_id": "3003",
+      "component": "cluster-network-operator",
+      "description": "Remove duplicated openssl parameter",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-85404"
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16378",
+      "pull_request_id": "16378",
+      "component": "console",
+      "description": "Add robots.txt policy to console",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-84772"
+    },
+    {
+      "url": "https://github.com/openshift/os/pull/1921",
+      "pull_request_id": "1921",
+      "component": "rhel-coreos, rhel-coreos-extensions",
+      "description": "NO-JIRA: rhaos-pkgs-match-openshift: exclude known package mismatches",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/ovn-kubernetes/pull/3181",
+      "pull_request_id": "3181",
+      "component": "ovn-kubernetes, ovn-kubernetes-microshift",
+      "description": "Trim ACL names according to RFC1123",
+      "bug_url": ""
+    }
+  ]
+}

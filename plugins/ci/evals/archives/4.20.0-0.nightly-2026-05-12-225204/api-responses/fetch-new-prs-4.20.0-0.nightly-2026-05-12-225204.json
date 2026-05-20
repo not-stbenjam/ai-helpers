@@ -1,0 +1,17 @@
+[
+    {
+      "url": "https://github.com/openshift/cluster-node-tuning-operator/pull/1443",
+      "pull_request_id": "1443",
+      "component": "cluster-node-tuning-operator",
+      "description": "Add support for lscpu_check TuneD built-in",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-66364"
+    },
+    {
+      "url": "https://github.com/openshift/ovn-kubernetes/pull/3102",
+      "pull_request_id": "3102",
+      "component": "ovn-kubernetes, ovn-kubernetes-microshift",
+      "description": "CUDN: cleanup NADs in terminating namespaces without pods",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-81484"
+    }
+  ]
+}

@@ -1,0 +1,578 @@
+[36mINFO[0m[2026-05-07T19:36:37Z] ci-operator version v20260507-53463e8f6      
+[36mINFO[0m[2026-05-07T19:36:37Z] No source defined                            
+[33mWARN[0m[2026-05-07T19:36:37Z] skipped directory "..2026_05_07_19_36_32.4080496841" when creating secret from directory "/usr/local/pull-secret" 
+[36mINFO[0m[2026-05-07T19:36:37Z] Using namespace https://console.build01.ci.openshift.org/k8s/cluster/projects/ci-op-zmib81qb 
+[36mINFO[0m[2026-05-07T19:36:37Z] Running [input:ci-job-run-aggregator-latest], release-analysis-aggregator 
+[36mINFO[0m[2026-05-07T19:36:37Z] Tagging ci/job-run-aggregator:latest into pipeline:ci-job-run-aggregator-latest. 
+[36mINFO[0m[2026-05-07T19:36:38Z] Running multi-stage test release-analysis-aggregator 
+[36mINFO[0m[2026-05-07T19:36:38Z] Running multi-stage phase pre                
+[36mINFO[0m[2026-05-07T19:36:38Z] Step phase pre succeeded after 0s.           
+[36mINFO[0m[2026-05-07T19:36:38Z] Running multi-stage phase test               
+[36mINFO[0m[2026-05-07T19:36:38Z] Running step release-analysis-aggregator-openshift-release-analysis-aggregator. 
+[36mINFO[0m[2026-05-07T19:47:46Z] Logs for container test in pod release-analysis-aggregator-openshift-release-analysis-aggregator: 
+[36mINFO[0m[2026-05-07T19:47:46Z] time="2026-05-07T19:36:46.687Z" level=info msg="aggregating job runs" job=periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade now="2026-05-07T19:36:46Z" payload=5.0.0-0.ci-2026-05-07-142711 readyAt="2026-05-07T19:46:30Z" timeoutAt="2026-05-08T00:56:30Z"
+time="2026-05-07T19:36:46.687Z" level=info msg="Waiting now=2026-05-07 19:36:46.687572253 +0000 UTC m=+0.026286433, ReadyAt=2026-05-07 19:46:30 +0000 UTC.\n"
+time="2026-05-07T19:46:30.002Z" level=info msg="finished waiting until 2026-05-07 19:46:30 +0000 UTC"
+time="2026-05-07T19:46:50.002Z" level=info msg="Going to wait until 2026-05-08 00:56:30 +0000 UTC with timeout value 5h9m39.997190027s"
+time="2026-05-07T19:46:50.004Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.004Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124862591275008 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.004Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305029196419072 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.005Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305026684030976 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.006Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.007Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305043473829888 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.007Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305039266942976 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.008Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214322083401728 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.008Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214326273511424 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.009Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052138367113498624 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.nightly-2026-05-06-212204\""
+time="2026-05-07T19:46:50.009Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124854202667008 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.009Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052355276304027648 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.nightly-2026-05-07-114403\""
+time="2026-05-07T19:46:50.010Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052263804145766400 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.nightly-2026-05-07-054132\""
+time="2026-05-07T19:46:50.010Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.010Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.011Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124848334835712 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.011Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.012Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124843301670912 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.013Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124865107857408 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.013Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124845864390656 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.013Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124852529139712 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.014Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124860074692608 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.014Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.014Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305036754554880 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.015Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214317079597056 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.015Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214324591595520 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.015Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214318753124352 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.016Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124858396971008 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.017Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.018Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305024180031488 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.020Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052464811760947200 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.nightly-2026-05-07-185738\""
+time="2026-05-07T19:46:50.021Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305040948858880 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.021Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124856723443712 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.021Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395604650233856 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.022Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.022Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214314521071616 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.023Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305030886723584 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.024Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305033399111680 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.024Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214332980203520 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.025Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214328781705216 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.026Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305035089416192 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.027Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214330463621120 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.027Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.028Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214320401485824 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.028Z" level=info msg="all jobs completed"
+time="2026-05-07T19:46:50.029Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124865107857408 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.030Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124845864390656 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.030Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124852529139712 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.031Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124860074692608 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.031Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.031Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305036754554880 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.031Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214317079597056 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.031Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214324591595520 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.032Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214318753124352 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.033Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124858396971008 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.034Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.034Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305024180031488 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.037Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052464811760947200 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.nightly-2026-05-07-185738\""
+time="2026-05-07T19:46:50.037Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305040948858880 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.037Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124856723443712 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.038Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395604650233856 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.038Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.038Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214314521071616 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.039Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305030886723584 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.040Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305033399111680 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.041Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214332980203520 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.041Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214328781705216 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.042Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305035089416192 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.043Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214330463621120 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.043Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.044Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214320401485824 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.045Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.045Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124862591275008 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.045Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305029196419072 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.046Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305026684030976 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.046Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.047Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305043473829888 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.047Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052305039266942976 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-082710\""
+time="2026-05-07T19:46:50.047Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214322083401728 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.048Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052214326273511424 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-022709\""
+time="2026-05-07T19:46:50.048Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052138367113498624 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.nightly-2026-05-06-212204\""
+time="2026-05-07T19:46:50.048Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124854202667008 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.049Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052355276304027648 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.nightly-2026-05-07-114403\""
+time="2026-05-07T19:46:50.049Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052263804145766400 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.nightly-2026-05-07-054132\""
+time="2026-05-07T19:46:50.049Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.050Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.050Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124848334835712 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.050Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-07-142711\""
+time="2026-05-07T19:46:50.051Z" level=info msg="checking periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052124843301670912 for payloadtag match: looking for \"5.0.0-0.ci-2026-05-07-142711\" found \"5.0.0-0.ci-2026-05-06-202708\""
+time="2026-05-07T19:46:50.052Z" level=info msg="all jobs completed"
+time="2026-05-07T19:46:50.052Z" level=info msg="finished waiting"
+time="2026-05-07T19:46:50.052Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/prowjob.json"
+time="2026-05-07T19:46:50.202Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/prowjob.json"
+time="2026-05-07T19:46:50.300Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/prowjob.json"
+time="2026-05-07T19:46:50.415Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/prowjob.json"
+time="2026-05-07T19:46:50.495Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/prowjob.json"
+time="2026-05-07T19:46:50.588Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/prowjob.json"
+time="2026-05-07T19:46:50.665Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/prowjob.json"
+time="2026-05-07T19:46:50.789Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256/prowjob.json"
+time="2026-05-07T19:46:50.879Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680/prowjob.json"
+time="2026-05-07T19:46:50.967Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395604650233856/prowjob.json"
+time="2026-05-07T19:46:51.138Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/prowjob.json"
+time="2026-05-07T19:46:51.267Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/prowjob.json"
+time="2026-05-07T19:46:51.379Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/prowjob.json"
+time="2026-05-07T19:46:51.497Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/prowjob.json"
+time="2026-05-07T19:46:51.620Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/prowjob.json"
+time="2026-05-07T19:46:51.737Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/prowjob.json"
+time="2026-05-07T19:46:51.844Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/prowjob.json"
+time="2026-05-07T19:46:51.952Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256/prowjob.json"
+time="2026-05-07T19:46:52.069Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680/prowjob.json"
+time="2026-05-07T19:46:52.195Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395604650233856/prowjob.json"
+time="2026-05-07T19:46:52.239Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/prowjob.json"
+time="2026-05-07T19:46:52.274Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/prowjob.json"
+time="2026-05-07T19:46:52.317Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/prowjob.json"
+time="2026-05-07T19:46:52.360Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/prowjob.json"
+time="2026-05-07T19:46:52.386Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/prowjob.json"
+time="2026-05-07T19:46:52.428Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/prowjob.json"
+time="2026-05-07T19:46:52.466Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/prowjob.json"
+time="2026-05-07T19:46:52.494Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256/prowjob.json"
+time="2026-05-07T19:46:52.527Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680/prowjob.json"
+time="2026-05-07T19:46:52.566Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395604650233856/prowjob.json"
+time="2026-05-07T19:46:52.595Z" level=info msg="found 10 finished jobRuns: periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395599604486144, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395597092098048, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395602125262848, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395609679204352, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395615572201472, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395607162621952, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395612812349440, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395594583904256, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395617258311680, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395604650233856 and 0 unfinished jobRuns: "
+time="2026-05-07T19:46:52.595Z" level=info msg="aggregating 10 related jobRuns: periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395599604486144, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395597092098048, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395602125262848, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395609679204352, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395615572201472, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395607162621952, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395612812349440, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395594583904256, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395617258311680, periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade2052395604650233856" job=periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade payload=5.0.0-0.ci-2026-05-07-142711
+time="2026-05-07T19:46:53.646Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_e2e_analysis__20260507-185216.xml"
+time="2026-05-07T19:46:53.646Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_symptoms.xml"
+time="2026-05-07T19:46:53.788Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/e2e-gcp-ovn-upgrade/gather-must-gather/artifacts/junit_install.xml"
+time="2026-05-07T19:46:54.066Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-152735.xml"
+time="2026-05-07T19:46:54.066Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-164029.xml"
+time="2026-05-07T19:46:54.066Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-152735.xml"
+time="2026-05-07T19:46:54.066Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-164029.xml"
+time="2026-05-07T19:46:54.066Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_upgrade__20260507-163524.xml"
+time="2026-05-07T19:46:54.066Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_node_ready.xml"
+time="2026-05-07T19:46:54.066Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_nodes.xml"
+time="2026-05-07T19:46:54.066Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts/junit_operator.xml"
+time="2026-05-07T19:46:54.272Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:54.341Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:54.418Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:54.494Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:54.724Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:54.970Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:55.065Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:55.431Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:55.515Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:55.587Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:55.684Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:55.760Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/prowjob.json"
+time="2026-05-07T19:46:56.782Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_e2e_analysis__20260507-190258.xml"
+time="2026-05-07T19:46:56.782Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_symptoms.xml"
+time="2026-05-07T19:46:57.028Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts/e2e-gcp-ovn-upgrade/gather-must-gather/artifacts/junit_install.xml"
+time="2026-05-07T19:46:57.366Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-153546.xml"
+time="2026-05-07T19:46:57.366Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-165347.xml"
+time="2026-05-07T19:46:57.366Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-153546.xml"
+time="2026-05-07T19:46:57.366Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-165347.xml"
+time="2026-05-07T19:46:57.366Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_upgrade__20260507-164845.xml"
+time="2026-05-07T19:46:57.366Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_node_ready.xml"
+time="2026-05-07T19:46:57.366Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_nodes.xml"
+time="2026-05-07T19:46:57.366Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts/junit_operator.xml"
+time="2026-05-07T19:46:57.366Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:57.445Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:57.521Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:57.586Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:57.822Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:58.032Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:58.103Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:58.410Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:58.484Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:58.552Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:58.625Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:46:58.712Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/prowjob.json"
+time="2026-05-07T19:46:59.689Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_e2e_analysis__20260507-185001.xml"
+time="2026-05-07T19:46:59.689Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_symptoms.xml"
+time="2026-05-07T19:46:59.905Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts/e2e-gcp-ovn-upgrade/gather-must-gather/artifacts/junit_install.xml"
+time="2026-05-07T19:47:00.273Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-152726.xml"
+time="2026-05-07T19:47:00.273Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-164209.xml"
+time="2026-05-07T19:47:00.273Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-152726.xml"
+time="2026-05-07T19:47:00.273Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-164209.xml"
+time="2026-05-07T19:47:00.273Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_upgrade__20260507-163646.xml"
+time="2026-05-07T19:47:00.273Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_node_ready.xml"
+time="2026-05-07T19:47:00.273Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_nodes.xml"
+time="2026-05-07T19:47:00.273Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts/junit_operator.xml"
+time="2026-05-07T19:47:00.273Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:00.348Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:00.427Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:00.488Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:00.719Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:00.921Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:01.001Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:01.382Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:01.444Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:01.523Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:01.594Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:01.670Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/prowjob.json"
+time="2026-05-07T19:47:02.760Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_e2e_analysis__20260507-190215.xml"
+time="2026-05-07T19:47:02.760Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_symptoms.xml"
+time="2026-05-07T19:47:02.945Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts/e2e-gcp-ovn-upgrade/gather-must-gather/artifacts/junit_install.xml"
+time="2026-05-07T19:47:03.271Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-152822.xml"
+time="2026-05-07T19:47:03.271Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-164709.xml"
+time="2026-05-07T19:47:03.271Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-152822.xml"
+time="2026-05-07T19:47:03.271Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-164709.xml"
+time="2026-05-07T19:47:03.271Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_upgrade__20260507-164119.xml"
+time="2026-05-07T19:47:03.271Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_node_ready.xml"
+time="2026-05-07T19:47:03.271Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_nodes.xml"
+time="2026-05-07T19:47:03.271Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts/junit_operator.xml"
+time="2026-05-07T19:47:03.271Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:03.336Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:03.392Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:03.461Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:03.670Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:03.822Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:03.890Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:04.262Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:04.321Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:04.403Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:04.467Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:04.545Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/prowjob.json"
+time="2026-05-07T19:47:05.665Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_e2e_analysis__20260507-190257.xml"
+time="2026-05-07T19:47:05.665Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_symptoms.xml"
+time="2026-05-07T19:47:05.901Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts/e2e-gcp-ovn-upgrade/gather-must-gather/artifacts/junit_install.xml"
+time="2026-05-07T19:47:06.183Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-153110.xml"
+time="2026-05-07T19:47:06.183Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-164854.xml"
+time="2026-05-07T19:47:06.183Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-153110.xml"
+time="2026-05-07T19:47:06.183Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-164854.xml"
+time="2026-05-07T19:47:06.183Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_upgrade__20260507-164334.xml"
+time="2026-05-07T19:47:06.184Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_node_ready.xml"
+time="2026-05-07T19:47:06.184Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_nodes.xml"
+time="2026-05-07T19:47:06.184Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts/junit_operator.xml"
+time="2026-05-07T19:47:06.184Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:06.262Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:06.335Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:06.397Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:06.744Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:06.956Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:07.040Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:07.295Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:07.371Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:07.436Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:07.500Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:07.560Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/prowjob.json"
+time="2026-05-07T19:47:08.730Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_e2e_analysis__20260507-190351.xml"
+time="2026-05-07T19:47:08.730Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_symptoms.xml"
+time="2026-05-07T19:47:08.934Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts/e2e-gcp-ovn-upgrade/gather-must-gather/artifacts/junit_install.xml"
+time="2026-05-07T19:47:09.255Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-153505.xml"
+time="2026-05-07T19:47:09.255Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-165638.xml"
+time="2026-05-07T19:47:09.255Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-153505.xml"
+time="2026-05-07T19:47:09.255Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-165638.xml"
+time="2026-05-07T19:47:09.255Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_upgrade__20260507-165135.xml"
+time="2026-05-07T19:47:09.256Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_node_ready.xml"
+time="2026-05-07T19:47:09.256Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_nodes.xml"
+time="2026-05-07T19:47:09.256Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts/junit_operator.xml"
+time="2026-05-07T19:47:09.256Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:09.322Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:09.402Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:09.476Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:09.635Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:09.829Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:09.894Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:10.241Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:10.305Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:10.383Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:10.457Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:10.535Z" level=debug msg="Fetching latest prowjob content from gcs: logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/prowjob.json"
+time="2026-05-07T19:47:11.586Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_e2e_analysis__20260507-185321.xml"
+time="2026-05-07T19:47:11.586Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts/e2e-gcp-ovn-upgrade/gather-extra/artifacts/junit/junit_symptoms.xml"
+time="2026-05-07T19:47:11.761Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts/e2e-gcp-ovn-upgrade/gather-must-gather/artifacts/junit_install.xml"
+time="2026-05-07T19:47:12.027Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-152829.xml"
+time="2026-05-07T19:47:12.027Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/e2e-monitor-tests__20260507-164455.xml"
+time="2026-05-07T19:47:12.027Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-152829.xml"
+time="2026-05-07T19:47:12.027Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_e2e__20260507-164455.xml"
+time="2026-05-07T19:47:12.027Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit/junit_upgrade__20260507-163952.xml"
+time="2026-05-07T19:47:12.027Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_node_ready.xml"
+time="2026-05-07T19:47:12.027Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts/e2e-gcp-ovn-upgrade/openshift-e2e-test/artifacts/junit_nodes.xml"
+time="2026-05-07T19:47:12.027Z" level=debug msg="found logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts/junit_operator.xml"
+time="2026-05-07T19:47:12.027Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:12.099Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:12.188Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:12.246Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:12.454Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:12.630Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:12.707Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:13.146Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:13.209Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:13.269Z" level=debug msg="getting junit file content content from GCS"
+time="2026-05-07T19:47:13.328Z" level=debug msg="getting junit file content content from GCS"
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds] oc new-app should succeed with a --name of 58 characters [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Message: Failed: Passed 1 times, failed 9 times.  The historical pass rate is 100%.  The required number of passes is 8.
+name: '[sig-builds][Feature:Builds] oc new-app should succeed with a --name of 58
+  characters [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]'
+testsuitename: openshift-tests
+summary: 'Failed: Passed 1 times, failed 9 times.  The historical pass rate is 100%.  The
+  required number of passes is 8.'
+passes:
+- jobrunid: "2052395597092098048"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts
+failures:
+- jobrunid: "2052395594583904256"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256/artifacts
+- jobrunid: "2052395599604486144"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts
+- jobrunid: "2052395602125262848"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts
+- jobrunid: "2052395604650233856"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395604650233856
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395604650233856/artifacts
+- jobrunid: "2052395607162621952"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts
+- jobrunid: "2052395609679204352"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts
+- jobrunid: "2052395612812349440"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts
+- jobrunid: "2052395615572201472"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts
+- jobrunid: "2052395617258311680"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680/artifacts
+skips: []
+
+
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds] build have source revision metadata started build should contain source revision information [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Message: Failed: Passed 1 times, failed 9 times.  The historical pass rate is 100%.  The required number of passes is 8.
+name: '[sig-builds][Feature:Builds] build have source revision metadata started build
+  should contain source revision information [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]'
+testsuitename: openshift-tests
+summary: 'Failed: Passed 1 times, failed 9 times.  The historical pass rate is 100%.  The
+  required number of passes is 8.'
+passes:
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds] build with empty source started build should build even with an empty source in build config [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds] build can reference a cluster service with a build being created from new-build should be able to run a build that references a cluster service [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds][valueFrom] process valueFrom in build strategy environment variables should successfully resolve valueFrom in s2i build environment variables [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds][pullsearch] docker build where the registry is not specified Building from a Dockerfile whose FROM image ref does not specify the image registry should create a docker build that has buildah search from our predefined list of image registries and succeed [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds] s2i build with a root user image should create a root build and pass with a privileged SCC [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds] custom build with buildah being created from new-build should complete build with custom builder image [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds] oc new-app should fail with a --name longer than 58 characters [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds][timing] capture build stages and durations should record build stages and durations for s2i [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds] build without output image building from templates should create an image from a S2i template without an output image reference defined [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds] result image should have proper labels set S2I build from a template should create a image from "test-s2i-build.json" template with proper Docker labels [apigroup:build.openshift.io][apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds] oc new-app should succeed with an imagestream [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds][volumes] build volumes should mount given secrets and configmaps into the build pod for docker strategy builds [apigroup:image.openshift.io][apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds] s2i build with a quota Building from a template should create an s2i build with a quota and run it [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds][volumes] build volumes should mount given secrets and configmaps into the build pod for source strategy builds [apigroup:image.openshift.io][apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-builds][Feature:Builds] imagechangetriggers imagechangetriggers should trigger builds of all types [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] oc builds new-build [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-operator] an end user can use OLM can subscribe to the operator [apigroup:config.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-imageregistry][Feature:Image] oc tag should preserve image reference for external images [apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-node] [FeatureGate:ImageVolume] ArtifactVolume when subPath is used should handle image volume with subPath [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-auth][Feature:SecurityContextConstraints]  TestPodDefaultCapabilities [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-imageregistry][Feature:ImageLayers] Image layer subresource should return layers from tagged images [apigroup:image.openshift.io][apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] Workloads test oc works well ROSA-OSD_CCS-ARO-ConnectedOnly-Author:knarra-Medium-66989-Workloads oc debug with or without init container for pod
+Test Failed! suite=[root    openshift-tests], testCase=[sig-imageregistry][Feature:ImageLookup] Image policy should update OpenShift object image fields when local names are on [apigroup:image.openshift.io][apigroup:apps.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-node] zstd:chunked Image should successfully run date command [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] oc builds complex build start-build [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-node] [FeatureGate:ImageVolume] ArtifactVolume when subPath is used should fail to mount image volume with invalid subPath [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-api-machinery][Feature:ResourceQuota] Object count check the quota after import-image with --all option [Skipped:Disconnected] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] Workloads test oc works well ROSA-OSD_CCS-ARO-Author:yinzhou-LEVEL0-Critical-63002-oc new-app propagate containerPort information to the deployment if import-mode is PreserveOriginal
+Test Failed! suite=[root    openshift-tests], testCase=[sig-imageregistry][Feature:ImageInfo] Image info should display information about images [apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-apps][Feature:DeploymentConfig] deploymentconfigs with multiple image change triggers should run a successful deployment with multiple triggers [apigroup:apps.openshift.io][apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-devex][Feature:Templates] templateinstance readiness test should report ready soon after all annotated objects are ready [apigroup:template.openshift.io][apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-imageregistry][Feature:ImageLookup] Image policy should perform lookup when the object has the resolve-names annotation [apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] oc debug ensure it works with image streams [apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] oc set image can set images for pods and deployments [apigroup:image.openshift.io][Skipped:Disconnected] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] Workloads client test ROSA-OSD_CCS-ARO-ConnectedOnly-Author:yinzhou-Critical-11882-Return description of resources with cli describe
+Test Failed! suite=[root    openshift-tests], testCase=[sig-auth][Feature:LDAP] LDAP should start an OpenLDAP test server [apigroup:user.openshift.io][apigroup:security.openshift.io][apigroup:authorization.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-imageregistry][Feature:ImageLookup] Image policy should update standard Kube object image fields when local names are on [apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-imageregistry][Feature:ImageExtract] Image extract should extract content from an image [apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] oc set image can set images for pods and deployments [apigroup:image.openshift.io][apigroup:apps.openshift.io][Skipped:Disconnected] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] Workloads test oc works well ROSA-OSD_CCS-ARO-ConnectedOnly-Author:yinzhou-High-67013-oc image mirror with multi-arch images and --filter-by-os
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] Workloads test oc works well ROSA-OSD_CCS-ARO-ConnectedOnly-Author:yinzhou-High-38178-oc should be able to debug init container
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] oc builds complex build webhooks CRUD [apigroup:build.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] oc adm release extract image-references [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] Workloads client test ROSA-OSD_CCS-ARO-Author:yinzhou-High-10136-Project should only watch its owned cache events
+Test Failed! suite=[root    openshift-tests], testCase=[sig-apps][Feature:DeploymentConfig] deploymentconfigs with multiple image change triggers should run a successful deployment with a trigger used by different containers [apigroup:apps.openshift.io][apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-cli] Workloads test oc works well ROSA-OSD_CCS-ARO-ConnectedOnly-NonPreRelease-Longduration-Author:yinzhou-High-42982-Describe quota output should always show units [Timeout:30m]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-api-machinery][Feature:ResourceQuota] Object count when exceed openshift.io/image-tags will ban to create new image references in the project [Skipped:Disconnected] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-olmv1][OCPFeatureGate:NewOLMWebhookProviderOpenshiftServiceCA] OLMv1 operator with webhooks should have a working validating webhook
+Test Failed! suite=[root    openshift-tests], testCase=[sig-imageregistry][Feature:ImageLookup] Image policy should perform lookup when the Deployment gets the resolve-names annotation later [apigroup:image.openshift.io] [Suite:openshift/conformance/parallel]
+Test Failed! suite=[root    openshift-tests], testCase=[sig-auth][Feature:LDAP] LDAP IDP should authenticate against an ldap server [apigroup:user.openshift.io][apigroup:route.openshift.io] [Suite:openshift/conformance/parallel]
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680/artifacts
+failures:
+- jobrunid: "2052395597092098048"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts
+- jobrunid: "2052395599604486144"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts
+- jobrunid: "2052395602125262848"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts
+skips: []
+
+
+Test Failed! suite=[root    openshift-tests], testCase=[Jira:"Test Framework"] there should not be mass test failures
+Message: Passed 0 times, failed 10 times, skipped 0 times: we require at least one pass to consider it a success
+name: '[Jira:"Test Framework"] there should not be mass test failures'
+testsuitename: openshift-tests
+summary: 'Passed 0 times, failed 10 times, skipped 0 times: we require at least one
+  pass to consider it a success'
+passes: []
+failures:
+- jobrunid: "2052395594583904256"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256/artifacts
+- jobrunid: "2052395597092098048"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts
+- jobrunid: "2052395599604486144"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts
+- jobrunid: "2052395602125262848"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts
+- jobrunid: "2052395604650233856"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395604650233856
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395604650233856/artifacts
+- jobrunid: "2052395607162621952"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts
+- jobrunid: "2052395609679204352"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts
+- jobrunid: "2052395612812349440"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts
+- jobrunid: "2052395615572201472"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts
+- jobrunid: "2052395617258311680"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680/artifacts
+skips: []
+
+
+Test Failed! suite=[root    openshift-tests-upgrade], testCase=[Monitor:kubelet-container-restarts][sig-architecture] platform pods in ns/openshift-cloud-network-config-controller should not exit an excessive amount of times
+Message: Passed 0 times, failed 10 times, skipped 0 times: we require at least one pass to consider it a success
+name: '[Monitor:kubelet-container-restarts][sig-architecture] platform pods in ns/openshift-cloud-network-config-controller
+  should not exit an excessive amount of times'
+testsuitename: openshift-tests-upgrade
+summary: 'Passed 0 times, failed 10 times, skipped 0 times: we require at least one
+  pass to consider it a success'
+passes: []
+failures:
+- jobrunid: "2052395594583904256"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256/artifacts
+- jobrunid: "2052395597092098048"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts
+- jobrunid: "2052395599604486144"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts
+- jobrunid: "2052395602125262848"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts
+- jobrunid: "2052395604650233856"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395604650233856
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395604650233856/artifacts
+- jobrunid: "2052395607162621952"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts
+- jobrunid: "2052395609679204352"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts
+- jobrunid: "2052395612812349440"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts
+- jobrunid: "2052395615572201472"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts
+- jobrunid: "2052395617258311680"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680/artifacts
+skips: []
+
+
+Test Failed! suite=[root    BackendDisruption], testCase=service-load-balancer-with-pdb-new-connections mean disruption should be less than historical plus five standard deviations
+Message: 
+Failed: Mean disruption of service-load-balancer-with-pdb-new-connections is 6.22 seconds is more than the failureThreshold of the weekly historical mean from 10 days ago: historicalMean=0.36s standardDeviation=0.76s failureThreshold=4.14s historicalP95=2.00s successes=[2052395604650233856=0s 2052395597092098048=1s 2052395607162621952=0s 2052395612812349440=0s 2052395609679204352=0s 2052395615572201472=1s] failures=[2052395602125262848=23s 2052395617258311680=27s 2052395599604486144=16s 2052395594583904256=15s]
+name: service-load-balancer-with-pdb-new-connections mean disruption should be less
+  than historical plus five standard deviations
+testsuitename: aggregated-disruption
+summary: |2-
+
+  Failed: Mean disruption of service-load-balancer-with-pdb-new-connections is 6.22 seconds is more than the failureThreshold of the weekly historical mean from 10 days ago: historicalMean=0.36s standardDeviation=0.76s failureThreshold=4.14s historicalP95=2.00s successes=[2052395604650233856=0s 2052395597092098048=1s 2052395607162621952=0s 2052395612812349440=0s 2052395609679204352=0s 2052395615572201472=1s] failures=[2052395602125262848=23s 2052395617258311680=27s 2052395599604486144=16s 2052395594583904256=15s]
+passes:
+- jobrunid: "2052395604650233856"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395604650233856
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395604650233856/artifacts
+- jobrunid: "2052395597092098048"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395597092098048/artifacts
+- jobrunid: "2052395607162621952"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395607162621952/artifacts
+- jobrunid: "2052395612812349440"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395612812349440/artifacts
+- jobrunid: "2052395609679204352"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395609679204352/artifacts
+- jobrunid: "2052395615572201472"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395615572201472/artifacts
+failures:
+- jobrunid: "2052395602125262848"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts
+- jobrunid: "2052395617258311680"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680/artifacts
+- jobrunid: "2052395599604486144"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts
+- jobrunid: "2052395594583904256"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256/artifacts
+skips: []
+
+
+time="2026-05-07T19:47:45.955Z" level=fatal msg="Command failed" error="Some tests failed aggregation.  See above for details."
+{"component":"entrypoint","error":"wrapped process failed: exit status 1","file":"sigs.k8s.io/prow/pkg/entrypoint/run.go:84","func":"sigs.k8s.io/prow/pkg/entrypoint.Options.internalRun","level":"error","msg":"Error executing test process","severity":"error","time":"2026-05-07T19:47:46Z"}
+error: failed to execute wrapped command: exit status 1 
+[36mINFO[0m[2026-05-07T19:47:46Z] Step release-analysis-aggregator-openshift-release-analysis-aggregator failed after 11m7s. 
+[36mINFO[0m[2026-05-07T19:47:46Z] Step phase test failed after 11m7s.          
+[36mINFO[0m[2026-05-07T19:47:46Z] Running multi-stage phase post               
+[36mINFO[0m[2026-05-07T19:47:46Z] Step phase post succeeded after 0s.          
+[36mINFO[0m[2026-05-07T19:47:46Z] Ran for 11m8s                                
+[31mERRO[0m[2026-05-07T19:47:46Z] Some steps failed:                           
+[31mERRO[0m[2026-05-07T19:47:46Z] 
+  * could not run steps: step release-analysis-aggregator failed: "release-analysis-aggregator" test steps failed: "release-analysis-aggregator" pod "release-analysis-aggregator-openshift-release-analysis-aggregator" failed: could not watch pod: the pod ci-op-zmib81qb/release-analysis-aggregator-openshift-release-analysis-aggregator failed after 11m5s (failed containers: test): ContainerFailed one or more containers exited
+
+Container test exited with code 1, reason Error
+---
+rtifacts
+failures:
+- jobrunid: "2052395602125262848"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395602125262848/artifacts
+- jobrunid: "2052395617258311680"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395617258311680/artifacts
+- jobrunid: "2052395599604486144"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395599604486144/artifacts
+- jobrunid: "2052395594583904256"
+  humanurl: https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256
+  gcsartifacturl: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-5.0-e2e-gcp-ovn-upgrade/2052395594583904256/artifacts
+skips: []
+
+
+time="2026-05-07T19:47:45.955Z" level=fatal msg="Command failed" error="Some tests failed aggregation.  See above for details."
+{"component":"entrypoint","error":"wrapped process failed: exit status 1","file":"sigs.k8s.io/prow/pkg/entrypoint/run.go:84","func":"sigs.k8s.io/prow/pkg/entrypoint.Options.internalRun","level":"error","msg":"Error executing test process","severity":"error","time":"2026-05-07T19:47:46Z"}
+error: failed to execute wrapped command: exit status 1
+---
+Link to step on registry info site: https://steps.ci.openshift.org/reference/openshift-release-analysis-aggregator
+Link to job on registry info site: https://steps.ci.openshift.org/job?org=&repo=&branch=&test=release-analysis-aggregator 

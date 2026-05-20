@@ -1,0 +1,180 @@
+{
+  "body": "**What this PR does / why we need it**:\r\n\r\nCurrently it's not possible to change the feature gates for a CustomNoUpgrade feature set cluster, because there's a Validating Admission Policy that only allows the change if the username is `system:hosted-cluster-config` and the KAS bootstrap container tries to change it with `system:admin`. Also it uses the `CreateOrUpdate` function with an empty callback function, which causes any update to fail silently.\r\n\r\nThis PR creates a dedicated client certificate and kubeconfig for the KAS bootstrap container and adds this user to the Validating Admission Policy. The kubeconfig uses localhost as the server URL so the container can connect to the kube-apiserver within the same pod without going through the service, which is not yet available at that point. Secondly, it replaces the `CreateOrUpdate` with server-side apply, so updates will work as expected and every resource type won't need to be special cased with a callback function.\r\n\r\n\r\n**Which issue(s) this PR fixes** *(optional, use `fixes #<issue_number>(, fixes #<issue_number>, ...)` format, where issue_number might be a GitHub issue, or a Jira story*:\r\nFixes #https://issues.redhat.com/browse/OCPBUGS-50603\r\n\r\n**Checklist**\r\n- [x] Subject and description added to both, commit and PR.\r\n- [x] Relevant issues have been referenced.\r\n- [ ] This change includes docs. \r\n- [x] This change includes unit tests.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n## Summary by CodeRabbit\n\n* **New Features**\n  * Added kubeconfig support for the KAS bootstrap container and a corresponding cluster role binding for its service user.\n\n* **Bug Fixes**\n  * Updated bootstrap workflows and deployment manifests so the bootstrap container reliably receives and uses its kubeconfig secret.\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+  "files": [
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/hostedcontrolplane_controller_test.go",
+      "additions": 6,
+      "deletions": 1,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/kas_pki_setup.go",
+      "additions": 23,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/manifests/pki.go",
+      "additions": 8,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/pki/ca.go",
+      "additions": 4,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/pki/kas.go",
+      "additions": 4,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/AROSwift/zz_fixture_TestControlPlaneComponents_kas_bootstrap_container_kubeconfig_secret.yaml",
+      "additions": 18,
+      "deletions": 0,
+      "changeType": "ADDED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/AROSwift/zz_fixture_TestControlPlaneComponents_kube_apiserver_controlplanecomponent.yaml",
+      "additions": 3,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/AROSwift/zz_fixture_TestControlPlaneComponents_kube_apiserver_deployment.yaml",
+      "additions": 25,
+      "deletions": 1,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/GCP/zz_fixture_TestControlPlaneComponents_kas_bootstrap_container_kubeconfig_secret.yaml",
+      "additions": 18,
+      "deletions": 0,
+      "changeType": "ADDED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/GCP/zz_fixture_TestControlPlaneComponents_kube_apiserver_controlplanecomponent.yaml",
+      "additions": 3,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/GCP/zz_fixture_TestControlPlaneComponents_kube_apiserver_deployment.yaml",
+      "additions": 25,
+      "deletions": 1,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/IBMCloud/zz_fixture_TestControlPlaneComponents_kas_bootstrap_container_kubeconfig_secret.yaml",
+      "additions": 18,
+      "deletions": 0,
+      "changeType": "ADDED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/IBMCloud/zz_fixture_TestControlPlaneComponents_kube_apiserver_controlplanecomponent.yaml",
+      "additions": 3,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/IBMCloud/zz_fixture_TestControlPlaneComponents_kube_apiserver_deployment.yaml",
+      "additions": 25,
+      "deletions": 1,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/TechPreviewNoUpgrade/zz_fixture_TestControlPlaneComponents_kas_bootstrap_container_kubeconfig_secret.yaml",
+      "additions": 18,
+      "deletions": 0,
+      "changeType": "ADDED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/TechPreviewNoUpgrade/zz_fixture_TestControlPlaneComponents_kube_apiserver_controlplanecomponent.yaml",
+      "additions": 3,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/TechPreviewNoUpgrade/zz_fixture_TestControlPlaneComponents_kube_apiserver_deployment.yaml",
+      "additions": 25,
+      "deletions": 1,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/zz_fixture_TestControlPlaneComponents_kas_bootstrap_container_kubeconfig_secret.yaml",
+      "additions": 18,
+      "deletions": 0,
+      "changeType": "ADDED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/zz_fixture_TestControlPlaneComponents_kube_apiserver_controlplanecomponent.yaml",
+      "additions": 3,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/testdata/kube-apiserver/zz_fixture_TestControlPlaneComponents_kube_apiserver_deployment.yaml",
+      "additions": 25,
+      "deletions": 1,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/v2/assets/kube-apiserver/deployment.yaml",
+      "additions": 24,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/v2/assets/kube-apiserver/kas-bootstrap-container-kubeconfig.yaml",
+      "additions": 10,
+      "deletions": 0,
+      "changeType": "ADDED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/v2/kas/component.go",
+      "additions": 4,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/controllers/hostedcontrolplane/v2/kas/kubeconfig.go",
+      "additions": 15,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "control-plane-operator/hostedclusterconfigoperator/controllers/resources/kas/admissionpolicies.go",
+      "additions": 1,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "kas-bootstrap/kas_boostrap.go",
+      "additions": 82,
+      "deletions": 24,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "kas-bootstrap/kas_boostrap_test.go",
+      "additions": 153,
+      "deletions": 33,
+      "changeType": "MODIFIED"
+    },
+    {
+      "path": "kas-bootstrap/testdata/00_kas-bootstrap-container-rolebinding.yaml",
+      "additions": 12,
+      "deletions": 0,
+      "changeType": "ADDED"
+    },
+    {
+      "path": "support/config/types.go",
+      "additions": 3,
+      "deletions": 0,
+      "changeType": "MODIFIED"
+    }
+  ],
+  "title": "OCPBUGS-50603: Create dedicated identity for KAS bootstrap container"
+}

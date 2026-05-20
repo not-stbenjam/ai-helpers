@@ -1,0 +1,999 @@
+[
+  {
+    "tag": "4.18.0-0.nightly-2026-05-14-085133",
+    "phase": "Rejected",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-14-085133",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2054903419998572544",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2054848788371083264"
+          ]
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2054899760459943936",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2054848798429024256"
+          ]
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2054900150022705152",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2054848774102061056"
+          ]
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2054848775830114304"
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2054848790904442880"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2054848795904053248"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2054875257453416448",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2054848800941412352"
+          ]
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2054848777524613120"
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2054848782486474752"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2054848779982475264"
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2054848785024028672"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2054848803457994752"
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-13-235509",
+    "phase": "Rejected",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-13-235509",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2054712952883253248"
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2054777913244389376",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2054712962953777152"
+          ]
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2054712968221822976"
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2054777431209807872",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2054712947858477056"
+          ]
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2054712955404029952"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2054712945367060480"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2054788393220444160",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2054712950375059456"
+          ]
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2054712960437194752"
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2054712965470359552"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2054712957929000960"
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2054712973028495360"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2054712975570243584"
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-13-164455",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-13-164455",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2054660841508179968",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2054604752720760832"
+          ]
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2054604770349420544"
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2054604762816450560"
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2054604750229344256"
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2054604765354004480"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2054604760387948544"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2054604777886584832"
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2054604767828643840"
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2054604757766508544"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2054604755262509056"
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2054604772857614336"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2054604775378391040"
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-13-071325",
+    "phase": "Rejected",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-13-071325",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2054536022825373696",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2054460899942469632"
+          ]
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2054504294719164416",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2054460886516502528"
+          ]
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2054460891558055936"
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2054460909182521344"
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2054460902459052032"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2054460884004114432"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2054460897425887232"
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2054470470593417216",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2054460878127894528"
+          ]
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2054460906657550336"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2054460904975634432"
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2054460889058250752"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2054460880648671232"
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-13-012335",
+    "phase": "Rejected",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-13-012335",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2054372803594948608"
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2054372818484727808"
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2054372803389427712"
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2054416453297246208",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2054372803532034048"
+          ]
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2054372803485896704"
+        },
+        "fips-scan": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2054390804427837440",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2054372816802811904"
+          ]
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2054372803720777728"
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2054382300052852736",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2054372803435565056"
+          ]
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2054372810934980608"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2054372803762720768"
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2054372815120896000"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2054372803653668864"
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-12-180538",
+    "phase": "Rejected",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-12-180538",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2054321138384769024",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2054263899867320320"
+          ]
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2054263886764314624"
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2054263887280214016"
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2054263886705594368"
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2054263886835617792"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2054263886659457024"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2054289605619879936",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2054263895681404928"
+          ]
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2054273743680704512",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2054263886441353216"
+          ]
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2054263901532459008"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2054302232483991552",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2054263886500073472"
+          ]
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2054263886558793728"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2054263904053235712"
+        }
+      },
+      "asyncJobs": {}
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-12-102359",
+    "phase": "Rejected",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-12-102359",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2054146764205723648"
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2054176976310112256",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2054146761676558336"
+          ]
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2054146756639199232"
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Failed",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2054208723907252224",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2054146773533855744"
+          ]
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2054146766709723136"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2054146778453774336"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2054162017194872832",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2054146775102525440"
+          ]
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2054146759168364544"
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2054146776797024256"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2054185424267513856",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2054146768387444736"
+          ]
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2054146770073554944"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2054146771759665152"
+        }
+      }
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-12-031629",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-12-031629",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2054038834764582912"
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2054038835041406976"
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2054084106207105024",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2054038834915577856"
+          ]
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2054038834626170880"
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2054038834793943040"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2054038849717276672"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2054070178626408448",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2054038834982686720"
+          ]
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2054038834693279744"
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2054038844671528960"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2054038837125976064"
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2054038834848468992"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2054038834865246208"
+        }
+      }
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-11-213533",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-11-213533",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2053960563519655936",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2053953011654332416"
+          ]
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2053994824087900160",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2053953011608195072"
+          ]
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2053953011553669120"
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2053953011771772928"
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2053953011700469760"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2053953029152968704"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2053953011822104576"
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2053953011868241920"
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2053953011943739392"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2053953011901796352"
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2053953020797915136"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2053953011729829888"
+        }
+      }
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-11-070232",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-11-070232",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2053793303140241408",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2053733379613921280"
+          ]
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2053772450377764864",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2053733360303345664"
+          ]
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2053733356964679680"
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2053733374576562176"
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2053733355278569472"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2053733372068368384"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2053733377088950272"
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2053733358705315840"
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2053733364518621184"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2053733362073341952"
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2053733367031009280"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2053733369568563200"
+        }
+      }
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-11-001626",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-11-001626",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2053631173816487936"
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2053631169647349760"
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2053631166782640128"
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2053686651758055424",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2053631166870720512"
+          ]
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2053631166468067328"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2053631166652616704"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2053631166325460992"
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2053631167172710400"
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2053631178887401472"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2053631177171931136"
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2053631181378818048"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2053631166543564800"
+        }
+      }
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-10-201542",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-10-201542",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2053570480945762304"
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2053570480681521152"
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2053570480857681920"
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2053570480908013568"
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2053570482233413632"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2053570480811544576"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2053571042093305856",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2053570480564080640"
+          ]
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2053570480639578112"
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2053570480765407232"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2053570480719269888"
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2053570489846075392"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2053570494820519936"
+        }
+      }
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-10-053521",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-10-053521",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2053416352546295808",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2053348914421043200"
+          ]
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2053348914374905856"
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2053388879725072384",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2053348914047750144"
+          ]
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2053348914085498880"
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2053348914874028032"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2053348914337157120"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2053348914127441920"
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2053348914177773568"
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2053348914299408384"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2053348914253271040"
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2053348921597497344"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2053348928304189440"
+        }
+      }
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-09-223951",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-09-223951",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2053244357598777344"
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2053244357540057088"
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2053244357376479232"
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2053244359041617920"
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2053244365760892928"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2053244372467585024"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2053244357426810880"
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2053244357477142528"
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2053244357691052032"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2053244357644914688"
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2053244369951002624"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2053244357728800768"
+        }
+      }
+    }
+  },
+  {
+    "tag": "4.18.0-0.nightly-2026-05-09-072219",
+    "phase": "Accepted",
+    "url": "https://amd64.ocp.releases.ci.openshift.org/releasestream/4.18.0-0.nightly/release/4.18.0-0.nightly-2026-05-09-072219",
+    "results": {
+      "blockingJobs": {
+        "aws-ovn-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2053072516162785280",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-ovn-serial/2053013512757710848"
+          ]
+        },
+        "aws-ovn-single-node-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-upgrade-ovn-single-node/2053013510241128448"
+        },
+        "aws-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-aws-ovn-upgrade/2053013503521853440"
+        },
+        "azure-ovn-upgrade-4.18-micro": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2053054730912927744",
+          "retries": 1,
+          "previousAttemptURLs": [
+            "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-e2e-azure-ovn-upgrade/2053013507716157440"
+          ]
+        },
+        "driver-toolkit": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-aws-driver-toolkit/2053013515265904640"
+        },
+        "fips-scan": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-fips-payload-scan/2053013503152754688"
+        },
+        "gcp-ovn-rt-upgrade-4.18-minor": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-ci-4.18-upgrade-from-stable-4.17-e2e-gcp-ovn-rt-upgrade/2053013502938845184"
+        },
+        "hypershift-ovn-conformance-4.18": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-hypershift-release-4.18-periodics-e2e-aws-ovn-conformance/2053013502993371136"
+        },
+        "metal-ipi-ovn-bm": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-bm/2053013502682992640"
+        },
+        "metal-ipi-ovn-ipv6": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-release-main-nightly-4.18-e2e-metal-ipi-ovn-ipv6/2053013503039508480"
+        },
+        "microshift-ovn-conformance-parallel": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance/2053013502896902144"
+        },
+        "microshift-ovn-conformance-serial": {
+          "state": "Succeeded",
+          "url": "https://prow.ci.openshift.org/view/gs/test-platform-results/logs/periodic-ci-openshift-microshift-release-4.18-periodics-e2e-aws-ovn-ocp-conformance-serial/2053013503098228736"
+        }
+      }
+    }
+  }
+]

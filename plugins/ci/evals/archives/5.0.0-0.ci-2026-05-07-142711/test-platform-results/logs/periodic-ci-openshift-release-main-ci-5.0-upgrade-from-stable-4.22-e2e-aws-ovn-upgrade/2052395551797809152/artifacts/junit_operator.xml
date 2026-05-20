@@ -1,0 +1,42 @@
+<testsuites>
+  <testsuite name="step graph" tests="34" skipped="0" failures="1" time="7590.357865347">
+    <properties></properties>
+    <testcase name="" time="4.9712e-05"></testcase>
+    <testcase name="All images are built and tagged into stable" time="1.651e-06"></testcase>
+    <testcase name="Find the input image ocp-4.12-upi-installer and tag it into the pipeline" time="2.387384203"></testcase>
+    <testcase name="Find the input image ocp-4.14-upi-installer and tag it into the pipeline" time="2.390300779"></testcase>
+    <testcase name="Find the input image ocp-4.18-upi-installer and tag it into the pipeline" time="2.390903684"></testcase>
+    <testcase name="Find the input image ocp-4.20-upi-installer and tag it into the pipeline" time="2.3926428140000002"></testcase>
+    <testcase name="Find the input image ocp-cli-jq-latest and tag it into the pipeline" time="2.391892343"></testcase>
+    <testcase name="Find the input image origin-centos-8 and tag it into the pipeline" time="2.390030359"></testcase>
+    <testcase name="Import the release payload &#34;initial&#34; from an external source" time="168.282575596"></testcase>
+    <testcase name="Import the release payload &#34;latest&#34; from an external source" time="151.810679313"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-aws-deprovision-users-and-policies container test" time="0"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-aws-deprovision-verification container test" time="36"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-gather-audit-logs container test" time="13"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-gather-aws-console container test" time="12"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-gather-core-dump container test" time="10"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-gather-extra container test" time="126"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-gather-must-gather container test" time="98"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-gather-network container test" time="87"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-ipi-conf container test" time="0"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-ipi-conf-aws container test" time="5"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-ipi-conf-aws-byo-ipv4-pool-public container test" time="1"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-ipi-conf-telemetry container test" time="0"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-ipi-deprovision-deprovision container test" time="303"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-ipi-install-hosted-loki container test" time="0"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-ipi-install-install-stableinitial container test" time="2628"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-ipi-install-monitoringpvc container test" time="0"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-ipi-install-rbac container test" time="1"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-observers-resource-watch container test" time="0"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-openshift-e2e-test-capabilities-check container test" time="37"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-openshift-tests-extension-admission-crd-install container test" time="1"></testcase>
+    <testcase name="Run multi-stage test e2e-aws-ovn-upgrade - e2e-aws-ovn-upgrade-ovn-conf container test" time="0"></testcase>
+    <testcase name="Run multi-stage test post phase" time="1082.269457755">
+      <system-out>The collected steps of multi-stage phase post.</system-out>
+    </testcase>
+    <testcase name="Run multi-stage test pre phase" time="2738.063468586">
+      <system-out>The collected steps of multi-stage phase pre.</system-out>
+    </testcase>
+    <testcase name="Run multi-stage test test phase" time="3599.901853213">
+      <failure message="">&#34;e2e-aws-ovn-upgrade&#34; pod &#34;e2e-aws-ovn-upgrade-openshift-e2e-test&#34; failed: pod pending for more than 1h0m0s: pod has not been scheduled in 1h0m0.000199034s: &#xA;Found 156 events for Pod e2e-aws-ovn-upgrade-openshift-e2e-test:&#xA;* 2026-05-07T15:18:44

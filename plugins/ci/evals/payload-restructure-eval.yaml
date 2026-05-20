@@ -1,0 +1,78 @@
+description: "Eval: restructured payload skills using hermetic archive (case-010)"
+
+providers:
+  - id: anthropic:claude-agent-sdk
+    label: sonnet-4.6
+    config:
+      model: claude-sonnet-4-6
+      plugins:
+        - type: local
+          path: ../
+      custom_allowed_tools: ['Bash', 'Read', 'Write', 'Edit', 'Grep', 'Glob', 'WebFetch', 'WebSearch', 'Task', 'Skill', 'Agent']
+      append_system_prompt: |
+        You are a diligent senior OpenShift release engineer triaging failures.
+
+        **CRITICAL**: You have many ci, must-gather, and jira skills at your disposal. You MUST load the relevant skills using the Skill tool BEFORE you begin any work. Do NOT improvise or guess. This applies equally to subagents: instruct every subagent to review its available skills and load the appropriate ones before beginning its investigation. A subagent that does not load a skill will produce shallow, unreliable analysis.
+
+prompts:
+  - label: "Payload Analysis"
+    raw: "{{prompt}}"
+
+extensions:
+  - file://set-archive-env.js:beforeEach
+
+defaultTest:
+  options:
+    provider:
+      id: vertex:claude-opus-4-6
+      config:
+        projectId: "{{ env.ANTHROPIC_VERTEX_PROJECT_ID }}"
+        region: global
+        temperature: 0
+  assert:
+    - type: skill-used
+      value: "ci:analyze-payload"
+    - type: python
+      value: file://assertions.py:output_files_exist
+    - type: python
+      value: file://assertions.py:yaml_results_valid
+    - type: python
+      value: file://assertions.py:json_data_valid
+    - type: python
+      value: file://assertions.py:html_report_structure
+    - type: cost
+      threshold: 25.0
+    - type: latency
+      threshold: 3600000
+
+tests:
+  - description: "case-010 5.0 ci CNO networkpolicy revert (restructured skills)"
+    vars:
+      prompt: "Run /ci:analyze-payload 5.0.0-0.ci-2026-05-07-142711"
+      archive_dir: "{{ env.EVAL_ARCHIVES_ROOT }}/5.0.0-0.ci-2026-05-07-142711"
+    assert:
+      - type: icontains
+        value: "Rejected"
+      - type: icontains
+        value: "revert"
+      - type: icontains
+        value: "network"
+      - type: llm-rubric
+        value: |
+          Evaluate this payload analysis. Expected ground truth:
+          - cluster-network-operator PR #2959 added NetworkPolicies that blocked
+            egress from cloud-network-config-controller
+          - CrashLoopBackOff across AWS, Azure, GCP due to API server timeouts
+          - Should be identified as high-confidence revert candidate (>=85)
+          - The agent should use the NEW consolidated skills: analyze-payload,
+            job-analysis, payload-report (not the old individual skills)
+
+          Score 1-5:
+          1: Wrong component or no revert candidate identified
+          2: Correct component but no specific mechanism described
+          3: Correct component and general mechanism but weak evidence
+          4: Correct component, specific NetworkPolicy/egress mechanism, cross-platform correlation
+          5: All of the above plus PR #2959 referenced, confidence score justified with rubric breakdown
+
+evaluateOptions:
+  maxConcurrency: 1

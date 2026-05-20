@@ -1,0 +1,54 @@
+{
+  "payload_tag": "4.19.0-0.nightly-2026-05-13-214109",
+  "description": "Hermetic eval archive for CI payload analysis of 4.19.0-0.nightly-2026-05-13-214109",
+  "archive_stats": {
+    "total_files": 6,
+    "total_size_bytes": 66016
+  },
+  "file_categories": {
+    "metadata": {
+      "count": 3,
+      "total_bytes": 1401
+    },
+    "fetch-new-prs": {
+      "count": 2,
+      "total_bytes": 1405
+    },
+    "fetch-payloads": {
+      "count": 1,
+      "total_bytes": 63210
+    }
+  },
+  "files": [
+    {
+      "path": "extraction-manifest.json",
+      "size": 1147,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-aggregated-jobs.txt",
+      "size": 0,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-direct-jobs.txt",
+      "size": 254,
+      "category": "metadata"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-4.19.0-0.nightly-2026-05-12-153952.json",
+      "size": 1105,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-4.19.0-0.nightly-2026-05-13-214109.json",
+      "size": 300,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-payloads-amd64-4.19-nightly.json",
+      "size": 63210,
+      "category": "fetch-payloads"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+[
+    {
+      "url": "https://github.com/openshift/kubernetes-autoscaler/pull/418",
+      "pull_request_id": "418",
+      "component": "cluster-autoscaler",
+      "description": "UPSTREAM: 9458: fix(clusterapi): use kind-aware version discovery for infra references",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-84130"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-capi-operator/pull/531",
+      "pull_request_id": "531",
+      "component": "cluster-capi-operator",
+      "description": "NO-JIRA: fix: conversion: handle HTTPProtocolIPv6, temporarily disable its diffing",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-capi-operator/pull/532",
+      "pull_request_id": "532",
+      "component": "cluster-capi-operator",
+      "description": "Refactor e2e newAWSMachineTemplate to use mapi2capi",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-84378"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-kube-apiserver-operator/pull/2123",
+      "pull_request_id": "2123",
+      "component": "cluster-kube-apiserver-operator",
+      "description": "Remove unstable TestBoundTokenOperatorSecretDeletion",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3326"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-monitoring-operator/pull/2889",
+      "pull_request_id": "2889",
+      "component": "cluster-monitoring-operator",
+      "description": "ClusterMonitoring alertmanagerConfig logic",
+      "bug_url": "https://issues.redhat.com/browse/MON-4492"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-monitoring-operator/pull/2814",
+      "pull_request_id": "2814",
+      "component": "cluster-monitoring-operator",
+      "description": "Minimal and telemetry CP monitors",
+      "bug_url": "https://issues.redhat.com/browse/MON-4517"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-monitoring-operator/pull/2887",
+      "pull_request_id": "2887",
+      "component": "cluster-monitoring-operator",
+      "description": "enable softirqs node-exporter collector via config",
+      "bug_url": "https://issues.redhat.com/browse/MON-4560"
+    },
+    {
+      "url": "https://github.com/openshift/cloud-provider-openstack/pull/375",
+      "pull_request_id": "375",
+      "component": "csi-driver-manila, openstack-cinder-csi-driver, openstack-cloud-controller-manager",
+      "description": "Updating csi-driver-manila-container image to be consistent with ART for 4.22",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-77592"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8231",
+      "pull_request_id": "8231",
+      "component": "hypershift",
+      "description": "add e2e test for etcd snapshot backup method on AWS",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-2834"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8328",
+      "pull_request_id": "8328",
+      "component": "hypershift",
+      "description": "docs: NO-JIRA: clarify serialization tag behaviour in api/AGENTS.md",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/machine-api-operator/pull/1491",
+      "pull_request_id": "1491",
+      "component": "machine-api-operator",
+      "description": "NO-JIRA: fix: importing nutanix test to in the binary",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/machine-config-operator/pull/5765",
+      "pull_request_id": "5765",
+      "component": "machine-config-operator",
+      "description": "Add IRI registry authentication support to MCO",
+      "bug_url": "https://issues.redhat.com/browse/AGENT-1449"
+    },
+    {
+      "url": "https://github.com/openshift/must-gather/pull/525",
+      "pull_request_id": "525",
+      "component": "must-gather",
+      "description": "no-jira: chore: address the linting issues in the scripts",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/ovn-kubernetes/pull/3148",
+      "pull_request_id": "3148",
+      "component": "ovn-kubernetes, ovn-kubernetes-microshift",
+      "description": "NO-JIRA: OTE: run EVPN external traffic tests which use random subnet for VTEP",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/origin/pull/31045",
+      "pull_request_id": "31045",
+      "component": "tests",
+      "description": "test: add monitortest to detect pods stuck in Pending state",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-79544"
+    },
+    {
+      "url": "https://github.com/openshift/origin/pull/31013",
+      "pull_request_id": "31013",
+      "component": "tests",
+      "description": "Add [Late] test to collect CRI-O goroutine dumps via SIGUSR1",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-79544"
+    },
+    {
+      "url": "https://github.com/openshift/origin/pull/31063",
+      "pull_request_id": "31063",
+      "component": "tests",
+      "description": "NO-ISSUE: Automated - Update synthetic test data",
+      "bug_url": ""
+    }
+  ]
+}

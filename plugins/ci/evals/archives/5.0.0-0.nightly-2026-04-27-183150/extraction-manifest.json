@@ -1,0 +1,83 @@
+{
+  "case": "case-11",
+  "payload_tag": "5.0.0-0.nightly-2026-04-27-183150",
+  "description": "Hermetic eval archive for CI payload analysis of 5.0.0-0.nightly-2026-04-27-183150",
+  "archive_stats": {
+    "total_files": 10,
+    "total_size_bytes": 92237
+  },
+  "file_categories": {
+    "metadata": {
+      "count": 2,
+      "total_bytes": 385
+    },
+    "sippy-api": {
+      "count": 5,
+      "total_bytes": 5936
+    },
+    "fetch-new-prs": {
+      "count": 1,
+      "total_bytes": 5065
+    },
+    "fetch-payloads": {
+      "count": 1,
+      "total_bytes": 80737
+    },
+    "gh-cache": {
+      "count": 1,
+      "total_bytes": 114
+    }
+  },
+  "files": [
+    {
+      "path": "failed-aggregated-jobs.txt",
+      "size": 135,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-direct-jobs.txt",
+      "size": 250,
+      "category": "metadata"
+    },
+    {
+      "path": "api-responses/curl-sippy-api_component_readiness_regressions_release=5.0_status=open.json",
+      "size": 2928,
+      "category": "sippy-api"
+    },
+    {
+      "path": "api-responses/curl-sippy-api_component_readiness_regressions_release=5.0_view=4.19-main-amd64-amd64-techpreview_status=open.json",
+      "size": 25,
+      "category": "sippy-api"
+    },
+    {
+      "path": "api-responses/curl-sippy-api_tests_release=5.0.json",
+      "size": 1088,
+      "category": "sippy-api"
+    },
+    {
+      "path": "api-responses/curl-sippy-api_tests_release=5.0_filter=name%3DMetricsCollectionProfiles.json",
+      "size": 125,
+      "category": "sippy-api"
+    },
+    {
+      "path": "api-responses/curl-sippy-api_tests_release=5.0_test=%5Bsig-instrumentation%5D%5BOCPFeatureGate%3AMetricsCollectionProfiles%5D%5BSerial%5D+The+collection+profiles+feature-set+in+a+homogeneous+minimal+environment%2C+should+hide.json",
+      "size": 1770,
+      "category": "sippy-api"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-5.0.0-0.nightly-2026-04-27-183150.json",
+      "size": 5065,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-payloads-amd64-5.0-nightly.json",
+      "size": 80737,
+      "category": "fetch-payloads"
+    },
+    {
+      "path": "gh-cache/raw/openshift_origin_master_test_extended_prometheus_collection_profiles.go",
+      "size": 114,
+      "category": "gh-cache"
+    }
+  ]
+}

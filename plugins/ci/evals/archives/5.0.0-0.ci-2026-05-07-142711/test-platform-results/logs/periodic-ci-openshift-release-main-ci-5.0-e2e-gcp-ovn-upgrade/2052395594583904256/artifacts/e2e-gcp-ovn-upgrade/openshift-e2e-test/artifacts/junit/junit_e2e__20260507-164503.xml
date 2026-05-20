@@ -1,0 +1,7 @@
+Total failures in run2: 43
+  17 - timed out
+  10 - Expected false to be true
+   6 - unable to locate images in image streams
+   5 - other
+   4 - 502 Bad Gateway
+   1 - image is nil

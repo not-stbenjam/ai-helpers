@@ -1,0 +1,10 @@
+[
+    {
+      "url": "https://github.com/openshift/azure-service-operator/pull/30",
+      "pull_request_id": "30",
+      "component": "azure-service-operator",
+      "description": "Bump google.golang.org/grpc to v1.79.3",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-80362"
+    }
+  ]
+}

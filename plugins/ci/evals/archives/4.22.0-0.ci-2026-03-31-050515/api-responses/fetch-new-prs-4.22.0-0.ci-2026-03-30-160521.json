@@ -1,0 +1,129 @@
+[
+    {
+      "url": "https://github.com/openshift/api/pull/2785",
+      "pull_request_id": "2785",
+      "component": "cluster-config-api",
+      "description": "Add envtest releases for 4.15 and 4.16",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3115"
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3486",
+      "pull_request_id": "3486",
+      "component": "agent-installer-ui",
+      "description": "chore(deps): update dependency swr to v2.4.1 (#3486)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3516",
+      "pull_request_id": "3516",
+      "component": "agent-installer-ui",
+      "description": "Bump happy-dom from 20.0.2 to 20.8.9 (#3516)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3517",
+      "pull_request_id": "3517",
+      "component": "agent-installer-ui",
+      "description": "Revert abi abov the sea new flow (#3517)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/assisted-installer/pull/2039",
+      "pull_request_id": "2039",
+      "component": "agent-installer-csr-approver, agent-installer-orchestrator",
+      "description": "Ensure MCO configs are present before rebooting the bootstrap node",
+      "bug_url": "https://issues.redhat.com/browse/MGMT-23191"
+    },
+    {
+      "url": "https://github.com/openshift/assisted-service/pull/10045",
+      "pull_request_id": "10045",
+      "component": "agent-installer-api-server",
+      "description": "Remove pinned image version for nfd operator",
+      "bug_url": "https://issues.redhat.com/browse/MGMT-23625"
+    },
+    {
+      "url": "https://github.com/openshift/assisted-service/pull/9919",
+      "pull_request_id": "9919",
+      "component": "agent-installer-api-server",
+      "description": "Replace AcceleratorProfile with HardwareProfile",
+      "bug_url": "https://issues.redhat.com/browse/MGMT-23231"
+    },
+    {
+      "url": "https://github.com/openshift/cloud-credential-operator/pull/978",
+      "pull_request_id": "978",
+      "component": "cloud-credential-operator",
+      "description": "Set operator condition to Progressing when pod identity webhook pod are updating",
+      "bug_url": "https://issues.redhat.com/browse/CCO-739"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-baremetal-operator/pull/580",
+      "pull_request_id": "580",
+      "component": "cluster-baremetal-operator",
+      "description": "NO-ISSUE: Update envtest version",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cluster-openshift-apiserver-operator/pull/669",
+      "pull_request_id": "669",
+      "component": "cluster-openshift-apiserver-operator",
+      "description": "bump(k8s.io): 1.35.2",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-2450"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8022",
+      "pull_request_id": "8022",
+      "component": "hypershift",
+      "description": "add KubeVirt-specific backup settings",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-78931"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8077",
+      "pull_request_id": "8077",
+      "component": "hypershift",
+      "description": "NO-JIRA: chore(deps): weekly dependabot consolidation",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8085",
+      "pull_request_id": "8085",
+      "component": "hypershift",
+      "description": "fix(ci): configure Codecov PR comments and add unit tests",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-244"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8089",
+      "pull_request_id": "8089",
+      "component": "hypershift",
+      "description": "Introduce envtest for integration tests alternative",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3037"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8109",
+      "pull_request_id": "8109",
+      "component": "hypershift",
+      "description": "ci(docs): migrate docs-preview job to GitHub Actions",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3116"
+    },
+    {
+      "url": "https://github.com/openshift/monitoring-plugin/pull/864",
+      "pull_request_id": "864",
+      "component": "monitoring-plugin",
+      "description": "NO-JIRA: podImage fix automation testing to remove extra click",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/service-ca-operator/pull/326",
+      "pull_request_id": "326",
+      "component": "service-ca-operator",
+      "description": "NO-JIRA: migrate from go-bindata to embed",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/operator-framework/operator-marketplace/pull/737",
+      "pull_request_id": "737",
+      "component": "operator-marketplace",
+      "description": "NO-ISSUE: Bump the k8s-dependencies group with 3 updates",
+      "bug_url": ""
+    }
+  ]
+}

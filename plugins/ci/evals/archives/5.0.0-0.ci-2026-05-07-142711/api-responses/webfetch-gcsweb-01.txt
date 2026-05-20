@@ -1,0 +1,36 @@
+# WebFetch URL: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/aggregated-aws-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2052478906816008192/artifacts/release-analysis-aggregator/openshift-release-analysis-aggregator/artifacts/release-analysis-aggregator/aggregation-testrun-summary.html
+# Prompt: Extract the test run summary showing which runs passed, failed, and the overall status. List each run's status and any summary information.
+# Session: aws-agent
+---
+# OpenShift 5.0 Upgrade Test Run Summary
+
+## Overview
+This Spyglass Suite report covers periodic upgrade testing from OpenShift 4.22 to 5.0 on AWS with OVN networking across 9 test job runs.
+
+## Failed Tests (46 total)
+
+The most critical failures include:
+
+- **Container restart monitoring**: The cloud network config controller pods are failing—"platform pods in ns/openshift-cloud-network-config-controller should not exit an excessive amount of times" shows 0 passes across all 9 runs.
+
+- **Network features**: Conntrack proxy implementation and EgressFirewall tests each show 3 failed runs out of 7 required.
+
+- **Build system**: Multiple sig-builds tests are failing at high rates (6-7 failures out of 7 required), affecting:
+  - S2I builds with root user images
+  - oc new-app operations
+  - Build volume mounting
+  - Image change triggers
+
+- **CLI and image operations**: Tests for `oc set image`, `oc debug`, image extraction, and LDAP authentication show consistent failure patterns (typically 5-6 failures per 7 required).
+
+- **General health indicator**: The "[Jira:Test Framework]" test detecting mass failures shows 8 failures across runs, indicating systemic testing problems.
+
+## Passed Tests (2 total)
+
+Only infrastructure-level monitoring tests passed consistently:
+- Termination message policy validation (9 passes)
+- Required SCC annotation checking (9 passes)
+
+## Conclusion
+
+This upgrade cycle exhibits widespread instability, with container restarts and build functionality severely compromised. The testing infrastructure itself appears strained, suggesting potential environmental or configuration issues during the upgrade process.

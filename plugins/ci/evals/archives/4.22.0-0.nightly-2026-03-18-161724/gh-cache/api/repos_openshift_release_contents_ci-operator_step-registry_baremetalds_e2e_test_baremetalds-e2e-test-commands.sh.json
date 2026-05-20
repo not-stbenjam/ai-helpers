@@ -1,0 +1,100 @@
+exit 1
+  fi
+done
+
+# wait for all nodes to reach Ready=true to ensure that all machines and nodes came up, before we run
+# any e2e tests that might require specific workload capacity.
+if [[ "${SKIP_READINESS_CHECKS:-false}" == "true" ]]; then
+  echo "$(date) - skipping node readiness check because SKIP_READINESS_CHECKS is set to true"
+else
+  echo "$(date) - waiting for nodes to be ready..."
+  oc wait nodes --all --for=condition=Ready=true --timeout=10m
+  echo "$(date) - all nodes are ready"
+fi
+
+
+# Check for image registry availability
+for _ in {1..11}; do
+  count=$(oc get configs.imageregistry.operator.openshift.io/cluster --no-headers | wc -l)
+  echo "Image registry count: ${count}"
+  if [[ ${count} -gt 0 ]]; then
+    break
+  fi
+  sleep 30
+done
+
+# Check for imagestreams availability
+for _ in {1..11}; do
+  if ! oc get imagestreams --all-namespaces; then
+    sleep 30
+  else
+    echo "$(date) - Imagestreams are available"
+    break
+  fi
+done
+
+# this works around a problem where tests fail because imagestreams aren't imported.  We see this happen for exec session.
+echo "$(date) - waiting for non-samples imagesteams to import..."
+count=0
+while :
+do
+
+  # The local image registry isn't working in 4.6 and isn't needed for the
+  # subset of tests we use for this version
+  if ! is_openshift_version_gte "4.7" ; then
+    echo "Skipping imagesteams wait"
+    break
+  fi
+
+  non_imported_imagestreams=$(oc -n openshift get imagestreams -o go-template='{{range .items}}{{$namespace := .metadata.namespace}}{{$name := .metadata.name}}{{range .status.tags}}{{if not .items}}{{$namespace}}/{{$name}}:{{.tag}}{{"\n"}}{{end}}{{end}}{{end}}')
+  if [ -z "${non_imported_imagestreams}" ]
+  then
+    break
+  fi
+  echo "The following image streams are yet to be imported (attempt #${count}):"
+  echo "${non_imported_imagestreams}"
+
+  count=$((count+1))
+  if (( count > 30 )); then
+    echo "Failed while waiting on imagestream import"
+    exit 1
+  fi
+
+  sleep 60
+done
+echo "$(date) - all imagestreams are imported."
+
+# In some cases the cluster events are processed slowly by the kube-apiservers,
+# producing a late revision updates that could be missed by the previous co check.
+if [[ "${SKIP_READINESS_CHECKS}" == "true" ]]; then
+    echo "$(date) - skipping secondary clusteroperators status check"
+else
+  echo "$(date) - Waiting 10 minutes before checking again clusteroperators"
+  sleep 10m
+
+  check_clusteroperators_status
+fi
+
+# Build hypervisor SSH configuration if enabled
+build_hypervisor_config
+
+case "${TEST_TYPE}" in
+upgrade-conformance)
+    upgrade
+    TEST_LIMIT_START_TIME="$(date +%s)" TEST_SUITE=openshift/conformance/parallel suite
+    ;;
+upgrade)
+    upgrade
+    ;;
+suite-conformance)
+    suite
+    TEST_LIMIT_START_TIME="$(date +%s)" TEST_SUITE=openshift/conformance/parallel suite
+    ;;
+suite)
+    suite
+    ;;
+*)
+    echo >&2 "Unsupported test type '${TEST_TYPE}'"
+    exit 1
+    ;;
+esac

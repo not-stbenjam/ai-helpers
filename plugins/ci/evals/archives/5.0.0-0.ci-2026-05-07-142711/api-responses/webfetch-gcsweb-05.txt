@@ -1,0 +1,45 @@
+# WebFetch URL: https://gcsweb-ci.apps.ci.l2s4.p1.openshiftapps.com/gcs/test-platform-results/logs/aggregated-azure-ovn-upgrade-5.0-major-release-openshift-release-analysis-aggregator/2052480005698490368/build-log.txt
+# Prompt: Extract the complete content of this build log. I need to see ALL error messages, failure reasons, step results, and any links to underlying job runs. Show everything.
+# Session: azure-agent
+---
+# Build Log Analysis: Release Analysis Aggregator Test
+
+## Overview
+This is a CI/CD pipeline execution for OpenShift release testing, specifically aggregating job runs for payload `5.0.0-0.ci-2026-05-07-142711`.
+
+## Key Operations
+
+**Job Execution:**
+- Started: 2026-05-07T20:05:48Z
+- Namespace: `ci-op-6bztkdxi` on OpenShift build cluster
+- Test phase: `release-analysis-aggregator` multi-stage pipeline
+
+**Job Run Aggregation:**
+The system waited until 2026-05-07T20:15:41Z for job readiness, then processed 10 completed job runs matching the target payload tag. All runs finished successfully by 2026-05-07T20:16:02Z.
+
+## Test Results
+
+**Two test failures identified:**
+
+1. **Build S2I Template Test** - `[sig-builds][Feature:Builds] build without output image`
+   - Pass rate: 40% (4 passes, 6 failures)
+   - Historical baseline: 100%
+   - Required passes: 8
+
+2. **Source Revision Metadata Test** - `[sig-builds][Feature:Builds] build have source revision`
+   - Pass rate: 40% (4 passes, 6 failures)
+   - Historical baseline: 100%
+   - Required passes: 8
+
+Both failures involve the `build.openshift.io` API group in conformance tests.
+
+## Disruption Analysis
+
+Multiple service connection tests were analyzed. Notable results include:
+- Most cache and API services showed minimal disruption (0-1 seconds)
+- Some HTTP/2 connections experienced higher disruption (up to 5 seconds)
+- One outlier detected in ingress-to-console testing (3 seconds)
+
+## Critical Notes
+
+Missing historical data warning for node initialization tests. Content truncated at conclusion, indicating additional test failures beyond those shown.

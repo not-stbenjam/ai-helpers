@@ -1,5 +1,5 @@
 ---
-name: Archive Payload Result
+name: archive-payload-result
 description: Build a hermetic eval archive from an original Claude payload agent session — extracts all tool call responses, downloads GCS artifacts, and saves reference outputs
 ---
 

@@ -1,0 +1,29 @@
+TEST: [Monitor:kubelet-container-restarts][sig-architecture] platform pods in ns/openshift-cloud-network-config-controller should not fail to start
+FAILURE TEXT (first 2000 chars):
+11 container starts had issues
+
+container failed to start at 2026-05-07 15:32:40.124271311 +0000 UTC m=+361.628458860: namespace/openshift-cloud-network-config-controller pod/cloud-network-config-controller-7455f4c954-27wfn uid/b62f2ffa-bbad-4c1c-be6b-c691df8994f1 container/controller - constructed/pod-lifecycle-constructor reason/ContainerWait missed real "ContainerWait"
+container failed to start at 2026-05-07 15:58:36.802605963 +0000 UTC m=+1918.306793513: namespace/openshift-cloud-network-config-controller pod/cloud-network-config-controller-7455f4c954-27wfn uid/b62f2ffa-bbad-4c1c-be6b-c691df8994f1 container/controller - constructed/pod-lifecycle-constructor reason/ContainerWait missed real "ContainerWait"
+container failed to start at 2026-05-07 15:59:19.59461343 +0000 UTC m=+1961.098800980: namespace/openshift-cloud-network-config-controller node/ci-op-5dvbb5pr-58fc7-dtwcs-master-2 pod/cloud-network-config-controller-7455f4c954-27wfn uid/b62f2ffa-bbad-4c1c-be6b-c691df8994f1 container/controller - cause/CrashLoopBackOff reason/ContainerWait  back-off 10s restarting failed container=controller pod=cloud-network-config-controller-7455f4c954-27wfn_openshift-cloud-network-config-controller(b62f2ffa-bbad-4c1c-be6b-c691df8994f1)
+container failed to start at 2026-05-07 15:59:19.59461343 +0000 UTC m=+1961.098800980: namespace/openshift-cloud-network-config-controller pod/cloud-network-config-controller-7455f4c954-27wfn uid/b62f2ffa-bbad-4c1c-be6b-c691df8994f1 container/controller - cause/CrashLoopBackOff constructed/pod-lifecycle-constructor reason/ContainerWait  back-off 10s restarting failed container=controller pod=cloud-network-config-controller-7455f4c954-27wfn_openshift-cloud-network-config-controller(b62f2ffa-bbad-4c1c-be6b-c691df8994f1)
+container failed to start at 2026-05-07 15:59:50.362717758 +0000 UTC m=+1991.866905297: namespace/openshift-cloud-network-config-controller pod/cloud-network-config-controller-7455f4c954-27wfn uid/b62f2ffa-bbad-4c1c-be6b-c691df899
+===END===
+TEST: [Monitor:kubelet-container-restarts][sig-architecture] platform pods in ns/openshift-cloud-network-config-controller should not exit an excessive amount of times
+FAILURE TEXT (first 2000 chars):
+1 containers with multiple restarts
+
+namespace/openshift-cloud-network-config-controller node/ci-op-5dvbb5pr-58fc7-dtwcs-master-2 pod/cloud-network-config-controller-7455f4c954-27wfn uid/b62f2ffa-bbad-4c1c-be6b-c691df8994f1 container/controller restarted 6 times at:
+non-zero exit at 2026-05-07 15:59:06.172202077 +0000 UTC m=+1947.676389616: cause/Error code/1 reason/ContainerExit W0507 15:58:35.791027       1 client_config.go:682] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+F0507 15:59:05.793212       1 main.go:89] Error getting platform status from cluster infrastructure: failed to get infrastructure: failed to get server groups: Get "https://172.30.0.1:443/api": dial tcp 172.30.0.1:443: i/o timeout
+non-zero exit at 2026-05-07 15:59:50.362717758 +0000 UTC m=+1991.866905297: cause/Error code/1 reason/ContainerExit W0507 15:59:19.690934       1 client_config.go:682] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+F0507 15:59:49.692929       1 main.go:89] Error getting platform status from cluster infrastructure: failed to get infrastructure: failed to get server groups: Get "https://172.30.0.1:443/api": dial tcp 172.30.0.1:443: i/o timeout
+non-zero exit at 2026-05-07 16:00:52.797782813 +0000 UTC m=+2054.301970352: cause/Error code/1 reason/ContainerExit W0507 16:00:22.597292       1 client_config.go:682] Neither --kubeconfig nor --master was specified.  Using the inClusterConfig.  This might not work.
+F0507 16:00:52.599402       1 main.go:89] Error getting platform status from cluster infrastructure: failed to get infrastructure: failed to get server groups: Get "https://172.30.0.1:443/api": dial tcp 172.30.0.1:443: i/o timeout
+non-zero exit at 2026-05-07 16:02:13.392871961 +0000 UTC m=+2134.897059509: cause/Error code/1 reason/ContainerExit W0507 16:01:42.683086       1 client_config.go:682] Neither --kubeconfig nor --master was specified.  Using the inClusterCo
+===END===
+TEST: [Monitor:legacy-test-framework-invariants-alerts][Networking][invariant] alert/KubePodNotReady should not be at or above pending in ns/openshift-cloud-network-config-controller
+FAILURE TEXT (first 2000 chars):
+KubePodNotReady was at or above pending for at least 58s on platformidentification.JobType{Release:"5.0", FromRelease:"4.22", Platform:"azure", Architecture:"amd64", Network:"ovn", Topology:"ha"} (maxAllowed=0s): pending for 58s, firing for 0s:
+
+May 07 16:29:36.801 - 58s   I namespace/openshift-cloud-network-config-controller pod/cloud-network-config-controller-7db5d8c88-ghqp9 alert/KubePodNotReady alertstate/pending severity/warning ALERTS{alertname="KubePodNotReady", alertstate="pending", namespace="openshift-cloud-network-config-controller", pod="cloud-network-config-controller-7db5d8c88-ghqp9", prometheus="openshift-monitoring/k8s", severity="warning"}
+===END===

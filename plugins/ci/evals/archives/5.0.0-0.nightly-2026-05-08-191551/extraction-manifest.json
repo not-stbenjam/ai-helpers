@@ -1,0 +1,89 @@
+{
+  "case": "case-12",
+  "payload_tag": "5.0.0-0.nightly-2026-05-08-191551",
+  "description": "Hermetic eval archive for CI payload analysis of 5.0.0-0.nightly-2026-05-08-191551",
+  "archive_stats": {
+    "total_files": 12,
+    "total_size_bytes": 28161
+  },
+  "file_categories": {
+    "metadata": {
+      "count": 2,
+      "total_bytes": 0
+    },
+    "sippy-api": {
+      "count": 1,
+      "total_bytes": 111
+    },
+    "fetch-new-prs": {
+      "count": 4,
+      "total_bytes": 19448
+    },
+    "gh-cache": {
+      "count": 5,
+      "total_bytes": 8602
+    }
+  },
+  "files": [
+    {
+      "path": "failed-aggregated-jobs.txt",
+      "size": 0,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-direct-jobs.txt",
+      "size": 0,
+      "category": "metadata"
+    },
+    {
+      "path": "api-responses/curl-sippy-api_tests_release=5.0_filter=name%3D%5BMonitor%3Alegacy-cvo-invariants%5D%5Bbz-Node+Tuning+Operator%5D+clusteroperator%2Fnode-tuning+should+not+change+condition%2FDegraded.json",
+      "size": 111,
+      "category": "sippy-api"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-5.0.0-0.nightly-2026-05-07-185738.json",
+      "size": 3972,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-5.0.0-0.nightly-2026-05-08-023953.json",
+      "size": 8504,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-5.0.0-0.nightly-2026-05-08-105617.json",
+      "size": 294,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-5.0.0-0.nightly-2026-05-08-191551.json",
+      "size": 6678,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "gh-cache/openshift/cluster-network-operator/pr-list-revert_2959.json",
+      "size": 2,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/openshift/cluster-node-tuning-operator/1499.json",
+      "size": 383,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/openshift/cluster-node-tuning-operator/pr-list-revert_1499.json",
+      "size": 2,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/raw/openshift_cluster-node-tuning-operator_master_test_extended_specs_nto.go",
+      "size": 7277,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/raw/openshift_cluster-node-tuning-operator_master_test_extended_testdata_nto_default-irq-smp-affinity.yaml",
+      "size": 938,
+      "category": "gh-cache"
+    }
+  ]
+}

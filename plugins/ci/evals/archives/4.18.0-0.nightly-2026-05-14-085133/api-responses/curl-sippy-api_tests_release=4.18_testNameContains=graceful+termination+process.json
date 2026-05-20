@@ -1,0 +1,10 @@
+[sig-kubevirt] services when running openshift cluster on KubeVirt virtual machines should allow direct connections to p
+  Current pass: 0.0%, Previous pass: 100.0%, Runs: 0
+[sig-kubevirt] services when running openshift cluster on KubeVirt virtual machines should allow connections to pods fro
+  Current pass: 0.0%, Previous pass: 75.0%, Runs: 0
+[sig-arch] all containers in ns/openshift-addon-operator must have terminationMessagePolicy=FallbackToLogsOnError
+  Current pass: 0.0%, Previous pass: 0.0%, Runs: 7
+[sig-arch] all containers in ns/openshift-backplane-managed-scripts must have terminationMessagePolicy=FallbackToLogsOnE
+  Current pass: 0.0%, Previous pass: 0.0%, Runs: 7
+tracing-uiplugin [Capability:UIPlugin][Capability:TraceVisualization][Capability:TimeRange] Test Distributed Traces Cuto
+  Current pass: 0.0%, Previous pass: 100.0%, Runs: 0

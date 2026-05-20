@@ -1,0 +1,12 @@
+{
+  "body": "## What this PR does / why we need it:\r\n\r\nThe release payload may ship multiple RHCOS variants (e.g. rhel-coreos\r\n9.8 and rhel-coreos-10 10.2). ComponentVersions() can't be used because\r\nit either errors on multiple machine-os versions or picks only one.\r\n\r\nExtract all machine-os versions directly from the ImageStream tags and\r\nverify the drifted node's OS image matches at least one of them.\r\n\r\nMade-with: Cursor\r\n\r\n## Which issue(s) this PR fixes:\r\n<!--\r\n(optional, use `fixes #<issue_number>(, fixes #<issue_number>, ...)` format, where issue_number might be a GitHub issue, or a Jira story\r\n-->\r\nFixes \r\n\r\n## Special notes for your reviewer:\r\n\r\n## Checklist:\r\n- [ ] Subject and description added to both, commit and PR.\r\n- [ ] Relevant issues have been referenced.\r\n- [ ] This change includes docs. \r\n- [ ] This change includes unit tests.\n\n<!-- This is an auto-generated comment: release notes by coderabbit.ai -->\n\n## Summary by CodeRabbit\n\n* **Tests**\n  * Enhanced validation of machine OS versions during node upgrades to check compatibility against all available expected versions instead of a single version\n  * Improved observability with additional logging of pre-upgrade node OS information and collected expected version values\n\n<!-- end of auto-generated comment: release notes by coderabbit.ai -->",
+  "files": [
+    {
+      "path": "test/e2e/karpenter_test.go",
+      "additions": 31,
+      "deletions": 10,
+      "changeType": "MODIFIED"
+    }
+  ],
+  "title": "NO-JIRA: fix(e2e): handle dual RHCOS payloads in Karpenter drift OS image check"
+}

@@ -1,0 +1,108 @@
+{
+  "case": "case-10",
+  "payload_tag": "5.0.0-0.ci-2026-04-14-085906",
+  "description": "Hermetic eval archive for CI payload analysis of 5.0.0-0.ci-2026-04-14-085906",
+  "archive_stats": {
+    "total_files": 15,
+    "total_size_bytes": 32310
+  },
+  "file_categories": {
+    "metadata": {
+      "count": 2,
+      "total_bytes": 220
+    },
+    "release-controller-api": {
+      "count": 1,
+      "total_bytes": 135
+    },
+    "fetch-new-prs": {
+      "count": 1,
+      "total_bytes": 2170
+    },
+    "fetch-payloads": {
+      "count": 1,
+      "total_bytes": 24455
+    },
+    "gh-cache": {
+      "count": 10,
+      "total_bytes": 5330
+    }
+  },
+  "files": [
+    {
+      "path": "failed-aggregated-jobs.txt",
+      "size": 0,
+      "category": "metadata"
+    },
+    {
+      "path": "failed-direct-jobs.txt",
+      "size": 220,
+      "category": "metadata"
+    },
+    {
+      "path": "api-responses/curl-rc-api_v1_releasestream_5.0.0-0.ci_tags.json",
+      "size": 135,
+      "category": "release-controller-api"
+    },
+    {
+      "path": "api-responses/fetch-new-prs-5.0.0-0.ci-2026-04-13-205905.json",
+      "size": 2170,
+      "category": "fetch-new-prs"
+    },
+    {
+      "path": "api-responses/fetch-payloads-amd64-5.0-ci.json",
+      "size": 24455,
+      "category": "fetch-payloads"
+    },
+    {
+      "path": "gh-cache/raw/openshift_hypershift_release-5.0_$file",
+      "size": 188,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/raw/openshift_hypershift_release-5.0_cmd_infra_azure_create.go",
+      "size": 31,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/raw/openshift_hypershift_release-5.0_cmd_infra_azure_create_iam.go",
+      "size": 31,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/raw/openshift_hypershift_release-5.0_cmd_infra_azure_identities.go",
+      "size": 31,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/raw/openshift_hypershift_release-5.0_cmd_infra_azure_rbac.go",
+      "size": 4159,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/raw/openshift_hypershift_release-5.0_support_azureutil_azureutil.go",
+      "size": 766,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/raw/openshift_hypershift_release-5.0_test_e2e_hypershift_framework.go",
+      "size": 31,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/raw/openshift_hypershift_release-5.0_test_e2e_util_azure.go",
+      "size": 31,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/raw/openshift_hypershift_release-5.0_test_e2e_util_fixture_azure.go",
+      "size": 31,
+      "category": "gh-cache"
+    },
+    {
+      "path": "gh-cache/raw/openshift_hypershift_release-5.0_test_e2e_util_fixture_fixture.go",
+      "size": 31,
+      "category": "gh-cache"
+    }
+  ]
+}

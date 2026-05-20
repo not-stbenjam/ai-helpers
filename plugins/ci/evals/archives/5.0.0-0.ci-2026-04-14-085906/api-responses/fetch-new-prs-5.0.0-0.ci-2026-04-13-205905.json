@@ -1,0 +1,52 @@
+[
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3567",
+      "pull_request_id": "3567",
+      "component": "agent-installer-ui",
+      "description": "NO-ISSUE: Update translation files to match new i18next format (#3567)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/csi-operator/pull/538",
+      "pull_request_id": "538",
+      "component": "aws-ebs-csi-driver-operator, azure-disk-csi-driver-operator, azure-file-csi-driver-operator, csi-driver-manila-operator, openstack-cinder-csi-driver-operator",
+      "description": "Add VolumeAttributesClass e2e test manifests for Azure disk",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-80930"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/7840",
+      "pull_request_id": "7840",
+      "component": "hypershift",
+      "description": "add GCP CCM v2 e2e tests",
+      "bug_url": "https://issues.redhat.com/browse/GCP-368"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8194",
+      "pull_request_id": "8194",
+      "component": "hypershift",
+      "description": "update builder images from 4.22 to 4.23",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3197"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8202",
+      "pull_request_id": "8202",
+      "component": "hypershift",
+      "description": "Add codecov.yml validation to make verify",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3216"
+    },
+    {
+      "url": "https://github.com/openshift/installer/pull/10332",
+      "pull_request_id": "10332",
+      "component": "baremetal-installer, installer, installer-artifacts",
+      "description": "Add kind verification in InternalReleaseImage check",
+      "bug_url": "https://issues.redhat.com/browse/AGENT-1417"
+    },
+    {
+      "url": "https://github.com/openshift/origin/pull/30982",
+      "pull_request_id": "30982",
+      "component": "tests",
+      "description": "Verify etc pod should start with oom_score_adj as system-node-critical",
+      "bug_url": "https://issues.redhat.com/browse/OCPEDGE-2381"
+    }
+  ]
+}

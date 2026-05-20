@@ -1,0 +1,7 @@
+{
+  "mergedAt": "2026-03-31T16:46:28Z",
+  "number": 7790,
+  "state": "MERGED",
+  "title": "CNTRLPLANE-2841: feat(HCCO): add guest cluster metrics forwarder for control plane metrics",
+  "url": "https://github.com/openshift/hypershift/pull/7790"
+}

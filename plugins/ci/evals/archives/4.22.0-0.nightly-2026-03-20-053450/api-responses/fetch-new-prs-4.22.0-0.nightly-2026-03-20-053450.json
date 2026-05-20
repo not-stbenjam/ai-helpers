@@ -1,0 +1,220 @@
+[
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3463",
+      "pull_request_id": "3463",
+      "component": "agent-installer-ui",
+      "description": "Left navigation menu is cut off (#3463)",
+      "bug_url": "https://issues.redhat.com/browse/MGMT-23516"
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3464",
+      "pull_request_id": "3464",
+      "component": "agent-installer-ui",
+      "description": "fix validations for NTP and Proxy in above sea level ABI flow (#3464)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift-assisted/assisted-installer-ui/pull/3466",
+      "pull_request_id": "3466",
+      "component": "agent-installer-ui",
+      "description": "Add identifiers and checked state attribute to custom manifests switch (#3466)",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/cloud-provider-azure/pull/155",
+      "pull_request_id": "155",
+      "component": "azure-cloud-controller-manager, azure-cloud-node-manager",
+      "description": "Merge https://github.com/kubernetes-sigs/cloud-provider-azure:master (314ccf1) into main",
+      "bug_url": "https://issues.redhat.com/browse/OCPCLOUD-3281"
+    },
+    {
+      "url": "https://github.com/openshift/cloud-provider-nutanix/pull/54",
+      "pull_request_id": "54",
+      "component": "nutanix-cloud-controller-manager",
+      "description": "Merge https://github.com/nutanix-cloud-native/cloud-provider-nutanix:main (9c374cb) into main",
+      "bug_url": "https://issues.redhat.com/browse/OCPCLOUD-3272"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-authentication-operator/pull/853",
+      "pull_request_id": "853",
+      "component": "cluster-authentication-operator",
+      "description": "dependencies: k8s 1.35 rebase",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-2996"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-control-plane-machine-set-operator/pull/397",
+      "pull_request_id": "397",
+      "component": "cluster-control-plane-machine-set-operator",
+      "description": "Bump to k8s 1.35 and associated deps.",
+      "bug_url": "https://issues.redhat.com/browse/OCPCLOUD-3284"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-etcd-operator/pull/1543",
+      "pull_request_id": "1543",
+      "component": "cluster-etcd-operator",
+      "description": "Add e2e Network policy test cases",
+      "bug_url": "https://issues.redhat.com/browse/ETCD-557"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-image-registry-operator/pull/1297",
+      "pull_request_id": "1297",
+      "component": "cluster-image-registry-operator",
+      "description": "make metrics server tls configuration file-based",
+      "bug_url": "https://issues.redhat.com/browse/IR-350"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-ingress-operator/pull/1354",
+      "pull_request_id": "1354",
+      "component": "cluster-ingress-operator",
+      "description": "Replace OLM-based Istio install with Sail Library",
+      "bug_url": "https://issues.redhat.com/browse/NE-2471"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-network-operator/pull/2863",
+      "pull_request_id": "2863",
+      "component": "cluster-network-operator",
+      "description": "Updating cluster-network-operator-container image to be consistent with ART for 4.22",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-70016"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-network-operator/pull/2910",
+      "pull_request_id": "2910",
+      "component": "cluster-network-operator",
+      "description": "wait for patch port to apply drop garp flows",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-77015"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-node-tuning-operator/pull/1432",
+      "pull_request_id": "1432",
+      "component": "cluster-node-tuning-operator",
+      "description": "e2e: PP: cover ExecCPUAffinity support in tests",
+      "bug_url": "https://issues.redhat.com/browse/CNF-18941"
+    },
+    {
+      "url": "https://github.com/openshift/cluster-olm-operator/pull/176",
+      "pull_request_id": "176",
+      "component": "cluster-olm-operator",
+      "description": "Add feature-gate for DeploymentConfig",
+      "bug_url": "https://issues.redhat.com/browse/OPRUN-4502"
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16043",
+      "pull_request_id": "16043",
+      "component": "console",
+      "description": "Remove support for deprecated extensions",
+      "bug_url": "https://issues.redhat.com/browse/CONSOLE-5093"
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16126",
+      "pull_request_id": "16126",
+      "component": "console",
+      "description": "Remove deprecated modal components and CSS",
+      "bug_url": "https://issues.redhat.com/browse/CONSOLE-4447"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8001",
+      "pull_request_id": "8001",
+      "component": "hypershift",
+      "description": "fix(cpo): Don't remove HCP Ingress from routes when CapabilityRoute is disabled",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-78778"
+    },
+    {
+      "url": "https://github.com/openshift/insights-operator/pull/1252",
+      "pull_request_id": "1252",
+      "component": "insights-operator",
+      "description": "add permission for opentelemetrycollectors",
+      "bug_url": "https://issues.redhat.com/browse/CCXDEV-16006"
+    },
+    {
+      "url": "https://github.com/openshift/insights-operator/pull/1253",
+      "pull_request_id": "1253",
+      "component": "insights-operator",
+      "description": "Fix string accessor error",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-78115"
+    },
+    {
+      "url": "https://github.com/openshift/kubernetes/pull/2603",
+      "pull_request_id": "2603",
+      "component": "pod",
+      "description": "UPSTREAM: &lt;carry&gt;: OCPBUGS-39360: Fix ClusterIsIPv6() detection for dual-stack v6-primary clusters",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/kubernetes/pull/2630",
+      "pull_request_id": "2630",
+      "component": "pod",
+      "description": "NO-JIRA: UPSTREAM: &lt;carry&gt;: Add jacobsee and jubittajohn to DOWNSTREAM_OWNERS",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/kubernetes/pull/2630",
+      "pull_request_id": "2630",
+      "component": "hyperkube, kube-proxy",
+      "description": "NO-JIRA: UPSTREAM: &lt;carry&gt;: Add jacobsee and jubittajohn to DOWNSTREAM_OWNERS",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/machine-api-operator/pull/1483",
+      "pull_request_id": "1483",
+      "component": "machine-api-operator",
+      "description": "NO-JIRA: fix flaky TestReconcile/machine_with_node_likely_to_go_unhealthy#1483",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/machine-api-provider-powervs/pull/139",
+      "pull_request_id": "139",
+      "component": "powervs-machine-controllers",
+      "description": "Updating ose-powervs-machine-controllers-container image to be consistent with ART for 4.22",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-77745"
+    },
+    {
+      "url": "https://github.com/openshift/machine-api-provider-powervs/pull/141",
+      "pull_request_id": "141",
+      "component": "powervs-machine-controllers",
+      "description": "NO-JIRA: Add damdo to approvers list in OWNERS file",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/monitoring-plugin/pull/831",
+      "pull_request_id": "831",
+      "component": "monitoring-plugin",
+      "description": "feat: re enable dev console views",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-77113"
+    },
+    {
+      "url": "https://github.com/openshift/monitoring-plugin/pull/837",
+      "pull_request_id": "837",
+      "component": "monitoring-plugin",
+      "description": "NO-JIRA: switch to core platform page before test case run",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/monitoring-plugin/pull/854",
+      "pull_request_id": "854",
+      "component": "monitoring-plugin",
+      "description": "NO-JIRA: Incident Detection Tests Stabilization",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/must-gather/pull/508",
+      "pull_request_id": "508",
+      "component": "must-gather",
+      "description": "Add Node Feature Discovery Operator collection script",
+      "bug_url": "https://issues.redhat.com/browse/RFE-8344"
+    },
+    {
+      "url": "https://github.com/openshift/oc/pull/2232",
+      "pull_request_id": "2232",
+      "component": "cli, cli-artifacts",
+      "description": "NO-ISSUE: pkg/cli/admin/release/extract: Read manifests into memory",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/service-ca-operator/pull/332",
+      "pull_request_id": "332",
+      "component": "service-ca-operator",
+      "description": "test/e2e: migrate apiservice-ca-bundle-injection to OTE serial suite",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3033"
+    }
+  ]
+}

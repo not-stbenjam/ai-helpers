@@ -1,0 +1,129 @@
+[
+    {
+      "url": "https://github.com/openshift/cluster-api-provider-aws/pull/607",
+      "pull_request_id": "607",
+      "component": "aws-cluster-api-controllers",
+      "description": "Bump github.com/go-jose/go-jose/v4 to 4.1.4",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-85567"
+    },
+    {
+      "url": "https://github.com/openshift/aws-encryption-provider/pull/45",
+      "pull_request_id": "45",
+      "component": "aws-kms-encryption-provider",
+      "description": "Update OWNERS with HyperShift core team",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3380"
+    },
+    {
+      "url": "https://github.com/openshift/aws-node-termination-handler/pull/7",
+      "pull_request_id": "7",
+      "component": "aws-node-termination-handler",
+      "description": "Update OWNERS with HyperShift core team",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3380"
+    },
+    {
+      "url": "https://github.com/openshift/azure-kubernetes-kms/pull/35",
+      "pull_request_id": "35",
+      "component": "azure-kms-encryption-provider",
+      "description": "Update OWNERS with HyperShift core team",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3380"
+    },
+    {
+      "url": "https://github.com/openshift/console/pull/16301",
+      "pull_request_id": "16301",
+      "component": "console",
+      "description": "[main] CVE-2026-26996 Bump minimatch library",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-83569"
+    },
+    {
+      "url": "https://github.com/openshift/cloud-provider-gcp/pull/115",
+      "pull_request_id": "115",
+      "component": "gcp-cloud-controller-manager",
+      "description": "Upgrade spdystream and grpc to fix CVEs",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-85551"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8494",
+      "pull_request_id": "8494",
+      "component": "hypershift",
+      "description": "Replace actions/cache with EFS-backed build cache in unit tests",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3329"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8506",
+      "pull_request_id": "8506",
+      "component": "hypershift",
+      "description": "Update external-dns image from 1.1.0-3 to 1.2.1",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-85577"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8331",
+      "pull_request_id": "8331",
+      "component": "hypershift",
+      "description": "fix(api): add missing has() guards to servingCerts CEL validation rule",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-77827"
+    },
+    {
+      "url": "https://github.com/openshift/hypershift/pull/8514",
+      "pull_request_id": "8514",
+      "component": "hypershift",
+      "description": "docs: add aws-node-termination-handler to repositories list",
+      "bug_url": "https://issues.redhat.com/browse/CNTRLPLANE-3380"
+    },
+    {
+      "url": "https://github.com/openshift/machine-config-operator/pull/6031",
+      "pull_request_id": "6031",
+      "component": "machine-config-operator",
+      "description": "BareMetal skew e2e fails patching provisioning CR after CBO webhook fix",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-85498"
+    },
+    {
+      "url": "https://github.com/openshift/monitoring-plugin/pull/936",
+      "pull_request_id": "936",
+      "component": "monitoring-plugin",
+      "description": "show disabled project bar while loading",
+      "bug_url": "https://issues.redhat.com/browse/OU-1281"
+    },
+    {
+      "url": "https://github.com/openshift/networking-console-plugin/pull/417",
+      "pull_request_id": "417",
+      "component": "networking-console-plugin",
+      "description": "Add project documentation and rewrite README",
+      "bug_url": "https://issues.redhat.com/browse/CONSOLE-5218"
+    },
+    {
+      "url": "https://github.com/openshift/operator-framework-operator-controller/pull/725",
+      "pull_request_id": "725",
+      "component": "olm-catalogd, olm-operator-controller",
+      "description": "Synchronize From Upstream Repositories",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-85508"
+    },
+    {
+      "url": "https://github.com/openshift/operator-framework-olm/pull/1298",
+      "pull_request_id": "1298",
+      "component": "operator-framework-tools, operator-lifecycle-manager, operator-registry",
+      "description": "NO-ISSUE: Synchronize From Upstream Repositories",
+      "bug_url": ""
+    },
+    {
+      "url": "https://github.com/openshift/origin/pull/31164",
+      "pull_request_id": "31164",
+      "component": "tests",
+      "description": "stage the creation of test pods to minimize etcd impact",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-85486"
+    },
+    {
+      "url": "https://github.com/openshift/origin/pull/31142",
+      "pull_request_id": "31142",
+      "component": "tests",
+      "description": "Automation creation of OCP-57401",
+      "bug_url": "https://issues.redhat.com/browse/OCPNODE-4505"
+    },
+    {
+      "url": "https://github.com/openshift/origin/pull/31127",
+      "pull_request_id": "31127",
+      "component": "tests",
+      "description": "fix: add distruption tolerance for DualReplica (two-node) topology",
+      "bug_url": "https://issues.redhat.com/browse/OCPBUGS-83623"
+    }
+  ]
+}
