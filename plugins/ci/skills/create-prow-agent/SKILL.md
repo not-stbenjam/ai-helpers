@@ -2,6 +2,7 @@
 name: create-prow-agent
 description: Interactive guide to design, configure, and deploy a new Prow-based AI agent in OpenShift CI. Walks through brainstorming the agent's purpose, then generates step registry refs, commands scripts, and ci-operator configs with a prerequisites checklist for credentials the developer needs to fill in.
 user-invocable: true
+disable-model-invocation: true
 ---
 
 # Create a Prow-Based AI Agent
