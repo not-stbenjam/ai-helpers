@@ -545,6 +545,33 @@ Remind them:
 - The agent should follow the principle of least privilege — restrict `--allowedTools` to the minimum needed
 - Set `--max-turns` and step timeouts to prevent runaway execution
 
+#### Step 2.12: Test with pj-rehearse
+
+After the PR is open, explain how to validate the agent using CI rehearsals:
+
+> Your PR is open. The **pj-rehearse** system will automatically detect the new/modified step registry refs and ci-operator configs, and run rehearsal jobs against your PR to validate them.
+>
+> **What rehearsals test:**
+> - Step registry YAML structure and ref resolution
+> - Image references (e.g., `from: claude-ai-helpers` resolves correctly)
+> - The workflow actually executes — setup, process, and report steps run in order
+>
+> **First runs without secrets:** The rehearsal will run even before vault secrets are synced. Your setup step should handle this gracefully — check for credential files and `exit 0` with a message if they're missing (see the existing agent patterns). This still validates the structural correctness of your step registry files.
+>
+> **Once secrets are wired up:** Subsequent rehearsals (or re-triggering with `/pj-rehearse`) will run the full pipeline end-to-end.
+
+If rehearsals don't fire automatically, or the user wants to re-run them after making changes, offer to trigger them:
+
+> Would you like me to trigger a rehearsal? I can comment `/pj-rehearse` on your PR, or you can do it manually.
+
+If the user agrees, post the comment:
+
+```bash
+gh pr comment {pr-number} --repo openshift/release --body "/pj-rehearse"
+```
+
+**Important:** Do not trigger multiple rehearsals in a row. Wait for the current rehearsal to complete (check via the PR's CI status checks) or for a REHEARSALNOTIFIER comment before triggering another one.
+
 ## Notes
 
 - The `claude-ai-helpers` container image is built from `openshift-eng/ai-helpers` and includes all plugins, the `gh` CLI, Go, Python, and common utilities.
